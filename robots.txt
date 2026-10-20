@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sripoojaservices.com.sg/sitemap.xml
