@@ -182,6 +182,8 @@ footer.site .copy{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;pad
 .rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .rv{background:var(--cream);border:1px solid var(--cream-2);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px}
 .rv blockquote{font-family:"Cormorant Garamond",serif;font-size:1.35rem;line-height:1.35;color:var(--maroon);font-style:italic;flex:1}
+.rv blockquote.hi{flex:0 0 auto;font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif;font-style:normal;font-size:1.25rem;line-height:1.6}
+.rv-tr{flex:1;font-size:.88rem;color:var(--muted);font-style:italic;margin:-4px 0 4px}
 .rv figcaption{font-size:.9rem;color:var(--muted)}
 .rv-note{text-align:center;margin-top:16px;color:var(--muted);font-size:.93rem}
 @media (max-width:900px){.rv-grid{grid-template-columns:1fr}}
@@ -203,3 +205,7 @@ img{-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
 .related a:hover{background:var(--cream-2)}
 footer.site .cols{grid-template-columns:1.3fr 1fr 1.2fr 1.2fr}
 @media (max-width:900px){footer.site .cols{grid-template-columns:1fr}}
+
+.rv-theme{margin-bottom:56px}
+.rv-theme header{margin-bottom:20px}
+.rv-theme header p{color:var(--muted)}
