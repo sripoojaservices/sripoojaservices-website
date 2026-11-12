@@ -251,3 +251,4 @@ nav.main a:not(.cta):hover{background:var(--cream-2);color:var(--maroon);box-sha
   nav.main a:not(.cta):hover{border-radius:10px}
   nav.main a.cta{text-align:center;margin-top:6px}
 }
+@media (max-width:480px){.topbar .wrap{gap:4px 14px;font-size:.78rem;padding-left:10px;padding-right:10px}}
