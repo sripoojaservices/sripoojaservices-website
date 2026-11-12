@@ -304,3 +304,7 @@ nav.main a.cta.active{background:var(--saffron-dark)}
   .brand .name{font-size:1.45rem}
 }
 @media (min-width:601px) and (max-width:900px){nav.main ul{gap:2px}nav.main a{padding:8px 11px;font-size:.93rem}}
+/* v17: Contact Us looks like the other tabs */
+nav.main a.cta{background:transparent;color:var(--ink)}
+nav.main a.cta:hover{background:#fff;color:var(--maroon)}
+nav.main a.cta.active{background:var(--maroon);color:#fff}
