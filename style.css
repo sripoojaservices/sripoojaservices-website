@@ -320,3 +320,5 @@ nav.main a.cta.active{background:var(--maroon);color:#fff}
 .veda-quote .vq-en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.3rem;color:var(--maroon);margin:0}
 .veda-quote .vq-note{color:var(--muted);font-size:.93rem;margin:8px auto 0;max-width:420px}
 .veda-quote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700}
+.veda-quote.vq-section{border-top:0;max-width:640px;margin:0 auto;padding-top:4px}
+.veda-quote .vq-ref{color:var(--muted);font-size:.85rem;font-style:italic;margin:4px auto 0;max-width:460px}
