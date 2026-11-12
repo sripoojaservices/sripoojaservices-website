@@ -252,3 +252,54 @@ nav.main a:not(.cta):hover{background:var(--cream-2);color:var(--maroon);box-sha
   nav.main a.cta{text-align:center;margin-top:6px}
 }
 @media (max-width:480px){.topbar .wrap{gap:4px 14px;font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* v15: name is the largest text; logo bigger; menu always visible as tabs */
+header.site{position:static}
+header.site .wrap{height:auto;padding-top:12px;padding-bottom:12px;justify-content:flex-start}
+.brand{gap:16px}
+.brand .logo{height:110px}
+.brand .name{font-size:2.3rem;white-space:nowrap}
+.brand .name .name2{display:inline}
+.brand .name small{font-size:.8rem;margin-top:6px}
+h1{font-size:clamp(1.6rem,3.4vw,2.1rem)}
+h2{font-size:clamp(1.4rem,2.8vw,1.8rem)}
+h3{font-size:1.3rem}
+.svc-detail h2{font-size:1.6rem}
+.page-hero{padding:54px 0 50px}
+.menu-btn,#menu-toggle{display:none!important}
+nav.main{position:sticky;top:0;z-index:60;display:block;background:var(--cream-2);border-bottom:1px solid #e6d3b3;box-shadow:none}
+nav.main ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:6px;padding:8px 0;align-items:center}
+nav.main a{display:inline-block;padding:9px 18px;border-radius:999px;font-size:.98rem;box-shadow:none;color:var(--ink)}
+nav.main a.active{background:var(--maroon);color:#fff;box-shadow:none;border-radius:999px}
+nav.main a:not(.cta):not(.active):hover{background:#fff;color:var(--maroon);border-radius:999px}
+nav.main a.cta{background:var(--saffron);color:#fff;margin-top:0}
+nav.main a.cta.active{background:var(--saffron-dark)}
+@media (min-width:901px) and (max-width:1179px){
+  .brand .name{font-size:2.1rem;white-space:nowrap}
+  .brand .name .name2{display:inline}
+}
+@media (max-width:900px){
+  header.site .wrap{height:auto}
+  nav.main{position:sticky;top:0;display:block;box-shadow:none;border-bottom:1px solid #e6d3b3}
+  nav.main ul{flex-direction:row;padding:8px 0}
+  nav.main a{display:inline-block;padding:8px 14px}
+  nav.main a.active{box-shadow:none;border-radius:999px}
+  .brand .logo{height:96px}
+  .brand .name{font-size:clamp(1.7rem,4.3vw,2.1rem)}
+}
+@media (max-width:600px){
+  .brand .logo{height:78px}
+  .brand .name{font-size:1.55rem;white-space:normal}
+  .brand .name .name2{display:block}
+  h1{font-size:1.4rem}
+  h2,.svc-detail h2{font-size:1.3rem}
+  h3{font-size:1.15rem}
+  nav.main{position:static}
+  nav.main ul{gap:4px}
+  nav.main a{padding:7px 11px;font-size:.88rem}
+}
+@media (max-width:480px){
+  header.site .wrap{height:auto}
+  .brand .logo{height:72px}
+  .brand .name{font-size:1.45rem}
+}
