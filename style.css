@@ -209,3 +209,6 @@ footer.site .cols{grid-template-columns:1.3fr 1fr 1.2fr 1.2fr}
 .rv-theme{margin-bottom:56px}
 .rv-theme header{margin-bottom:20px}
 .rv-theme header p{color:var(--muted)}
+
+.about-card.motto .sk-dev{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif;font-size:1.6rem;color:#fff;margin-bottom:2px}
+.quote .sk-dev.q{display:block;font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif;font-style:normal;margin-bottom:6px}
