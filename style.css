@@ -322,3 +322,4 @@ nav.main a.cta.active{background:var(--maroon);color:#fff}
 .veda-quote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700}
 .veda-quote.vq-section{border-top:0;max-width:640px;margin:0 auto;padding-top:4px}
 .veda-quote .vq-ref{color:var(--muted);font-size:.85rem;font-style:italic;margin:4px auto 0;max-width:460px}
+.co-name{color:var(--maroon);font-weight:700}
