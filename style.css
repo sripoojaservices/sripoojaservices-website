@@ -212,3 +212,42 @@ footer.site .cols{grid-template-columns:1.3fr 1fr 1.2fr 1.2fr}
 
 .about-card.motto .sk-dev{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif;font-size:1.6rem;color:#fff;margin-bottom:2px}
 .quote .sk-dev.q{display:block;font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif;font-style:normal;margin-bottom:6px}
+
+/* v14: bigger logo, one-line name where it fits */
+header.site .wrap{height:88px}
+.brand .logo{height:70px}
+.brand .name{font-size:1.5rem;white-space:nowrap}
+.brand .name .name2{display:inline}
+.brand .name small{font-size:.72rem;margin-top:4px}
+@media (min-width:901px) and (max-width:1179px){
+  .brand .name{font-size:1.35rem;white-space:normal}
+  .brand .name .name2{display:block}
+}
+@media (max-width:900px){
+  nav.main{top:88px}
+  .brand .name{font-size:clamp(1.25rem,3.6vw,1.6rem)}
+}
+@media (max-width:480px){
+  header.site .wrap{height:80px}
+  nav.main{top:80px}
+  .brand .logo{height:60px}
+  .brand .name{font-size:1.22rem;white-space:normal}
+  .brand .name .name2{display:block}
+}
+
+/* v14: framed page banner */
+.page-hero{position:relative;overflow:hidden;border-bottom:4px solid var(--gold);
+  background:radial-gradient(ellipse at 50% 0%,rgba(217,115,31,.35),transparent 60%),linear-gradient(135deg,var(--maroon-deep),var(--maroon))}
+.page-hero::before{content:"";position:absolute;inset:14px;border:1.5px solid rgba(201,162,74,.65);border-radius:14px;pointer-events:none}
+.page-hero::after{content:"";position:absolute;inset:20px;border:1px solid rgba(201,162,74,.3);border-radius:10px;pointer-events:none}
+.page-hero h1::after{content:"";display:block;width:90px;height:2px;margin:16px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.page-hero .wrap{position:relative;z-index:1}
+
+/* v14: menu highlight follows the pointer */
+nav.main a.active{background:transparent;box-shadow:inset 0 -2px 0 var(--saffron);border-radius:0}
+nav.main a:not(.cta):hover{background:var(--cream-2);color:var(--maroon);box-shadow:none;border-radius:999px}
+@media (max-width:900px){
+  nav.main a.active{box-shadow:inset 3px 0 0 var(--saffron);border-radius:0}
+  nav.main a:not(.cta):hover{border-radius:10px}
+  nav.main a.cta{text-align:center;margin-top:6px}
+}
