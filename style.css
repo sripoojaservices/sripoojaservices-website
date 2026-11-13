@@ -509,3 +509,6 @@ footer.site{background:rgba(20,2,1,.35)!important}
 .page-hero{padding:46px 0 46px}
 .page-hero .wrap>*:first-child{margin-top:0}
 .page-hero .wrap>*:last-child{margin-bottom:0}
+/* v47: tighter gap between SINGAPORE and tabs */
+.site-head nav.main ul{padding-top:0}
+@media (min-width:1001px){.site-head .brand{min-height:104px}.site-head header.site .wrap{padding-top:22px}}
