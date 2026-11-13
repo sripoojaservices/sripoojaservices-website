@@ -352,3 +352,14 @@ nav.main{background:radial-gradient(ellipse at 50% 50%,#6e190f 0%,#3d0a06 100%);
 nav.main a,nav.main a.cta{color:var(--gold-text)}
 nav.main a:not(.active):hover,nav.main a.cta:not(.active):hover{background:rgba(226,189,104,.14);color:#f5d98f}
 nav.main a.active,nav.main a.cta.active{background:#8c2418;color:#ffe3a0;box-shadow:inset 0 0 0 1px var(--gold-text)}
+/* v25: metallic gold lettering */
+:root{--gold-metal:linear-gradient(180deg,#fff3c4 0%,#f3d27a 28%,#c9962f 52%,#f6dc8a 72%,#a8771f 100%)}
+.page-hero h1,.page-hero .eyebrow,.cta-band h2,footer.site h4,nav.main a,.topbar a.tb-rev,.co-gold{
+  background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.page-hero h1{text-shadow:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
+.cta-band h2,footer.site h4{filter:drop-shadow(0 1px 1px rgba(0,0,0,.4))}
+nav.main a.active,nav.main a.cta.active{background:#8c2418;-webkit-text-fill-color:#ffe6a6;color:#ffe6a6}
+nav.main a:not(.active):hover{-webkit-text-fill-color:#fff0bf;color:#fff0bf;background:rgba(226,189,104,.14)}
+.topbar a.tb-rev .tw{-webkit-text-fill-color:#ffd75e}
+.page-hero h1::after,section h2::after{background:linear-gradient(90deg,transparent,#c9962f,#fff1b8,#c9962f,transparent)}
+section h2::after{background:linear-gradient(90deg,#a8771f,#f6dc8a,#c9962f,transparent)}
