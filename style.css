@@ -435,3 +435,5 @@ footer.site.slim .foot-line a{color:#f3d987}
 .site-head .head-contact::before,.site-head .head-contact::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
 .site-head .head-contact::before{top:0}
 .site-head .head-contact::after{bottom:0}
+.head-contact .ic{width:1em;height:1em;vertical-align:-.12em;margin-right:2px}
+.site-head nav.main a.active:hover,.site-head nav.main a.cta.active:hover{background:#8c2418;-webkit-text-fill-color:#ffe6a6;color:#ffe6a6;box-shadow:inset 0 0 0 1px var(--gold-text)}
