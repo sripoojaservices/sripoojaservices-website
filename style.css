@@ -562,3 +562,4 @@ html body section.alt div.wrap > p.eyebrow{font-family:"Mulish",system-ui,sans-s
 html body section.about-flow.alt div.about-centre div.about-card{background:linear-gradient(180deg,#fbf0d6,#f0dcb0)!important;border:1px solid #c9962f!important;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 html body section.about-flow.alt div.about-centre div.about-card h3,
 html body section.about-flow.alt div.about-centre div.about-card p{color:#5c150d!important;-webkit-text-fill-color:#5c150d!important}
+section.about-flow{padding-bottom:60px}
