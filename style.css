@@ -365,3 +365,10 @@ nav.main a:not(.active):hover{-webkit-text-fill-color:#fff0bf;color:#fff0bf;back
 section h2::after{background:linear-gradient(90deg,#a8771f,#f6dc8a,#c9962f,transparent)}
 nav.main a.cta:not(.active){background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 nav.main a.cta:not(.active):hover{background:rgba(226,189,104,.14);-webkit-text-fill-color:#fff0bf}
+/* v27: top strip + header + tabs as one burgundy band */
+.topbar{background:#5a140c;border-bottom:1px solid rgba(226,189,104,.25)}
+header.site{background:linear-gradient(180deg,#5a140c 0%,#6e190f 50%,#5a140c 100%)}
+.brand .logo{border-radius:50%;background:#fff;box-shadow:0 0 0 2px var(--gold-text),0 4px 14px rgba(0,0,0,.35)}
+.brand .name{background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
+.brand .name small{-webkit-text-fill-color:#e9c97a;color:#e9c97a}
+nav.main{background:#5a140c;border-top:1px solid rgba(226,189,104,.25)}
