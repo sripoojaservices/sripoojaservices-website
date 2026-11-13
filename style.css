@@ -472,3 +472,17 @@ footer.site.slim .foot-line a{color:#f3d987}
 .site-head{padding-bottom:12px}
 .site-head .head-contact{margin-bottom:0;max-height:none}
 .site-head.shrink{padding-bottom:4px}
+/* v41: logo on the left, full name on one line centred */
+.site-head header.site .wrap{position:relative;display:block;padding-top:14px;padding-bottom:4px}
+.site-head .brand{display:flex;justify-content:center;align-items:center;min-height:136px;position:relative}
+.site-head .brand .logo{position:absolute;left:0;top:50%;transform:translateY(-50%)}
+.site-head .brand-text{text-align:center}
+.site-head .brand .name{white-space:nowrap!important;font-size:clamp(1.6rem,3.2vw,2.6rem)}
+.site-head .brand .name .name2{display:inline!important}
+.site-head .brand .name small{text-align:center}
+@media (max-width:1100px){.site-head .brand .name{white-space:nowrap!important}}
+@media (max-width:900px){.site-head .brand{min-height:108px;padding-left:118px}.site-head .brand .name{font-size:clamp(1.15rem,3.4vw,1.9rem)}}
+@media (max-width:600px){.site-head .brand{min-height:84px;padding-left:92px;justify-content:flex-start}.site-head .brand-text{text-align:left}.site-head .brand .name{font-size:clamp(.95rem,4.6vw,1.3rem)}.site-head .brand .name small{text-align:left}}
+.site-head.shrink .brand{min-height:60px}
+@media (max-width:600px){.site-head.shrink .brand{min-height:46px;padding-left:56px}}
+@media (max-width:600px){.site-head .brand{padding-left:84px}.site-head .brand .logo{height:74px}.site-head .brand .name{font-size:4.1vw!important}.site-head .brand .name small{font-size:.62rem;letter-spacing:.25em}}
