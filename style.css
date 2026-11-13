@@ -381,3 +381,42 @@ section.alt{background:#4e110a}
 /* v29 TRIAL: body sections glow like the banner (lighter centre, darker edges) */
 section,section.alt{background:radial-gradient(ellipse 75% 70% at 50% 45%,#7c1e13 0%,#5c150d 55%,#3a0905 100%)}
 .about-card,.callout,.card,.rv,details{background:radial-gradient(ellipse at 50% 40%,#83231a 0%,#62170e 100%)}
+/* v30: one sticky header block (logo+name, contact line, tabs), no dividing lines */
+.topbar{display:none}
+.site-head{position:sticky;top:0;z-index:70;background:radial-gradient(ellipse 80% 120% at 50% 30%,#7a1c12 0%,#5a140c 60%,#430d07 100%);box-shadow:0 4px 16px rgba(0,0,0,.35);border-bottom:2px solid var(--gold)}
+.site-head header.site,.site-head nav.main{background:transparent!important;border:0!important;box-shadow:none!important;position:static}
+.site-head header.site .wrap{display:flex;flex-direction:column;align-items:center;padding-top:14px;padding-bottom:4px;gap:6px;transition:padding .25s}
+.site-head .brand{justify-content:center}
+.site-head .brand .logo{height:120px;transition:height .25s}
+.site-head .brand .name{font-size:2.5rem;transition:font-size .25s}
+.head-contact{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 22px;font-size:.92rem;transition:opacity .2s,max-height .25s;max-height:60px;overflow:hidden}
+.head-contact a{color:#f0d79a}
+.head-contact a:hover{color:#fff1c4}
+.site-head nav.main ul{padding:4px 0 10px}
+.site-head.shrink header.site .wrap{flex-direction:row;justify-content:center;padding-top:6px;padding-bottom:0}
+.site-head.shrink .brand .logo{height:54px}
+.site-head.shrink .brand .name{font-size:1.5rem}
+.site-head.shrink .brand .name small{display:none}
+.site-head.shrink .head-contact{max-height:0;opacity:0}
+.site-head.shrink nav.main ul{padding:2px 0 6px}
+footer.site.slim{padding:22px 0 18px;text-align:center}
+footer.site.slim .foot-line{color:#e9cf93;margin:0 0 8px;font-size:.92rem}
+footer.site.slim .foot-line a{color:#f3d987}
+@media (max-width:900px){.site-head .brand .logo{height:96px}.site-head .brand .name{font-size:clamp(1.6rem,4.4vw,2.1rem)}}
+@media (max-width:600px){
+  .site-head .brand .logo{height:74px}.site-head .brand .name{font-size:1.45rem}
+  .site-head header.site .wrap{padding-top:10px}
+  .head-contact{font-size:.8rem;gap:2px 12px}
+  .site-head.shrink .brand .logo{height:40px}.site-head.shrink .brand .name{font-size:1.05rem}
+  .site-head.shrink .brand .name .name2{display:inline}
+  nav.main{position:static}
+}
+.head-contact a{text-decoration:none}
+.brand .name .name2{background:inherit;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.site-head.shrink .head-contact{display:none}
+.site-head.shrink .brand .name{white-space:nowrap}
+@media (max-width:600px){
+  .site-head.shrink .brand{gap:10px}
+  .site-head.shrink .brand .name{font-size:1.02rem;white-space:nowrap}
+  .site-head.shrink .brand .name .name2{display:inline}
+}
