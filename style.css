@@ -363,3 +363,5 @@ nav.main a:not(.active):hover{-webkit-text-fill-color:#fff0bf;color:#fff0bf;back
 .topbar a.tb-rev .tw{-webkit-text-fill-color:#ffd75e}
 .page-hero h1::after,section h2::after{background:linear-gradient(90deg,transparent,#c9962f,#fff1b8,#c9962f,transparent)}
 section h2::after{background:linear-gradient(90deg,#a8771f,#f6dc8a,#c9962f,transparent)}
+nav.main a.cta:not(.active){background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+nav.main a.cta:not(.active):hover{background:rgba(226,189,104,.14);-webkit-text-fill-color:#fff0bf}
