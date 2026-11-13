@@ -568,3 +568,5 @@ section.about-flow{padding-bottom:60px}
 .wa-float{overflow:visible}
 .wa-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;background:#fbf0d6;color:#5c150d;font:700 .88rem "Mulish",system-ui,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tip,.wa-float:focus .wa-tip{opacity:1}
+.cta-band{padding:34px 0!important}
+.cta-band p{font-size:1.15rem;margin:0 auto}
