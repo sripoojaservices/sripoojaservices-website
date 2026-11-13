@@ -341,3 +341,14 @@ footer.site .cols{grid-template-columns:1.4fr 1fr 1fr}
 .cta-band p{color:#f0dcb0}
 footer.site{background:var(--burg-deep)}
 footer.site h4{color:var(--gold-text)}
+/* v24: burgundy + gold throughout (headings, tab bar) */
+h1,h2,h3{color:#6a160e}
+.brand .name{color:#6a160e}
+section h2{position:relative;padding-bottom:10px}
+section h2::after{content:"";position:absolute;left:0;bottom:0;width:70px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.center h2::after,section .center h2::after,.cta-band h2::after,.page-hero h2::after{left:50%;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.cta-band h2::after{display:none}
+nav.main{background:radial-gradient(ellipse at 50% 50%,#6e190f 0%,#3d0a06 100%);border-bottom:2px solid var(--gold)}
+nav.main a,nav.main a.cta{color:var(--gold-text)}
+nav.main a:not(.active):hover,nav.main a.cta:not(.active):hover{background:rgba(226,189,104,.14);color:#f5d98f}
+nav.main a.active,nav.main a.cta.active{background:#8c2418;color:#ffe3a0;box-shadow:inset 0 0 0 1px var(--gold-text)}
