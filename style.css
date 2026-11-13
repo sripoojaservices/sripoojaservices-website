@@ -493,3 +493,6 @@ footer.site.slim .foot-line a{color:#f3d987}
 @media (max-width:600px){.site-head .brand .name{font-size:4.1vw!important}}
 .site-head.shrink .brand .name{font-size:1.5rem}
 @media (max-width:600px){.site-head.shrink .brand .name{font-size:3.6vw!important}}
+/* v43: SINGAPORE aligned left under "Sri" */
+.site-head .brand-text{text-align:left}
+.site-head .brand .name small{text-align:left!important}
