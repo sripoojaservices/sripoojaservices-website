@@ -533,3 +533,15 @@ section.alt:not(.about-flow){padding-top:40px}
 .about-centre h2{text-wrap:balance;max-width:none}
 .about-centre .about-cards{grid-template-columns:1fr!important;max-width:720px;margin-left:auto;margin-right:auto;text-align:center}
 .about-centre .about-card p{text-align:center}
+/* v51: About heading/eyebrow/lead match the banner exactly; italic sublines */
+.page-hero p{font-style:italic}
+section.about-flow .about-centre .eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+section.about-flow .about-centre h2{font-family:"Mulish",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;letter-spacing:.01em;line-height:1.2;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important;padding-bottom:0}
+section.about-flow .about-centre h2::after{width:min(500px,78%)!important;height:2px!important;bottom:auto;position:static;display:block;margin:18px auto 0;transform:none!important;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)!important}
+section.about-flow .about-centre p.about-lead{font-family:"Mulish",system-ui,sans-serif;font-style:italic;font-weight:500;font-size:1.06rem!important;max-width:640px;margin:18px auto 0;text-wrap:balance}
+@media (max-width:600px){section.about-flow .about-centre h2{font-size:1.2rem!important}}
+html body section.about-flow.alt div.about-centre p.eyebrow,
+html body section.about-flow.alt div.about-centre h2{background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+html body section.about-flow.alt div.about-centre h2{filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important}
+html body section.about-flow.alt div.about-centre h2::after{-webkit-text-fill-color:initial!important}
+.page-hero p.eyebrow{font-style:normal}
