@@ -461,3 +461,14 @@ footer.site.slim .foot-line a{color:#f3d987}
 /* v39: longer banner divider; balanced subline */
 .page-hero h1::after{width:min(500px,78%);height:2px;margin-top:18px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
 .page-hero p{max-width:640px;margin-left:auto;margin-right:auto;text-wrap:balance}
+/* v40: company name in the same bold gold style; banner heading smaller than name */
+.site-head .brand .name{font-family:"Mulish",system-ui,sans-serif;font-weight:800;letter-spacing:.01em;line-height:1.1}
+.site-head .brand .name small{font-family:"Mulish",system-ui,sans-serif}
+.page-hero h1{font-size:clamp(1.3rem,2.4vw,1.75rem)}
+@media (max-width:1100px){.site-head .brand .name{white-space:normal}.site-head .brand .name .name2{display:block}}
+@media (max-width:600px){.page-hero h1{font-size:1.2rem}}
+.site-head.shrink .brand .name .name2{display:inline}
+.site-head.shrink .brand .name{white-space:nowrap}
+.site-head{padding-bottom:12px}
+.site-head .head-contact{margin-bottom:0;max-height:none}
+.site-head.shrink{padding-bottom:4px}
