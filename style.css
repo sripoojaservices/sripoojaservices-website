@@ -447,3 +447,7 @@ footer.site.slim .foot-line a{color:#f3d987}
 @media (max-width:600px){.site-head .brand .logo{height:84px}}
 .site-head.shrink .brand .logo{height:60px}
 @media (max-width:600px){.site-head.shrink .brand .logo{height:46px}}
+/* v37: twinkling star on Reviews in the header */
+.head-contact a.tb-rev{font-weight:700;color:#f5d37a}
+.head-contact a.tb-rev .tw{display:inline-block;color:#ffd75e;-webkit-text-fill-color:#ffd75e;animation:twinkle 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.head-contact a.tb-rev .tw{animation:none}}
