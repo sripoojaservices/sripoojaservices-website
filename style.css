@@ -378,3 +378,6 @@ section,section.alt,.about-card,.callout,.card,.rv,.faq-item,main{background:tra
 section{background:#5a140c}
 section.alt{background:#4e110a}
 .about-card,.callout,.card,.rv,details{background:#6e190f}
+/* v29 TRIAL: body sections glow like the banner (lighter centre, darker edges) */
+section,section.alt{background:radial-gradient(ellipse 75% 70% at 50% 45%,#7c1e13 0%,#5c150d 55%,#3a0905 100%)}
+.about-card,.callout,.card,.rv,details{background:radial-gradient(ellipse at 50% 40%,#83231a 0%,#62170e 100%)}
