@@ -437,3 +437,13 @@ footer.site.slim .foot-line a{color:#f3d987}
 .site-head .head-contact::after{bottom:0}
 .head-contact .ic{width:1em;height:1em;vertical-align:-.12em;margin-right:2px}
 .site-head nav.main a.active:hover,.site-head nav.main a.cta.active:hover{background:#8c2418;-webkit-text-fill-color:#ffe6a6;color:#ffe6a6;box-shadow:inset 0 0 0 1px var(--gold-text)}
+/* v36: gold-ring logo; bold name and tabs */
+.site-head .brand .logo{background:transparent;box-shadow:none;border-radius:0;filter:drop-shadow(0 4px 10px rgba(0,0,0,.45))}
+.site-head .brand .name{font-weight:700}
+.site-head .brand .name small{font-weight:600}
+.site-head nav.main a{font-weight:700}
+.site-head .brand .logo{height:136px}
+@media (max-width:900px){.site-head .brand .logo{height:108px}}
+@media (max-width:600px){.site-head .brand .logo{height:84px}}
+.site-head.shrink .brand .logo{height:60px}
+@media (max-width:600px){.site-head.shrink .brand .logo{height:46px}}
