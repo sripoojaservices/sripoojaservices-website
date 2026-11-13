@@ -372,3 +372,9 @@ header.site{background:linear-gradient(180deg,#5a140c 0%,#6e190f 50%,#5a140c 100
 .brand .name{background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
 .brand .name small{-webkit-text-fill-color:#e9c97a;color:#e9c97a}
 nav.main{background:#5a140c;border-top:1px solid rgba(226,189,104,.25)}
+/* v28 TRIAL: whole page burgundy background (text colours unchanged) */
+body{background:#5a140c}
+section,section.alt,.about-card,.callout,.card,.rv,.faq-item,main{background:transparent}
+section{background:#5a140c}
+section.alt{background:#4e110a}
+.about-card,.callout,.card,.rv,details{background:#6e190f}
