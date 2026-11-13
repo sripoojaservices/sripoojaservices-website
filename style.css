@@ -430,3 +430,8 @@ footer.site.slim .foot-line a{color:#f3d987}
 .site-head nav.main a:not(.cta):not(.active):hover,.site-head nav.main a.cta:not(.active):hover{background:#7d2014;-webkit-text-fill-color:#ffe6a6;color:#ffe6a6;box-shadow:inset 0 0 0 1px rgba(226,189,104,.45);border-radius:999px}
 .site-head{box-shadow:none}
 .site-head.shrink{box-shadow:0 4px 14px rgba(0,0,0,.35)}
+/* v34: contact-line frame uses the same 2px metallic line as the banner divider */
+.site-head .head-contact{border:0;border-image:none;position:relative;padding:9px 30px}
+.site-head .head-contact::before,.site-head .head-contact::after{content:"";position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
+.site-head .head-contact::before{top:0}
+.site-head .head-contact::after{bottom:0}
