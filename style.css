@@ -570,3 +570,9 @@ section.about-flow{padding-bottom:60px}
 .wa-float:hover .wa-tip,.wa-float:focus .wa-tip{opacity:1}
 .cta-band{padding:34px 0!important}
 .cta-band p{font-size:1.15rem;margin:0 auto}
+/* v60: tighter end of page; single plain footer; keep footer text clear of WhatsApp button */
+section.about-flow{padding-bottom:10px!important}
+.cta-band{padding:24px 0 10px!important}
+footer.site,footer.site.slim{background:transparent!important;padding:10px 0 96px!important}
+footer.site .copy{border-top:0!important;margin-top:0!important;padding-top:0!important;color:#d9bf92}
+footer.site .copy a{color:#f3d987}
