@@ -458,3 +458,6 @@ footer.site.slim .foot-line a{color:#f3d987}
 .page-hero h1{font-weight:800;font-size:clamp(1.7rem,3.4vw,2.35rem);letter-spacing:.01em;line-height:1.2}
 .page-hero p{font-weight:500;font-size:1.06rem}
 @media (max-width:600px){.page-hero h1{font-size:1.45rem}.page-hero p{font-size:.98rem}}
+/* v39: longer banner divider; balanced subline */
+.page-hero h1::after{width:min(500px,78%);height:2px;margin-top:18px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
+.page-hero p{max-width:640px;margin-left:auto;margin-right:auto;text-wrap:balance}
