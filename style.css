@@ -512,3 +512,7 @@ footer.site{background:rgba(20,2,1,.35)!important}
 /* v47: tighter gap between SINGAPORE and tabs */
 .site-head nav.main ul{padding-top:0}
 @media (min-width:1001px){.site-head .brand{min-height:104px}.site-head header.site .wrap{padding-top:22px}}
+/* v48: all body text in the same soft cream as the banner subline */
+section:not(.page-hero):not(.cta-band),
+section:not(.page-hero):not(.cta-band) *:not(.btn):not(svg):not(path){color:#f0dcb0!important;-webkit-text-fill-color:#f0dcb0!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;filter:none!important}
+section:not(.page-hero):not(.cta-band) h2::after{background:linear-gradient(90deg,#a8771f,#f6dc8a,#c9962f,transparent)!important}
