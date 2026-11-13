@@ -576,3 +576,5 @@ section.about-flow{padding-bottom:10px!important}
 footer.site,footer.site.slim{background:transparent!important;padding:10px 0 96px!important}
 footer.site .copy{border-top:0!important;margin-top:0!important;padding-top:0!important;color:#d9bf92}
 footer.site .copy a{color:#f3d987}
+/* v61: company name back to the earlier smooth metallic gold */
+.site-head .brand .name{background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))!important}
