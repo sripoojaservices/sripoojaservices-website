@@ -578,3 +578,9 @@ footer.site .copy{border-top:0!important;margin-top:0!important;padding-top:0!im
 footer.site .copy a{color:#f3d987}
 /* v61: company name back to the earlier smooth metallic gold */
 .site-head .brand .name{background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))!important}
+/* v62: keep all tabs on one line on laptop/tablet widths */
+@media (min-width:601px){
+  .site-head nav.main ul{flex-wrap:nowrap!important;justify-content:center}
+  .site-head nav.main li{flex:0 0 auto}
+  .site-head nav.main a,.site-head nav.main a.cta{white-space:nowrap;padding-left:clamp(7px,1.1vw,16px)!important;padding-right:clamp(7px,1.1vw,16px)!important}
+}
