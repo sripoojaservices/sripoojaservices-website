@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=56">
+<link rel="stylesheet" href="style.css?v=61">
 </head>
 <body>
 '''
@@ -60,22 +60,16 @@ def header(active):
 '''
 
 CTA = f'''<section class="cta-band"><div class="wrap">
-  <h2>Planning a pooja or ceremony?</h2>
-  <p>Tell us the occasion and your preferred date, and we will get back to you.</p>
-  <div class="btn-row">
-    <a class="btn btn-light" href="{WA}">Message on WhatsApp</a>
-    <a class="btn btn-outline" style="border-color:#fff;color:#fff" href="tel:{PHONE_TEL}">Call {PHONE_DISPLAY}</a>
-  </div>
+  <p>Feel free to reach out to us and know more.</p>
 </div></section>
 '''
 
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
-  <p class="foot-line">Enquiries Mon–Fri, 11am–5pm · Ceremonies by appointment, any day · <a href="{FB}">Follow us on Facebook</a></p>
-  <p class="copy">© {NAME}, Singapore · Registered in Singapore since 2009 · UEN 53144294B<br>All photos and content © {NAME}. Please do not reuse without permission.</p>
+  <p class="copy">© {NAME}, Singapore · Registered in Singapore since 2009 · UEN 53144294B<br>All photos and content © {NAME}. Please do not reuse without written permission. · <a href="{FB}">Follow us on Facebook</a></p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
-<a class="wa-float" href="{WA}" aria-label="Chat on WhatsApp">{WA_SVG}</a>
+<a class="wa-float" href="{WA}" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">{WA_SVG}<span class="wa-tip">Chat with us on WhatsApp</span></a>
 </body>
 </html>
 '''
@@ -124,8 +118,7 @@ home = f'''<section class="hero"><div class="wrap">
     <h2>Rituals that honour life's defining moments</h2>
   </div>
   <div>
-    <p>Life is a series of defining moments, each marking a new stage of growth. Each event has its own festivities and ceremony, leaving us with precious memories.</p>
-    <p style="margin-top:1rem">At <strong>{NAME}</strong>, every ceremony is performed as laid down in the scriptures, because every family deserves pure and authentic worship.</p>
+    <p>Each new stage of life deserves God's blessings. At <strong>{NAME}</strong>, every ceremony is performed as laid down in the scriptures, because every family deserves pure and authentic worship.</p>
   </div>
 </div></section>
 
@@ -151,21 +144,6 @@ home = f'''<section class="hero"><div class="wrap">
   </div>
 </div></section>
 
-<section><div class="wrap two-col">
-  <div>
-    <p class="eyebrow">How we conduct ceremonies</p>
-    <h2>Faithful to tradition, accessible to all</h2>
-    <p>Every ritual follows the Hindu Agamas and Shastras strictly, so you can experience the true fruits of your worship.</p>
-  </div>
-  <ul class="checklist">
-    <li>Genuine rituals taken from the ancient scriptures</li>
-    <li>Chanted in Sanskrit, explained in English and other Indian languages</li>
-    <li>Guidance on the right pooja for your occasion</li>
-    <li>Any specific pooja or ceremony of your choice can be arranged</li>
-    <li>Serving all Hindu families across Singapore</li>
-  </ul>
-</div></section>
-
 <section class="reviews"><div class="wrap">
   <div class="rv-head">
     <p class="eyebrow">In their words</p>
@@ -173,7 +151,7 @@ home = f'''<section class="hero"><div class="wrap">
   </div>
   <div class="rv-grid">
     <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“The entire ceremony was performed with care and attention to detail, creating a peaceful and spiritual atmosphere for our family.”</blockquote><figcaption><strong>Vicki M.</strong> · Mrityunjaya Homam</figcaption></figure>
-    <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“From the first time I spoke to him about my plans for the grihapravesam to the day of the prayers, he has been a guiding light in ensuring my first home is thoroughly blessed. I really appreciated how his list of pooja items was clear and included alternatives and supplementary notes. He was also very responsive when I reached out to him with questions. On the day of the prayers, I found that he is very methodical and detailed, explaining each step of the prayers carefully and calmly.”</blockquote><figcaption><strong>Vasellia S.</strong> · Graha Pravesam</figcaption></figure>
+    <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“From the first time I spoke to him about my plans for the grihapravesam to the day of the prayers, he has been a guiding light in ensuring my first home is thoroughly blessed. I really appreciated how his list of pooja items was clear and included alternatives and supplementary notes.”</blockquote><figcaption><strong>Vasellia S.</strong> · Graha Pravesam</figcaption></figure>
     <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote lang="hi" class="hi">“अगर अच्छे से पूजा हो तो उसका इतना बेहतरीन रिज़ल्ट आता है, यह पंडितजी से पूजा कराने के बाद पता चला।”</blockquote><p class="rv-tr">“After having Panditji perform the puja, I realised how excellent the results are when puja is done properly.”</p><figcaption><strong>Priya S.</strong> · Poojas &amp; homams at home</figcaption></figure>
   </div>
   <div class="btn-row" style="justify-content:center">
@@ -233,7 +211,6 @@ why = f'''<section class="page-hero"><div class="wrap">
       <div class="about-card"><h3>Our vision</h3><p>A Sanatana Dharma community that helps everyone, regardless of caste, creed, race, religion or nationality.</p></div>
       <div class="about-card"><h3>Our mission</h3><p>To guide each family through their prayers, and along the way to teach them what truly matters, so that whoever they engage in future, they will know what a proper prayer requires. In this way, the original teachings are passed on, unchanged, to the younger generation, and every family continues to receive the full merits of their prayers.</p></div>
     </div>
-    <p style="text-align:center;margin-top:36px;font-size:.92rem">Registered in Singapore since 2009 · UEN 53144294B</p>
   </div>
 </div></section>
 ''' + CTA
