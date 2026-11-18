@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=102">
+<link rel="stylesheet" href="style.css?v=103">
 </head>
 <body>
 '''
@@ -93,7 +93,7 @@ def page(fname, title, desc, active, body, extra_head="", img="image/srds_logo.p
     if FRAME_PAGES is None or fname in FRAME_PAGES:
         body = (f'<div class="gold-frame">{CORNERS}<div class="gf-scroll">' + body + '</div><div class="gf-hint" aria-hidden="true">▾ scroll ▾</div></div>\n'
                 '<script>(function(){var f=document.querySelector(".gold-frame");if(!f)return;'
-                'function fit(){if(window.innerWidth<=560){f.style.height="";document.documentElement.classList.remove("gf-fixed");return;}'
+                'function fit(){if(window.innerWidth<=820){f.style.height="";document.documentElement.classList.remove("gf-fixed");return;}'
                 'var h=document.querySelector(".site-head"),ft=document.querySelector("footer.site");'
                 'var avail=window.innerHeight-(h?h.offsetHeight:0)-(ft?ft.offsetHeight:0)-36;'
                 'f.style.height=Math.max(320,avail)+"px";document.documentElement.classList.add("gf-fixed");}'
