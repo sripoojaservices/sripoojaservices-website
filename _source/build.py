@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=78">
+<link rel="stylesheet" href="style.css?v=79">
 </head>
 <body>
 '''
@@ -61,6 +61,7 @@ def header(active):
 '''
 
 CTA = f'''<section class="cta-band"><div class="wrap">
+  <img class="lotus-div" src="image/lotus_divider.svg" alt="" aria-hidden="true">
   <p>Feel free to reach out to us and know more.</p>
 </div></section>
 '''

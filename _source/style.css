@@ -692,3 +692,8 @@ html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37
 .rv-theme header.svc-sub h2,.svc-group header.svc-sub h2{display:block!important;padding-bottom:6px!important;margin:0 0 8px!important;border-bottom:2px solid transparent!important;border-image:linear-gradient(90deg,#a8771f,#f6dc8a 25%,#c9962f 50%,#f6dc8a 75%,#a8771f) 1!important}
 .rv-theme header.svc-sub p{margin:0!important}
 .rv-theme header.svc-sub{margin-bottom:14px!important}
+/* v79: gold lotus divider above the closing line; tighter end gap */
+.cta-band{padding-top:6px!important}
+.cta-band .lotus-div{display:block;width:260px;max-width:70%;height:auto;margin:0 auto 6px}
+.gold-frame section:nth-last-child(2){padding-bottom:16px!important}
+.rv-note{margin-bottom:0!important}
