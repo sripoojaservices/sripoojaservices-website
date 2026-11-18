@@ -700,3 +700,11 @@ html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37
 /* v80: photos — dark caption cards instead of white */
 html body .gallery figure{background:rgba(40,6,3,.45)!important;border:1px solid rgba(226,189,104,.4)!important;box-shadow:none!important}
 html body .gallery figcaption{color:#f0dcb0!important;-webkit-text-fill-color:#f0dcb0!important;background:transparent!important}
+/* v81: no white boxes anywhere inside the frame */
+html body ul.related a{background:rgba(40,6,3,.45)!important;color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important;border:1px solid rgba(226,189,104,.45)!important;box-shadow:none!important}
+html body ul.related a:hover{background:#7d2014!important}
+html body .contact-card,html body .note{background:rgba(40,6,3,.45)!important;border:1px solid rgba(226,189,104,.4)!important;box-shadow:none!important;color:#f0dcb0!important}
+html body .contact-card *,html body .note *{color:#f0dcb0;-webkit-text-fill-color:currentColor}
+html body .contact-card a,html body .note a{color:#f5d37a!important}
+html body .contact-card h3,html body .contact-card strong{color:#f5d37a!important}
+html body .contact-card .ico{background:rgba(226,189,104,.15)!important;color:#f5d37a!important}
