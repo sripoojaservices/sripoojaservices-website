@@ -334,7 +334,7 @@ SERVICE_PAGES = [
   desc="Navagraha Shanti Homam in Singapore to pacify the nine planets and bring peace and harmony. Authentic Vedic ritual. WhatsApp +65 9850 5804.",
   img="photo06.jpg", alt="Sacred fire homam",
   intro="Navagraha Shanti Homam is offered to the nine planetary deities (Navagrahas). It seeks to pacify unfavourable planetary influences and invite their blessings for peace, health and progress.",
-  when="Families often perform this homam when a horoscope shows difficult planetary periods, before important life events, on birthdays, or during a Graha Pravesam.",
+  when="Families often perform this homam when a horoscope shows difficult planetary periods, before important life events, or on birthdays.",
   includes=["Invocation of each of the nine planetary deities","Offerings with the specific grains and samidh associated with each graha","Prayers for peace and harmony in the family"],
   quote=None,
   faq=[]),
