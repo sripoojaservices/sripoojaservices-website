@@ -719,3 +719,4 @@ html body .gallery img{aspect-ratio:4/3;object-fit:cover;object-position:50% 22%
 html body .gallery img[src*="photo11"]{object-position:50% 90%}
 html body .gallery img[src*="photo12"]{object-fit:contain;background:#1a0503}
 html body .gallery img[src*="photo20"]{object-fit:contain;background:#1a0503}
+html body .gallery img[src*="photo21"]{object-fit:contain;background:#1a0503}
