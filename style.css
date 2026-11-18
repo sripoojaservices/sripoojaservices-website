@@ -584,3 +584,5 @@ footer.site .copy a{color:#f3d987}
   .site-head nav.main li{flex:0 0 auto}
   .site-head nav.main a,.site-head nav.main a.cta{white-space:nowrap;padding-left:clamp(7px,1.1vw,16px)!important;padding-right:clamp(7px,1.1vw,16px)!important}
 }
+/* v63: even spacing between Home page sections */
+body section.alt,body section.reviews,body > section:not(.hero):not(.cta-band):not(.page-hero){padding-top:48px!important;padding-bottom:48px!important}
