@@ -262,7 +262,7 @@ page("extra_mile.htm", f"About Us | {NAME}", "Authentic, scripture-based poojas 
 
 # ---------- PHOTOS ----------
 import json
-_g=[x for x in json.load(open('gallery.json')) if x[0] not in ('photo02.jpg','photo09.jpg','photo16.jpg','photo03.jpg','photo06.jpg','photo25.jpg','photo26.jpg','photo27.jpg','photo28.jpg','photo23.jpg')]  # hidden = archive; swap in quarterly
+_g=[x for x in json.load(open('gallery.json')) if x[0] not in ('photo02.jpg','photo09.jpg','photo16.jpg','photo03.jpg','photo06.jpg','photo25.jpg','photo26.jpg','photo27.jpg','photo28.jpg','photo23.jpg','photo29.jpg','photo43.jpg')]  # hidden = archive; swap in quarterly
 figs="\n".join(f'    <figure><img src="image/gallery/{n}" alt="{c}" loading="lazy" width="{w}" height="{h}"{' style="object-position:center 20%"' if n=='photo17.jpg' else ''}><figcaption>{c}</figcaption></figure>' for n,c,(w,h) in _g)
 photos = f'''<section class="page-hero"><div class="wrap">
   <p class="eyebrow">Gallery</p>
