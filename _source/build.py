@@ -166,20 +166,21 @@ SVC_GROUPS = [
  ("Life occasions", "For the important moments in a family's life", "occ", [
    ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
          "Shubha Punyaahavaachanam", L("Naamakaranam (naming)","naamakaranam.htm"), "Annaprasanam (first feeding)",
-         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
+         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Vastu Shanti Homam", "Chanting session during palliative care"])]),
  ("Worship by deity", "Archanas, poojas and homams", "deity", [
    ("Maha Ganapati", ["Caturaavrutti Tarpanam", "Sahasranaama Archana", "Aavarana Pooja", L("Maha Ganapati Homam","ganapati-homam.htm"),
                       "Ashta Dravya Maha Ganapati Homam", "Sahasra Modaka Homam"]),
    ("Devi", ["Lalitha Sahasranaama Archana", "Kunkuma Archana and Suvaasini Pooja (by Suvaasinis)", "108 Aavarthi Homam for any form of Devi",
              "Sri Sukta Homam", "Abirami Andhathi Paraayanam with Pancha Upachaara Pooja", L("Sri Varalakshmi Pooja", info="varalakshmi-pooja.htm"),
              "Aishwarya Deepa Pooja with Suvaasini Pooja", "Sri Vidya Homam", "Devi Navaavarana Pooja", L("Bagavathi Seva", info="bagavathi-seva.htm"),
-             "Sri Lalitha Sahasranaama Homam", "Durga Saptasati Paraayanam (1 or 10, also Samputikarana)", "Chandi Homam with 10 Paraayanams (also Samputikarana)"]),
-   ("Maha Vishnu", ["Vishnu Sahasranaama Archana", "108 Aavarti Homam for any incarnation of Vishnu", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
+             "Sri Lalitha Sahasranaama Homam", "Navarathri Pooja", "Dasa Maha Vidya Homam", "Durga Saptasati Paraayanam (1 or 10, also Samputikarana)", "Chandi Homam", "Chandi Homam with 10 Paraayanams (also Samputikarana)"]),
+   ("Maha Vishnu", ["Vishnu Sahasranaama Archana", "108 Aavarti Homam for any incarnation of Vishnu", "Sudarshana Homam", "Dhanvantari Homam", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
    ("Shiva", ["Shiva Sahasranaama Archana", L("108 Aavarti Maha Mrityunjaya Homam","mrityunjaya-homam.htm")]),
    ("Subramanya", ["Skanda Homam", "Shatru Samhaara Trisati Maha Pooja"]),
-   ("Navagraha", [L("Navagraha Shanti Homam","navagraha-shanti-homam.htm"), "Laghu Navagraha Pooja"])]),
+   ("Navagraha and birth star", [L("Navagraha Shanti Homam","navagraha-shanti-homam.htm"), "Laghu Navagraha Pooja", "Nakshathra Homam"]),
+   ("Any chosen deity", ["Devata Sahasranaama Pooja (thousand-name worship)"])]),
  ("Installation", "Praanapratishta", "inst", [
-   ("", ["Maha Ganapati Yantra Praanapratishta", "Sri Chakra Praanapratishta"])]),
+   ("", ["Devata Pratishta (installation of deities)", "Maha Ganapati Yantra Praanapratishta", "Sri Chakra Praanapratishta"])]),
 ]
 def svc_list():
     out=[]
