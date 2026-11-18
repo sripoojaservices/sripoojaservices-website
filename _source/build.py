@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=97">
+<link rel="stylesheet" href="style.css?v=98">
 </head>
 <body>
 '''
@@ -369,7 +369,7 @@ SERVICE_PAGES = [
 ]
 import json as _json
 def faq_schema(qas):
-    return '<script type="application/ld+json">'+_json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in qas]})+'</script>\n'
+    return '<script type="application/ld+json">'+_json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":__import__("re").sub(r"<[^>]+>"," ",a)}} for q,a in qas]})+'</script>\n'
 
 
 for sp in SERVICE_PAGES:
@@ -423,10 +423,18 @@ for sp in SERVICE_PAGES:
 GEN_FAQ = [
  ("Where are the ceremonies conducted?","At your own home, or at your own business premises for a business opening."),
  ("In which language are the ceremonies conducted?","Mantras are chanted in Sanskrit, as laid down in the scriptures. We explain the meaning and steps in English and other Indian languages, so the whole family can follow and take part."),
- ("How do I book a pooja?","Message us on WhatsApp or call +65 9850 5804, or email sripoojaservices@gmail.com. Let us know the occasion, your preferred date and where the ceremony will take place. Enquiries are answered Monday to Friday, 11am to 5pm, and ceremonies can be held on any day by appointment."),
+ ("How do I book a pooja?","Message us on WhatsApp or call +65 9850 5804, or email sripoojaservices@gmail.com. Let us know the occasion, your preferred date and where the ceremony will take place. Enquiries are answered Monday to Friday, 11am to 5pm. Ceremonies can be held on any day by appointment, subject to our availability. If we already have a booking at that date and time, we will not be able to take another."),
+ ("How is a booking confirmed?","The details for confirming your booking are stated in the quotation we send you."),
+ ("Can you help us choose an auspicious date and time?","Yes. Share the details with us and we will help you choose a suitable date and time for your ceremony."),
+ ("Do you provide astrological services?","We do not offer astrological consultations as a separate service. However, we can check auspicious dates against your horoscope, and where there are hurdles or blockages in a particular matter, we can look into what may be causing them."),
+ ("Can a ceremony be held during Brahma Muhurtham?","Brahma Muhurtham, the early hours before sunrise, is an auspicious time for worship. However, the day of the week must also be considered. Hindus avoid certain events on some days; for example, Graha Pravesam is avoided on Tuesdays and Saturdays.<br><br><strong>Please note:</strong> in the Hindu almanac, a day begins at sunrise, not at midnight. If sunrise in Singapore is at 7am on a Wednesday, the hours before 7am still belong to Tuesday. So a Graha Pravesam held at 5am on a Wednesday actually falls on Tuesday, and one held at 5am on a Sunday falls on Saturday. Many families are not aware of this. Please keep both the time and the day of the week in mind when choosing your date, and we will be happy to advise you."),
+ ("Apart from the booking charge, is there anything else to pay?","Transport to and from the venue is to be arranged by the host.<br><br>Giving dakshina is entirely your choice. The scriptures highly recommend performing a charitable deed (daanam) after a ceremony in your home, and many families make their first such offering to the priest who performed the worship, as a token of gratitude, sometimes together with a veshti. It is a gift, never a requirement.<br><br>In homes with a domestic helper, we also encourage families to give the helper a small token of appreciation, as such occasions bring extra work. If you wish, the priest can advise you on the right moment during the ceremony, so that the offering brings more merit."),
+ ("Do you supply the pooja items?","No. We are registered as a service provider, not a supplier. Sourcing items for each family would add time and cost, and every home is different: most Hindu homes already have basic pooja utensils and trays, and fresh items such as fruits and flowers differ from shop to shop.<br><br>We also believe that choosing the items yourself is part of the worship. Just as you would personally choose a gift for someone you love, selecting the offerings with your own hands brings you closer to the Divine, and the blessings begin from there."),
+ ("Will you guide us on what to buy and where to get it?","Yes. Once your booking is confirmed, we will guide you every step of the way, from the list of items and where to buy them to the arrangements needed, so that your ceremony goes smoothly."),
+ ("What if we are not ready to start on time on the day?","Please understand that we may have another booking after your time slot, often with its own fixed muhurtham. If your ceremony starts late, it may not finish in time, which affects the next family. Since every ceremony follows auspicious timings, we kindly ask you to plan ahead and be ready at the agreed time, so that the ceremony can be completed within your slot."),
+ ("Can we change or cancel a booking?","We believe that whether an event takes place is ultimately in God's hands. If unfortunate circumstances mean you need to reschedule or cancel, we understand it as God's will, and the same can happen on our side as well. Nobody cancels deliberately, so we ask for mutual understanding, accept it as being for the good, and move forward without hard feelings."),
  ("Can you perform a pooja that is not on your list?","Yes. Our services page lists the most common poojas and homams. If you would like another auspicious pooja or homam, please ask and we will let you know if we can arrange it."),
  ("Are there any ceremonies you do not conduct?","Yes. We do not conduct weddings, as wedding customs differ from one community to another, or ancestral rituals. We conduct poojas, homams and ceremonies offered in worship of the Divine, such as Graha Pravesam, Naamakaranam, Aksharabhyasam and the homams on our services page."),
- ("What do we need to prepare?","Every ceremony is different. Once you book, we will guide you on the items and arrangements needed, so there is nothing to worry about."),
  ("Do you serve families from all Hindu traditions?","Yes. We conduct authentic Vedic ceremonies for all Hindu families, following the Agamas and Shastras."),
  ("Can we use an aluminium tray or foil for the homam fire?","No. Please use a proper homa kundam made of metal or brick. Firstly, the sacred fire is where the deity is invited, so it deserves a proper, respectful place, just as you would give an honoured guest a proper seat. Secondly, it is a matter of health and safety. A homam fire is hot enough to break down aluminium foil, releasing fine metal particles into the smoke. Homams are usually held indoors, in an enclosed room, with everyone sitting close to the fire for an hour or more. Breathing in such fumes can irritate the lungs, and the elderly, young children and anyone with breathing difficulties are most at risk. As a registered business, we take the health and safety of every home seriously, and will advise you on a suitable kundam when you book."),
  ("Why do you insist on following the scriptures strictly?","We believe the blessings of a ceremony come from performing it correctly, exactly as the Rishis laid it down, with the right intention from both the host and the priest. That is why we do not alter the procedures."),
@@ -437,7 +445,7 @@ faq_body = '''<section class="page-hero"><div class="wrap">
   <p>Answers to common questions about booking a pooja or homam with us in Singapore.</p>
 </div></section>
 <section><div class="wrap prose">
-''' + "".join(f'<div class="faq-item"><h3>{q}</h3><p>{a}</p></div>' for q,a in GEN_FAQ) + '''
+''' + "".join(f'<div class="faq-item{" faq-key" if "Brahma" in q else ""}"><h3>{q}</h3><p>{a}</p></div>' for q,a in GEN_FAQ) + '''
   <h2 style="margin-top:40px">Questions about a specific pooja?</h2>
   <ul class="related">''' + "".join(f'<li><a href="{o["slug"]}">{o["short"]}</a></li>' for o in SERVICE_PAGES) + '''<li><a href="service.htm">All services</a></li></ul>
 </div></section>
