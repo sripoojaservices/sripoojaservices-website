@@ -166,7 +166,7 @@ SVC_GROUPS = [
  ("Life occasions", "For the important moments in a family's life", "occ", [
    ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
          "Shubha Punyaahavaachanam", L("Naamakaranam (naming)","naamakaranam.htm"), "Annaprasanam (first feeding)",
-         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Vastu Shanti Homam", "Chanting session during palliative care"])]),
+         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
  ("Worship by deity", "Archanas, poojas and homams", "deity", [
    ("Maha Ganapati", ["Caturaavrutti Tarpanam", "Sahasranaama Archana", "Aavarana Pooja", L("Maha Ganapati Homam","ganapati-homam.htm"),
                       "Ashta Dravya Maha Ganapati Homam", "Sahasra Modaka Homam"]),
