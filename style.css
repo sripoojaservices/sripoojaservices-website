@@ -697,3 +697,6 @@ html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37
 .cta-band .lotus-div{display:block;width:260px;max-width:70%;height:auto;margin:0 auto 6px}
 .gold-frame section:nth-last-child(2){padding-bottom:16px!important}
 .rv-note{margin-bottom:0!important}
+/* v80: photos — dark caption cards instead of white */
+html body .gallery figure{background:rgba(40,6,3,.45)!important;border:1px solid rgba(226,189,104,.4)!important;box-shadow:none!important}
+html body .gallery figcaption{color:#f0dcb0!important;-webkit-text-fill-color:#f0dcb0!important;background:transparent!important}
