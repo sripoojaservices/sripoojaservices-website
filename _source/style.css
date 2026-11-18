@@ -672,3 +672,8 @@ html.gf-fixed .gold-frame .gf-hint.up{animation:none}
 .svc-combine a{color:#f5d37a}
 .deity-row h3{display:inline-block!important;width:auto!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;padding:0!important;border:0!important;box-shadow:none!important}
 html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important;letter-spacing:.03em}
+/* v76: group titles as subheadings with a full-width gold line; tighter gap after intro */
+.svc-hero + section{padding-top:18px!important}
+.svc-group header.svc-sub{display:block!important;margin-bottom:14px!important;padding-bottom:8px;position:relative}
+.svc-group header.svc-sub::after{content:""!important;display:block!important;position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,#a8771f,#f6dc8a 30%,#c9962f 60%,rgba(201,150,47,0))}
+.svc-group header.svc-sub h2{font-size:1.45rem;margin:0}

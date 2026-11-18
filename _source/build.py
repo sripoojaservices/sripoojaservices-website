@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=75">
+<link rel="stylesheet" href="style.css?v=76">
 </head>
 <body>
 '''
@@ -163,29 +163,30 @@ def L(name, href=None, info=None):
     if info: name += f' <a class="svc-info" href="{info}">please read ⓘ</a>'
     return name
 SVC_GROUPS = [
- ("Life occasions", "For the important moments in a family's life", "occ", [
+ ("Life occasions", "", "occ", [
    ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
          "Shubha Punyaahavaachanam", L("Naamakaranam (naming)","naamakaranam.htm"), "Annaprasanam (first feeding)",
          "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
- ("Worship by deity", "Archanas, poojas and homams", "deity", [
-   ("Maha Ganapati", ["Caturaavrutti Tarpanam", "Sahasranaama Archana", "Aavarana Pooja", L("Maha Ganapati Homam","ganapati-homam.htm"),
-                      "Ashta Dravya Maha Ganapati Homam", "Sahasra Modaka Homam"]),
-   ("Devi", ["Lalitha Sahasranaama Archana", "Kunkuma Archana and Suvaasini Pooja (by Suvaasinis)", "108 Aavarthi Homam for any form of Devi",
-             "Sri Sukta Homam", "Abirami Andhathi Paraayanam with Pancha Upachaara Pooja", L("Sri Varalakshmi Pooja", info="varalakshmi-pooja.htm"),
-             "Aishwarya Deepa Pooja with Suvaasini Pooja", "Sri Vidya Homam", "Devi Navaavarana Pooja", L("Bagavathi Seva", info="bagavathi-seva.htm"),
-             "Sri Lalitha Sahasranaama Homam", "Navarathri Pooja", "Dasa Maha Vidya Homam", "Durga Saptasati Paraayanam (1 or 10, also Samputikarana)", "Chandi Homam", "Chandi Homam with 10 Paraayanams (also Samputikarana)"]),
-   ("Maha Vishnu", ["Vishnu Sahasranaama Archana", "108 Aavarti Homam for any incarnation of Vishnu", "Sudarshana Homam", "Dhanvantari Homam", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
-   ("Shiva", ["Shiva Sahasranaama Archana", L("108 Aavarti Maha Mrityunjaya Homam","mrityunjaya-homam.htm")]),
-   ("Subramanya", ["Skanda Homam", "Shatru Samhaara Trisati Maha Pooja"]),
+ ("Worship by deity", "", "deity", [
+   ("Sri Maha Ganapati", ["Caturaavrutti Tarpanam", "Sri Maha Ganapati Sahasranaama Archana", "Sri Maha Ganapati Aavarana Pooja", L("Sri Maha Ganapati Homam","ganapati-homam.htm"),
+                      "Ashta Dravya Sri Maha Ganapati Homam", "Sahasra Modaka Homam"]),
+   ("Devi", ["Sri Vidya Homam", "Devi Navaavarana Pooja", "Sri Lalitha Sahasranaama Archana", "Kunkuma Archana and Suvaasini Pooja (by Suvaasinis)",
+             "Sri Sukta Homam", "Abirami Andhathi Paraayanam with Pancha Upachaara Pooja at each of the 100 verses", L("Sri Varalakshmi Pooja", info="varalakshmi-pooja.htm"),
+             "Aishwarya Deepa Pooja with Suvaasini Pooja", L("Bagavathi Seva", info="bagavathi-seva.htm"),
+             "Sri Lalitha Sahasranaama Homam", "Navarathri Pooja", "Deepavali Sri Lakshmi Pooja", "Dhanteras Sri Lakshmi Pooja", "Dasa Maha Vidya Homam",
+             "Durga Saptasati Paraayanam (also Samputikarana)", "Chandi Homam (also Samputikarana)"]),
+   ("Sri Maha Vishnu", ["Sri Maha Vishnu Sahasranaama Archana", "Sri Maha Vishnu Homam", "Sri Sudarshana Homam", "Sri Dhanvantari Homam", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
+   ("Sri Shiva", ["Sri Shiva Sahasranaama Archana", L("Sri Maha Mrityunjaya Homam","mrityunjaya-homam.htm"), "Sri Shiva Homam", "Sri Shiva Panchakshara Homam"]),
+   ("Sri Subramanya", ["Sri Skanda Homam", "Shatru Samhaara Trisati Maha Pooja"]),
    ("Navagraha and birth star", [L("Navagraha Shanti Homam","navagraha-shanti-homam.htm"), "Laghu Navagraha Pooja", "Nakshathra Homam"]),
-   ("Any chosen deity", ["Devata Sahasranaama Pooja (thousand-name worship)"])]),
- ("Installation", "Praanapratishta", "inst", [
-   ("", ["Devata Pratishta (installation of deities)", "Maha Ganapati Yantra Praanapratishta", "Sri Chakra Praanapratishta"])]),
+   ("Any chosen deity", ["Devata Sahasranaama Archana (thousand-name worship for any chosen deity)"])]),
+ ("Praanapratishta (installation)", "", "inst", [
+   ("", ["Sri Mahameru Praanapratishta", "Sri Chakra Yantra Praanapratishta", "Devata Vigraha Pratishta (idol installation)", "Yantra Pratishta for a chosen deity (please check with us)"])]),
 ]
 def svc_list():
     out=[]
     for title, sub, gid, rows in SVC_GROUPS:
-        out.append(f'  <div class="svc-group" id="{gid}"><header><h2>{title}</h2><p>{sub}</p></header>')
+        out.append(f'  <div class="svc-group" id="{gid}"><header class="svc-sub"><h2>{title}</h2></header>')
         for deity, items in rows:
             lis = "".join(f"<li>{i}</li>" for i in items)
             if deity:
@@ -193,7 +194,7 @@ def svc_list():
             else:
                 out.append(f'    <ul class="svc-list">{lis}</ul>')
         out.append('  </div>')
-    out.append('  <p class="svc-combine">Many of these can be combined, for example with Laghu Navagraha Pooja or a Sahasranaama Archana. <a href="contact.htm">Contact us</a> and we will suggest what suits your occasion.</p>')
+    out.append('  <p class="svc-combine">Some of these can be combined. Please <a href="contact.htm">give us a call</a> and we will be happy to clarify.</p>')
     return "\n".join(out)
 SVC_LIST = svc_list()
 
@@ -201,7 +202,7 @@ services = f'''<section class="page-hero svc-hero"><div class="wrap">
   <p class="eyebrow">Our services</p>
   <h1>Poojas, Homams &amp; Ceremonies</h1>
   <p>We offer the following services, performed as laid down in the scriptures.</p>
-  <p>We conduct any pooja, homam or ceremony offered in worship of the Divine to seek blessings and grace. Larger events with additional priests can also be arranged on request. Don't see what you need? <a href="contact.htm">Contact us</a> with your occasion and preferred date and we will let you know if we can arrange it.</p>
+  <p>We conduct poojas, homams and ceremonies offered in worship of the Divine to seek blessings and grace. Larger events with additional priests can also be arranged on request. Don't see what you need? <a href="contact.htm">Contact us</a> with your occasion and preferred date and we will let you know if we can arrange it.</p>
   <p>We do not conduct weddings, as customs differ from one community to another, or ancestral rituals.</p>
 </div></section>
 <section><div class="wrap">
