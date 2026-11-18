@@ -323,10 +323,10 @@ SERVICE_PAGES = [
  dict(slug="ganapati-homam.htm", short="Ganapati Homam", h1="Maha Ganapati Homam in Singapore",
   title="Maha Ganapati Homam in Singapore | Sri Rajarajeswari Divine Services",
   desc="Maha Ganapati Homam in Singapore to remove obstacles before new beginnings, conducted strictly according to Vedic tradition. Book via WhatsApp +65 9850 5804.",
-  img="photo02.jpg", alt="Ganapati Homam sacred fire with traditional offerings",
+  img="photo45.jpg", alt="Sri Maha Ganapati invoked on the Kalasam for a Ganapati Homam",
   intro="Maha Ganapati Homam is a sacred fire ritual dedicated to Lord Ganesha, the remover of obstacles. Offerings are made into the sacred fire with Vedic mantras, seeking His blessings for success and a smooth path ahead.",
-  when="Ganapati Homam is commonly performed before any new beginning: moving into a new home, starting a business, a wedding, a new job or a new year. Many families also perform it regularly for general well-being.",
-  includes=["Sankalpam stating the family's intention","Invocation of Lord Ganesha","Offerings into the sacred fire with Vedic mantras","Purnahuti and aarti to conclude"],
+  when="Ganapati Homam is commonly performed before any new beginning: moving into a new home, starting a business, before wedding preparations begin, or on New Year's Day. Many families also perform it annually for general well-being.",
+  includes=["Sankalpam stating the family's intention","Vighna Nivarana Ganapati Pooja","Punyaahavaachanam","Pradhaana Kalasam Pooja","Homam with offerings into the sacred fire","Prayers at the home altar"],
   quote=None,
   faq=[("Can Ganapati Homam be combined with other poojas?","Yes. It is often performed at the start of a Graha Pravesam, a business opening or other homams. Tell us your occasion and we will suggest the right combination.")]),
  dict(slug="navagraha-shanti-homam.htm", short="Navagraha Shanti Homam", h1="Navagraha Shanti Homam in Singapore",
@@ -404,20 +404,12 @@ for sp in SERVICE_PAGES:
   </div>
 </div></section>
 <section class="alt"><div class="wrap">
-  <h2>How we conduct it</h2>
-  <ul class="checklist">
-    <li>Performed strictly according to the Hindu Agamas and Shastras</li>
-    <li>Mantras chanted in Sanskrit, with explanations in English and other Indian languages</li>
-    <li>{sp.get("where","Conducted at your own home")}</li>
-    <li>Registered in Singapore since 2009</li>
-  </ul>
-  {faqs}
   <h3 style="margin-top:40px">Other services</h3>
   <ul class="related">{others}<li><a href="service.htm">All Services</a></li></ul>
   <p class="back-link" style="margin-top:28px"><a href="service.htm">← Back to Services</a></p>
 </div></section>
 ''' + CTA
-    page(sp["slug"], sp["title"], sp["desc"], "service.htm", body, extra_head=(faq_schema(sp["faq"]) if sp["faq"] else ""), img=("image/gallery/"+sp["img"]) if sp["img"] else "image/srds_logo.png")
+    page(sp["slug"], sp["title"], sp["desc"], "service.htm", body, img=("image/gallery/"+sp["img"]) if sp["img"] else "image/srds_logo.png")
 
 # ---------- FAQ ----------
 GEN_FAQ = [
