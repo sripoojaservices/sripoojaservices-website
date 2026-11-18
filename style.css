@@ -618,3 +618,12 @@ html,body{min-height:0!important}
 /* v68: last line left; Shreem closer to the name */
 .home-intro p.lead{text-align-last:left}
 .site-head header.site{margin-top:-30px}
+/* v69: on laptops the gold frame stays still; only the words inside scroll */
+.gold-frame .gf-scroll{position:relative}
+html.gf-fixed,html.gf-fixed body{overflow:hidden;height:100%}
+html.gf-fixed .site-head{position:static}
+html.gf-fixed .gold-frame{display:flex;flex-direction:column;margin-top:10px;margin-bottom:12px}
+html.gf-fixed .gold-frame .gf-scroll{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:0 18px;scrollbar-width:thin;scrollbar-color:#c9962f transparent}
+html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar{width:8px}
+html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-thumb{background:linear-gradient(#f3d27a,#a8771f);border-radius:8px}
+html.gf-fixed footer.site{padding-top:4px!important;padding-bottom:8px!important}
