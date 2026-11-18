@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=61">
+<link rel="stylesheet" href="style.css?v=64">
 </head>
 <body>
 '''
@@ -39,7 +39,7 @@ def header(active):
 <header class="site"><div class="wrap">
   <a class="brand" href="index.htm">
     <img class="logo" src="image/srds_logo_gold.png" alt="Sri Rajarajeswari Divine Services logo">
-    <span class="brand-text"><span class="name">Sri Rajarajeswari <span class="name2">Divine Services</span><small>Singapore</small></span></span>
+    <span class="brand-text"><span class="name">Sri Rajarajeswari <span class="name2">Divine Services</span><small>Singapore</small><small class="tag">Your trusted partner for pooja services in Singapore</small></span></span>
   </a>
 </div></header>
 <nav class="main"><div class="wrap">
@@ -66,7 +66,7 @@ CTA = f'''<section class="cta-band"><div class="wrap">
 
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
-  <p class="copy">© {NAME}, Singapore · Registered in Singapore since 2009 · UEN 53144294B<br>All photos and content © {NAME}. Please do not reuse without written permission. · <a href="{FB}">Follow us on Facebook</a></p>
+  <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B<br>All photos and content © {NAME}. Please do not reuse without written permission.</p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
 <a class="wa-float" href="{WA}" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">{WA_SVG}<span class="wa-tip">Chat with us on WhatsApp</span></a>
@@ -84,8 +84,13 @@ def seo_head(slug, title, desc, img="image/srds_logo.png"):
             f'<meta property="og:description" content="{desc}">\n<meta property="og:url" content="{url}">\n'
             f'<meta property="og:image" content="{SITE}/{img}">\n')
 
+FRAME_PAGES = {"index.htm"}
+CORNERS = ''.join(f'<img class="gf-c gf-{c}" src="image/corner_gold.svg" alt="" aria-hidden="true">' for c in ("tl","tr","bl","br"))
 def page(fname, title, desc, active, body, extra_head="", img="image/srds_logo.png"):
     ALL_PAGES.append(fname)
+    if fname in FRAME_PAGES:
+        body = f'<div class="gold-frame">{CORNERS}' + body + '</div>\n'
+
     with open(fname, "w", encoding="utf-8") as f:
         f.write(head(title, desc, seo_head(fname, title, desc, img) + extra_head) + header(active) + body + footer())
 
@@ -99,48 +104,13 @@ BIZ_SCHEMA = '<script type="application/ld+json">' + __import__("json").dumps({
   "sameAs":[FB, GMAPS]}) + '</script>\n'
 
 # ---------- HOME ----------
-home = f'''<section class="hero"><div class="wrap">
+home = f'''<section class="hero home-intro"><div class="wrap">
   <div>
-    <p class="eyebrow">Your trusted partner for pooja services in Singapore</p>
     <h1>Authentic Vedic rituals for your family's blessings</h1>
     <p class="lead">From welcoming a newborn to blessing a new home or business, we conduct genuine poojas and homams drawn from the ancient scriptures, for all Hindu families.</p>
-    <div class="btn-row">
-      <a class="btn btn-primary" href="service.htm">View our services</a>
-      <a class="btn btn-outline" href="{WA}">WhatsApp us</a>
-    </div>
-  </div>
-  <div class="mandala"><img class="hero-logo" src="image/srds_logo.png" alt="Sri Rajarajeswari Divine Services logo"></div>
-</div></section>
-
-<section class="alt"><div class="wrap two-col">
-  <div>
-    <p class="eyebrow">Welcome</p>
-    <h2>Rituals that honour life's defining moments</h2>
-  </div>
-  <div>
-    <p>Each new stage of life deserves God's blessings. At <strong>{NAME}</strong>, every ceremony is performed as laid down in the scriptures, because every family deserves pure and authentic worship.</p>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <p class="eyebrow" style="text-align:center">What the Vedas teach us to seek</p>
-  <h2 style="text-align:center">Knowledge, Wealth, Health &amp; Peace</h2>
-  <p class="lead" style="text-align:center;margin:0 auto">The Vedas guide us to follow certain principles and perform the right poojas and vratas for each occasion.</p>
-  <div class="pillars">
-    <div class="pillar"><div class="ico">📜</div><h3>Knowledge</h3><p>Aksharabhyasam and rites for learning and wisdom</p></div>
-    <div class="pillar"><div class="ico">🪔</div><h3>Wealth</h3><p>Varalakshmi Pooja, Sri Suktam Homam and business inaugurations</p></div>
-    <div class="pillar"><div class="ico">🌿</div><h3>Health</h3><p>Ayushya, Dhanvantari and Mrityunjaya homams</p></div>
-    <div class="pillar"><div class="ico">🕉</div><h3>Peace</h3><p>Navagraha Shanti, Vastu Shanti and household blessings</p></div>
-  </div>
-</div></section>
-
-<section class="alt"><div class="wrap">
-  <p class="eyebrow">Our services</p>
-  <h2>Poojas &amp; homams</h2>
-  <div class="cards">
-    <div class="card"><h3>Homams / Havans</h3><p>Sacred fire rituals including Maha Ganapati, Sri Vidya, Chandi, Navagraha Shanti and Lalitha Sahasranaama homams.</p><a class="more" href="service.htm#homams">See all homams →</a></div>
-    <div class="card"><h3>Poojas</h3><p>Shubha Punyaahavaachanam, Varalakshmi Vratha Pooja, Navarathri Pooja, Devata Pratishta, business inaugurations and more.</p><a class="more" href="service.htm#poojas">See all poojas →</a></div>
-    <div class="card"><h3>Starting Family Life</h3><p>Housewarming, naming, first feeding and initiation into learning.</p><a class="more" href="service.htm#samskaras">See all ceremonies →</a></div>
+    <p class="lead">Each new stage of life deserves God's blessings. At <strong>{NAME}</strong>, every ceremony is performed as laid down in the scriptures, because every family deserves pure and authentic worship.</p>
+    <p class="lead">Our Rishis have laid down the scriptures to guide us to follow certain principles and perform the right poojas and vratas for each occasion.</p>
+    <p class="lead">To know more about our services and the care we bring to every ceremony, please visit our <a href="service.htm">Services</a> and <a href="reviews.htm">Reviews</a> pages.</p>
   </div>
 </div></section>
 
@@ -154,11 +124,6 @@ home = f'''<section class="hero"><div class="wrap">
     <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“From the first time I spoke to him about my plans for the grihapravesam to the day of the prayers, he has been a guiding light in ensuring my first home is thoroughly blessed. I really appreciated how his list of pooja items was clear and included alternatives and supplementary notes.”</blockquote><figcaption><strong>Vasellia S.</strong> · Graha Pravesam</figcaption></figure>
     <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote lang="hi" class="hi">“अगर अच्छे से पूजा हो तो उसका इतना बेहतरीन रिज़ल्ट आता है, यह पंडितजी से पूजा कराने के बाद पता चला।”</blockquote><p class="rv-tr">“After having Panditji perform the puja, I realised how excellent the results are when puja is done properly.”</p><figcaption><strong>Priya S.</strong> · Poojas &amp; homams at home</figcaption></figure>
   </div>
-  <div class="btn-row" style="justify-content:center">
-    <a class="btn btn-primary" href="reviews.htm">More from families</a>
-    <a class="btn btn-outline" href="{GMAPS}">Read all reviews on Google</a>
-  </div>
-  <p class="rv-note">Had a ceremony with us? We'd be grateful if you <a href="{GMAPS}">left a review on Google</a>.</p>
 </div></section>
 ''' + CTA
 
@@ -324,7 +289,7 @@ for sp in SERVICE_PAGES:
     inc = "".join(f"<li>{x}</li>" for x in sp["includes"])
     q = sp["quote"]
     quote_html = (f'<figure class="rv svc-quote"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“{q[0]}”</blockquote>'
-                  f'<figcaption><strong>{q[1]}</strong> · {q[2]} · <a href="{GMAPS}">Google review</a></figcaption></figure>') if q else ""
+                  f'<figcaption><strong>{q[1]}</strong> · {q[2]} · Google review</figcaption></figure>') if q else ""
     photo_html = f'<img class="svc-photo" src="image/gallery/{sp["img"]}" alt="{sp["alt"]}" loading="lazy">' if sp["img"] else ""
     _ad = sp.get("addons")
     addons_html = (f'<h3 style="margin-top:22px">Optional add-ons</h3><ul class="checklist">' + "".join(f"<li>{x}</li>" for x in _ad) + '</ul>') if _ad else ""
@@ -429,10 +394,7 @@ reviews_body = f"""<section class="page-hero"><div class="wrap">
   <p>Every quote below is taken word for word from our Google reviews, written by different families, for different ceremonies, over more than four years.</p>
 </div></section>
 <section><div class="wrap">
-{_themes}  <div class="btn-row" style="justify-content:center;margin-top:8px">
-    <a class="btn btn-primary" href="{GMAPS}">Read all reviews on Google</a>
-  </div>
-  <p class="rv-note">Quotes are shortened in places (…), never reworded. Had a ceremony with us? We'd be grateful if you <a href="{GMAPS}">left a review on Google</a>.</p>
+{_themes}  <p class="rv-note">Quotes are taken from our Google reviews and shortened in places (…), never reworded.</p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
