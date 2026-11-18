@@ -779,3 +779,5 @@ html body .page-hero h1{background:none!important;-webkit-text-fill-color:#f5d37
 @media (max-width:820px){.to-top.show{display:flex}}
 /* v106 FAQ key box: dark inside for crisp text, stronger gold edge */
 html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;border:2px solid #e2b04a!important;box-shadow:0 0 0 1px rgba(245,211,122,.25),0 0 18px rgba(226,176,74,.25)!important}
+/* v107 phone: tagline splits evenly */
+@media (max-width:600px){html body .site-head .tag .tg2{display:block}}
