@@ -299,6 +299,7 @@ contact = f'''<section class="page-hero"><div class="wrap">
     <div class="contact-card"><div class="ico">✉</div><h3>Email</h3><a class="big" href="mailto:{EMAIL}">{EMAIL}</a><a class="btn btn-outline" href="mailto:{EMAIL}">Send an email</a></div>
   </div>
   <div class="note" style="margin:40px auto 0;max-width:760px;text-align:center"><strong>Enquiries:</strong> Monday to Friday, 11am – 5pm<br><strong>Ceremonies:</strong> by appointment, any day of the week</div>
+  <p class="contact-close" style="font-style:normal">If we do not answer your call, we may be conducting a pooja at a family's home. Please leave us a WhatsApp message and we will get back to you as soon as we can.</p>
   <p class="contact-close">We look forward to hearing from you.</p>
 </div></section>
 '''
