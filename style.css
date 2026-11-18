@@ -753,3 +753,9 @@ html body .faq-item h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a}
 html body .faq-item p{color:#f3e6cc!important}
 html body .faq-item{border-bottom:1px solid rgba(201,162,74,.35)}
 html body .faq-key{background:rgba(201,162,74,.12);border:1.5px solid #c9a24a!important;border-radius:10px;padding:18px 20px!important;margin:18px 0}
+/* v99 FAQ: stronger contrast */
+html body .faq-item h3{color:#f2b93b!important;-webkit-text-fill-color:#f2b93b;font-weight:700;border-left:4px solid #e2a92c;padding-left:12px}
+html body .faq-item p{color:#ffffff!important;opacity:.88;padding-left:16px}
+/* v100 FAQ: override global section text colour */
+html body section div.faq-item.faq-item.faq-item h3{color:#f2b93b!important;-webkit-text-fill-color:#f2b93b!important}
+html body section div.faq-item.faq-item.faq-item p,html body section div.faq-item.faq-item.faq-item p *{color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
