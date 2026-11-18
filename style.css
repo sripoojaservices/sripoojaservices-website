@@ -677,3 +677,12 @@ html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37
 .svc-group header.svc-sub{display:block!important;margin-bottom:14px!important;padding-bottom:8px;position:relative}
 .svc-group header.svc-sub::after{content:""!important;display:block!important;position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,#a8771f,#f6dc8a 30%,#c9962f 60%,rgba(201,150,47,0))}
 .svc-group header.svc-sub h2{font-size:1.45rem;margin:0}
+/* v77: reviews — even spacing, full-width gold line under each theme */
+.page-hero + section .rv-theme:first-child,.page-hero + section{padding-top:16px!important}
+.rv-theme{margin-bottom:40px!important}
+.rv-theme header.svc-sub{display:block!important;position:relative;padding-bottom:8px;margin-bottom:16px!important;border:0!important}
+.rv-theme header.svc-sub::after{content:"";display:block;position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,#a8771f,#f6dc8a 30%,#c9962f 60%,rgba(201,150,47,0))}
+.rv-theme header.svc-sub h2{margin:0;font-size:1.45rem}
+.rv-theme header.svc-sub h2::after,.rv-theme header h2::after{display:none!important}
+.rv-theme header.svc-sub p{margin:6px 0 0;color:#e8cfa0}
+.gold-frame .page-hero{padding-bottom:6px!important}
