@@ -281,7 +281,7 @@ var ks=Object.keys(cols);if(ks.length<2)return;var mx=0;ks.forEach(function(k){{
 if(best.gap<140)return;var s=Math.min(best.gap-30,best.c.w*0.7,260);o.style.cssText='display:block;position:absolute;width:'+s+'px;height:'+s+'px;left:'+(best.c.l+(best.c.w-s)/2)+'px;top:'+(best.c.b-gr.top+(best.gap-s)/2)+'px';}}
 window.addEventListener('load',place);window.addEventListener('resize',function(){{clearTimeout(window._mz);window._mz=setTimeout(place,150);}});[].forEach.call(g.querySelectorAll('img'),function(i){{i.addEventListener('load',place);}});place();}})();
   </script>
-  <p class="copy-note">All photos © {NAME}. Please do not copy or reuse them without our permission.</p>
+  <p class="copy-note">All photos © {NAME}. Please do not copy or reuse them without our written permission.</p>
 </div></section>
 ''' + CTA
 page("photo.htm", f"Pooja & Homam Photos, Singapore | {NAME}", "Photos from poojas, homams and ceremonies conducted by Sri Rajarajeswari Divine Services in Singapore.", "photo.htm", photos)
