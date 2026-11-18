@@ -748,3 +748,8 @@ html body .contact-card .big{color:#f0dcb0!important}
 html body .contact-card .btn{background:transparent!important;color:#f5d37a!important;border:1.5px solid #c9a24a!important}
 html body .contact-card .btn:hover{background:rgba(201,162,74,.18)!important}
 .contact-close{text-align:center;margin-top:36px;font-size:1.1rem;color:#f0dcb0;font-style:italic}
+/* v98 FAQ: question gold, answer cream; key item highlighted */
+html body .faq-item h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a}
+html body .faq-item p{color:#f3e6cc!important}
+html body .faq-item{border-bottom:1px solid rgba(201,162,74,.35)}
+html body .faq-key{background:rgba(201,162,74,.12);border:1.5px solid #c9a24a!important;border-radius:10px;padding:18px 20px!important;margin:18px 0}
