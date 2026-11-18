@@ -176,7 +176,7 @@ SVC_GROUPS = [
              "Sri Lalitha Sahasranaama Homam", "Navarathri Pooja", "Deepavali Sri Lakshmi Pooja", "Dhanteras Sri Lakshmi Pooja", "Dasa Maha Vidya Homam",
              "Durga Saptasati Paraayanam (also Samputikarana)", "Chandi Homam (also Samputikarana)"]),
    ("Sri Maha Vishnu", ["Sri Maha Vishnu Sahasranaama Archana", "Sri Maha Vishnu Homam", "Sri Sudarshana Homam", "Sri Dhanvantari Homam", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
-   ("Sri Shiva", ["Sri Shiva Sahasranaama Archana", L("Sri Maha Mrityunjaya Homam","mrityunjaya-homam.htm"), "Sri Shiva Homam", "Sri Shiva Panchakshara Homam"]),
+   ("Sri Shiva", ["Sri Shiva Sahasranaama Archana", L("Sri Maha Mrityunjaya Homam","mrityunjaya-homam.htm"), "Sri Shiva Panchakshara Homam"]),
    ("Sri Subramanya", ["Sri Skanda Homam", "Shatru Samhaara Trisati Maha Pooja"]),
    ("Navagraha and birth star", [L("Navagraha Shanti Homam","navagraha-shanti-homam.htm"), "Laghu Navagraha Pooja", "Nakshathra Homam"]),
    ("Any chosen deity", ["Devata Sahasranaama Archana (thousand-name worship for any chosen deity)"])]),
