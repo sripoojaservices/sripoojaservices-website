@@ -221,8 +221,9 @@ INFO_PAGES = [
    "There is no shortened or simplified version of this pooja in the scriptures, so we do not offer one.",
    "If the full pooja suits your family, we would be glad to conduct it."]),
  ("bagavathi-seva.htm","Bagavathi Seva",
-  ["For Bagavathi Seva, the mandalam is drawn by the family. We will guide you on how to draw it and how it should be laid out, and then perform the Seva.",
-   "We do not draw the mandalam ourselves."]),
+  ["For Bagavathi Seva, the mandalam needs to be made ready before we arrive to perform the Seva.",
+   "If you are unfamiliar with it, we can guide you, and a template is available for you to collect from us.",
+   "We do not offer the service of creating the mandalam."]),
 ]
 for slug, title, paras in INFO_PAGES:
     ptxt = "".join(f"<p>{x}</p>" for x in paras)
