@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=73">
+<link rel="stylesheet" href="style.css?v=74">
 </head>
 <body>
 '''
@@ -150,21 +150,22 @@ def grid(items):
     for i,(n,s) in enumerate(items,1):
         sub = f"<small>{s}</small>" if s else ""
         nm = f'<a href="{SVC_LINK[n]}">{n} →</a>' if n in SVC_LINK else n
-        out.append(f'<div class="svc"><span class="dot">{i}</span><div><strong>{nm}</strong>{sub}</div></div>')
+        out.append(f'<div class="svc"><div><strong>{nm}</strong>{sub}</div></div>')
     return '<div class="svc-grid">' + "\n".join(out) + '</div>'
 
 homams = [("Maha Ganapati Homam","Removing obstacles before new beginnings"),("Sahasra Modaka Homam","Offering a thousand modakas to Lord Ganapati in the sacred fire"),("Ayushya Homam","For long life and good health"),("Nakshathra Homam","Honouring one's birth star"),("Sri Suktam Homam","Invoking Goddess Lakshmi for prosperity"),("Sri Vidya Homam","Worship of the Divine Mother as Sri Lalitha"),("Chandi Homam","Invoking Goddess Chandi for protection and strength"),("Dasa Maha Vidya Homam","Worship of the ten great wisdom forms of the Divine Mother"),("Sudarshana Homam","Protection from negative influences"),("Dhanvantari Homam","For healing and wellbeing"),("Mrityunjaya Homam","For health and protection"),("Lalitha Sahasranaama Homam","Thousand-name worship of the Divine Mother"),("Navagraha Shanti Homam","Pacifying the nine planets"),("Vastu Shanti Homam","Harmony for a home or premises")]
 poojas = [("Shubha Punyaahavaachanam","Purification ceremony"),("Varalakshmi Vratha Pooja","Worship of Goddess Varalakshmi for the family's wellbeing"),("Navarathri Pooja","Nine nights of worship of the Divine Mother"),("Devata Pratishta","Installation of deities"),("Business Inauguration Pooja","For a new business or office"),("Devata Sahasranaama Pooja","Thousand-name worship of a chosen deity")]
 sams = [("Naamakaranam","Naming ceremony"),("Annaprasanam","Child's first feeding ceremony"),("Aksharabhyasam","Initiation into the world of learning"),("Graha Pravesam","Housewarming")]
 
-services = f'''<section class="page-hero"><div class="wrap">
+services = f'''<section class="page-hero svc-hero"><div class="wrap">
   <p class="eyebrow">Our services</p>
   <h1>Poojas, Homams &amp; Ceremonies</h1>
-  <p>Here are some of the common poojas and ceremonies we conduct, each performed according to the Hindu Agamas and Shastras.</p>
+  <p>We offer the following services, performed as laid down in the scriptures.</p>
+  <p>We conduct any pooja, homam or ceremony offered in worship of the Divine to seek blessings and grace. Larger events with additional priests can also be arranged on request. Don't see what you need? <a href="contact.htm">Contact us</a> with your occasion and preferred date and we will let you know if we can arrange it.</p>
+  <p>We do not conduct weddings, as customs differ from one community to another, or funeral and ancestral rites.</p>
 </div></section>
 <section><div class="wrap">
-  <div class="note"><strong>What we conduct:</strong> any pooja, homam or ceremony offered in worship of the Divine to seek blessings and grace. Larger events with additional priests can also be arranged on request. Don't see what you need? <a href="contact.htm">Contact us</a> with your occasion and preferred date and we will let you know if we can arrange it.<br><strong>What we do not conduct:</strong> weddings, as customs differ from one community to another, and funeral or ancestral rites.</div>
-  <div class="svc-group" id="homams"><header><h2>Homams / Havans</h2><p>Sacred fire rituals</p></header>{grid(homams)}</div>
+  <div class="svc-group" id="homams"><header><h2>Homams / Havans</h2></header>{grid(homams)}</div>
   <div class="svc-group" id="poojas"><header><h2>Poojas</h2><p>Worship for occasions and festivals</p></header>{grid(poojas)}</div>
   <div class="svc-group" id="samskaras" style="margin-bottom:0"><header><h2>Starting Family Life</h2><p>A new home, a newborn's naming, first feeding and initiation into learning</p></header>{grid(sams)}</div>
 </div></section>
@@ -310,6 +311,7 @@ for sp in SERVICE_PAGES:
     faqs = ('<h2 style="margin-top:40px">Common questions</h2>' + "".join(f'<div class="faq-item"><h3>{a}</h3><p>{b}</p></div>' for a,b in sp["faq"])) if sp["faq"] else ""
     others = "".join(f'<li><a href="{o["slug"]}">{o["short"]}</a></li>' for o in SERVICE_PAGES if o is not sp)
     body = f'''<section class="page-hero"><div class="wrap">
+  <p class="back-link"><a href="service.htm">← Back to Services</a></p>
   <p class="eyebrow"><a href="service.htm" style="color:inherit;text-decoration:none">Services</a> › {sp["short"]}</p>
   <h1>{sp["h1"]}</h1>
   <p>{sp["intro"]}</p>
@@ -338,6 +340,7 @@ for sp in SERVICE_PAGES:
   {faqs}
   <h3 style="margin-top:40px">Other services</h3>
   <ul class="related">{others}<li><a href="service.htm">All services</a></li></ul>
+  <p class="back-link" style="margin-top:28px"><a href="service.htm">← Back to Services</a></p>
 </div></section>
 ''' + CTA
     page(sp["slug"], sp["title"], sp["desc"], "service.htm", body, extra_head=(faq_schema(sp["faq"]) if sp["faq"] else ""), img=("image/gallery/"+sp["img"]) if sp["img"] else "image/srds_logo.png")
