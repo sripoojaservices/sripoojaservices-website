@@ -712,3 +712,5 @@ html body .contact-card .ico{background:rgba(226,189,104,.15)!important;color:#f
 body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 .head-contact,.contact-card,.contact-card *{-webkit-user-select:text;user-select:text}
+/* v83 gallery: show whole photo, no cropping */
+html body .gallery img{aspect-ratio:4/3;object-fit:contain;background:rgba(20,3,2,.55);height:auto}
