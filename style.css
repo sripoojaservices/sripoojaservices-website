@@ -641,3 +641,20 @@ html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-thumb{background:linear-
 /* v72: hint stays until the end, then offers back to top; clickable */
 html.gf-fixed .gold-frame .gf-hint{cursor:pointer}
 html.gf-fixed .gold-frame .gf-hint.up{animation:none}
+/* v74: services page — text up in the frame, left-aligned intro, no white boxes, no numbers */
+.gold-frame .page-hero{padding-top:14px!important}
+.svc-hero .wrap{max-width:860px}
+.svc-hero p:not(.eyebrow){text-align:left;max-width:860px!important;text-wrap:pretty}
+.svc-hero p a{color:#f5d37a;text-decoration:underline;text-underline-offset:3px}
+.home-intro p.lead{font-size:1.06rem!important}
+.svc-group header{border:0!important}
+.svc-group header::after,.svc-group h2::after{display:none!important}
+.svc-group header p{color:#e8cfa0}
+.svc{background:rgba(40,6,3,.35)!important;border:1px solid rgba(226,189,104,.35)!important}
+.svc strong,.svc a{color:#f5d37a!important}
+.svc small{color:#e8cfa0!important}
+.svc .dot{display:none}
+.back-link{margin:0 0 6px;text-align:left}
+.back-link a{color:#f5d37a;font-family:"Mulish",system-ui,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;font-style:normal}
+.back-link a:hover{text-decoration:underline}
+.svc-hero{padding-bottom:6px!important}
