@@ -202,7 +202,7 @@ services = f'''<section class="page-hero svc-hero"><div class="wrap">
   <h1>Poojas, Homams &amp; Ceremonies</h1>
   <p>We offer the following services, performed as laid down in the scriptures.</p>
   <p>We conduct any pooja, homam or ceremony offered in worship of the Divine to seek blessings and grace. Larger events with additional priests can also be arranged on request. Don't see what you need? <a href="contact.htm">Contact us</a> with your occasion and preferred date and we will let you know if we can arrange it.</p>
-  <p>We do not conduct weddings, as customs differ from one community to another, or funeral and ancestral rites.</p>
+  <p>We do not conduct weddings, as customs differ from one community to another, or ancestral rituals.</p>
 </div></section>
 <section><div class="wrap">
 {SVC_LIST}
@@ -414,7 +414,7 @@ GEN_FAQ = [
  ("In which language are the ceremonies conducted?","Mantras are chanted in Sanskrit, as laid down in the scriptures. We explain the meaning and steps in English and other Indian languages, so the whole family can follow and take part."),
  ("How do I book a pooja?","Message us on WhatsApp or call +65 9850 5804, or email sripoojaservices@gmail.com. Let us know the occasion, your preferred date and where the ceremony will take place. Enquiries are answered Monday to Friday, 11am to 5pm, and ceremonies can be held on any day by appointment."),
  ("Can you perform a pooja that is not on your list?","Yes. Our services page lists the most common poojas and homams. If you would like another auspicious pooja or homam, please ask and we will let you know if we can arrange it."),
- ("Are there any ceremonies you do not conduct?","Yes. We do not conduct weddings, as wedding customs differ from one community to another, or funeral and ancestral rites. We conduct poojas, homams and ceremonies offered in worship of the Divine, such as Graha Pravesam, Naamakaranam, Aksharabhyasam and the homams on our services page."),
+ ("Are there any ceremonies you do not conduct?","Yes. We do not conduct weddings, as wedding customs differ from one community to another, or ancestral rituals. We conduct poojas, homams and ceremonies offered in worship of the Divine, such as Graha Pravesam, Naamakaranam, Aksharabhyasam and the homams on our services page."),
  ("What do we need to prepare?","Every ceremony is different. Once you book, we will guide you on the items and arrangements needed, so there is nothing to worry about."),
  ("Do you serve families from all Hindu traditions?","Yes. We conduct authentic Vedic ceremonies for all Hindu families, following the Agamas and Shastras."),
  ("Can we use an aluminium tray or foil for the homam fire?","No. Please use a proper homa kundam made of metal or brick. Firstly, the sacred fire is where the deity is invited, so it deserves a proper, respectful place, just as you would give an honoured guest a proper seat. Secondly, it is a matter of health and safety. A homam fire is hot enough to break down aluminium foil, releasing fine metal particles into the smoke. Homams are usually held indoors, in an enclosed room, with everyone sitting close to the fire for an hour or more. Breathing in such fumes can irritate the lungs, and the elderly, young children and anyone with breathing difficulties are most at risk. As a registered business, we take the health and safety of every home seriously, and will advise you on a suitable kundam when you book."),
