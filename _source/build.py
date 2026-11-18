@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=72">
+<link rel="stylesheet" href="style.css?v=73">
 </head>
 <body>
 '''
@@ -85,11 +85,11 @@ def seo_head(slug, title, desc, img="image/srds_logo.png"):
             f'<meta property="og:description" content="{desc}">\n<meta property="og:url" content="{url}">\n'
             f'<meta property="og:image" content="{SITE}/{img}">\n')
 
-FRAME_PAGES = {"index.htm"}
+FRAME_PAGES = None  # None = every page
 CORNERS = ''.join(f'<img class="gf-c gf-{c}" src="image/corner_gold.svg" alt="" aria-hidden="true">' for c in ("tl","tr","bl","br"))
 def page(fname, title, desc, active, body, extra_head="", img="image/srds_logo.png"):
     ALL_PAGES.append(fname)
-    if fname in FRAME_PAGES:
+    if FRAME_PAGES is None or fname in FRAME_PAGES:
         body = (f'<div class="gold-frame">{CORNERS}<div class="gf-scroll">' + body + '</div><div class="gf-hint" aria-hidden="true">▾ scroll ▾</div></div>\n'
                 '<script>(function(){var f=document.querySelector(".gold-frame");if(!f)return;'
                 'function fit(){if(window.innerWidth<=560){f.style.height="";document.documentElement.classList.remove("gf-fixed");return;}'
