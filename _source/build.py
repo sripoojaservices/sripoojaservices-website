@@ -24,8 +24,8 @@ def head(title, desc, extra=""):
 <meta name="keywords" content="sri, rajarajeswari, divine, services, pooja, poojas, homam, homas, hindu, priest, singapore, agamas, shastras, griha pravesam, house warming">
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=65">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=66">
 </head>
 <body>
 '''
@@ -36,6 +36,7 @@ def header(active):
         f'      <li><a href="{h}"{act if h==active else ""}>{t}</a></li>' for h,t in NAV)
     cta_active = ' active' if active=="contact.htm" else ''
     return f'''<div class="site-head">
+<div class="bija" lang="sa" aria-hidden="true">श्रीं</div>
 <header class="site"><div class="wrap">
   <a class="brand" href="index.htm">
     <img class="logo" src="image/srds_logo_gold.png" alt="Sri Rajarajeswari Divine Services logo">
