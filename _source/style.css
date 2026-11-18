@@ -773,3 +773,7 @@ html body .site-head nav.main a{min-width:86px;text-align:center}
 }
 /* v104: page titles one even gold (gradient made 2nd line look darker) */
 html body .page-hero h1{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important}
+/* v105 back-to-top button (phones/tablets; frame mode has its own hint) */
+.to-top{position:fixed;left:16px;bottom:22px;z-index:60;display:none;flex-direction:column;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#5a140c;border:1.5px solid #c9a24a;color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important;text-decoration:none;font-size:.9rem;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.to-top span{font-size:.62rem;font-weight:700;letter-spacing:.06em;margin-top:2px}
+@media (max-width:820px){.to-top.show{display:flex}}
