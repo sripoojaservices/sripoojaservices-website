@@ -759,3 +759,7 @@ html body .faq-item p{color:#ffffff!important;opacity:.88;padding-left:16px}
 /* v100 FAQ: override global section text colour */
 html body section div.faq-item.faq-item.faq-item h3{color:#f2b93b!important;-webkit-text-fill-color:#f2b93b!important}
 html body section div.faq-item.faq-item.faq-item p,html body section div.faq-item.faq-item.faq-item p *{color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
+/* v101 nav: identical hover/active on every tab */
+html body .site-head nav.main a,html body .site-head nav.main a.cta{border-radius:999px!important}
+html body .site-head nav.main a:not(.active):hover,html body .site-head nav.main a.cta:not(.active):hover{background:#7d2014!important;-webkit-text-fill-color:#ffe6a6!important;color:#ffe6a6!important;box-shadow:inset 0 0 0 1px rgba(226,189,104,.45)!important;border-radius:999px!important}
+html body .site-head nav.main a.active,html body .site-head nav.main a.cta.active{background:#8c2418!important;-webkit-text-fill-color:#ffe6a6!important;color:#ffe6a6!important;box-shadow:inset 0 0 0 1px #e2bd68!important;border-radius:999px!important}
