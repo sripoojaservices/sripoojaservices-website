@@ -724,3 +724,7 @@ html body .gallery img[src*="photo42"]{object-fit:contain;background:#1a0503}
 html body .gallery img[src*="photo41"],html body .gallery img[src*="photo32"],html body .gallery img[src*="photo33"],html body .gallery img[src*="photo36"],html body .gallery img[src*="photo39"],html body .gallery img[src*="photo40"],html body .gallery img[src*="photo38"]{object-fit:contain;background:#1a0503}
 /* v92: show every photo in full */
 html body .gallery img{object-fit:contain!important;background:#1a0503}
+/* v93: gold frame around each photo */
+html body .gallery figure{border:2px solid #c9a24a!important;padding:8px 8px 0;box-shadow:0 0 0 1px rgba(245,211,122,.25),0 6px 18px rgba(0,0,0,.35)!important;border-radius:10px}
+html body .gallery img{border:1px solid rgba(245,211,122,.7);border-radius:4px;box-shadow:inset 0 0 0 3px rgba(0,0,0,.25)}
+html body .gallery figcaption{padding:10px 6px 12px}
