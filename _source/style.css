@@ -771,3 +771,5 @@ html body .site-head nav.main a{min-width:86px;text-align:center}
  html body .site-head .brand img{width:64px!important;height:auto!important}
  html body .site-head nav.main a{min-width:0;padding:7px 12px!important;font-size:.92rem}
 }
+/* v104: page titles one even gold (gradient made 2nd line look darker) */
+html body .page-hero h1{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important}
