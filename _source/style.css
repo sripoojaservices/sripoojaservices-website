@@ -627,3 +627,14 @@ html.gf-fixed .gold-frame .gf-scroll{flex:1;overflow-y:auto;overscroll-behavior:
 html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar{width:8px}
 html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-thumb{background:linear-gradient(#f3d27a,#a8771f);border-radius:8px}
 html.gf-fixed footer.site{padding-top:4px!important;padding-bottom:8px!important}
+/* v71: wider justified text (smaller word gaps), visible gold scrollbar, scroll hint */
+.home-intro .wrap{max-width:900px!important}
+.home-intro p.lead{max-width:860px!important;hyphens:auto;-webkit-hyphens:auto;word-spacing:-.02em}
+.gold-frame .gf-hint{display:none}
+html.gf-fixed .gold-frame .gf-hint{display:block;position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;font-family:"Mulish",system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:3px 14px;border-radius:999px;background:rgba(58,9,5,.85);color:#f3d27a;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);animation:gfbob 1.8s ease-in-out infinite;transition:opacity .4s}
+html.gf-fixed .gold-frame .gf-hint.gone{opacity:0;pointer-events:none}
+@keyframes gfbob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,4px)}}
+html.gf-fixed .gold-frame .gf-scroll{scrollbar-width:auto;scrollbar-color:#e2bd68 rgba(0,0,0,.25)}
+html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar{width:12px}
+html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-track{background:rgba(0,0,0,.25);border-radius:8px;margin:14px 0}
+html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-thumb{background:linear-gradient(#fff3c4,#f3d27a 30%,#c9962f 60%,#a8771f);border-radius:8px;border:2px solid rgba(58,9,5,.6)}
