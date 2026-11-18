@@ -315,7 +315,7 @@ SERVICE_PAGES = [
   intro="Graha Pravesam is the traditional Hindu ceremony for entering a new home. It purifies the house and invokes the blessings of the deities, so that the family begins life in their new home with peace, health and prosperity.",
   when="Families perform Graha Pravesam when moving into a newly bought or newly built home, including HDB flats, condominiums and landed houses. It is also often done after major renovation. The ceremony is held on an auspicious date and time (muhurtham).",
   includes=["Ganapati Pooja to remove obstacles","Punyaahavaachanam (purification of the home)","Dwara Pooja at the main entrance","The family's first entry into the new home","The traditional boiling of milk in the new kitchen","Offering the milk to the deities at the home altar"],
-  addons=["Maha Ganapati Homam, or another homam of your choice","Navagraha Pooja or Homam"],
+  addons=["Maha Ganapati Homam, or another homam of your choice","Navagraha Pooja"],
   note="", where="Conducted at your new home",
   quote=("He has been a guiding light in ensuring my first home is thoroughly blessed.","Vasellia S.","Graha Pravesam"),
   faq=[("When should we do Graha Pravesam?","On the day you move in, at an auspicious muhurtham. The family should stay overnight in the new home that same night, as the Graha Pravesam marks the day you begin living there."),
