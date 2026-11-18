@@ -615,3 +615,6 @@ html,body{min-height:0!important}
 .site-head .bija{padding-top:16px!important}
 .site-head header.site{margin-top:-16px}
 .home-intro p.lead{text-align:justify;text-align-last:center;hyphens:auto}
+/* v68: last line left; Shreem closer to the name */
+.home-intro p.lead{text-align-last:left}
+.site-head header.site{margin-top:-30px}
