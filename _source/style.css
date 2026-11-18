@@ -741,3 +741,10 @@ html body .gallery.mz{columns:auto!important;display:flex!important;gap:18px;ali
 html body .gallery{position:relative}
 html body .gallery .mz-orn{pointer-events:none}
 html body .gallery .mz-orn img{width:100%!important;height:100%!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 0 10px rgba(243,210,122,.35))}
+/* v97 contact: no box backgrounds, gold buttons */
+html body .contact-card{background:transparent!important;border:0!important;box-shadow:none!important}
+html body .contact-card h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a}
+html body .contact-card .big{color:#f0dcb0!important}
+html body .contact-card .btn{background:transparent!important;color:#f5d37a!important;border:1.5px solid #c9a24a!important}
+html body .contact-card .btn:hover{background:rgba(201,162,74,.18)!important}
+.contact-close{text-align:center;margin-top:36px;font-size:1.1rem;color:#f0dcb0;font-style:italic}

@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=96">
+<link rel="stylesheet" href="style.css?v=97">
 </head>
 <body>
 '''
@@ -295,12 +295,11 @@ contact = f'''<section class="page-hero"><div class="wrap">
 <section><div class="wrap">
   <div class="contact-grid">
     <div class="contact-card"><div class="ico">📞</div><h3>Call us</h3><a class="big" href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a><a class="btn btn-outline" href="tel:{PHONE_TEL}">Call now</a></div>
-    <div class="contact-card"><div class="ico">💬</div><h3>WhatsApp</h3><a class="big" href="{WA}">{PHONE_DISPLAY}</a><a class="btn btn-primary" href="{WA}">Start a chat</a></div>
+    <div class="contact-card"><div class="ico">💬</div><h3>WhatsApp</h3><a class="big" href="{WA}">{PHONE_DISPLAY}</a><a class="btn btn-outline" href="{WA}">Start a chat</a></div>
     <div class="contact-card"><div class="ico">✉</div><h3>Email</h3><a class="big" href="mailto:{EMAIL}">{EMAIL}</a><a class="btn btn-outline" href="mailto:{EMAIL}">Send an email</a></div>
   </div>
   <div class="note" style="margin:40px auto 0;max-width:760px;text-align:center"><strong>Enquiries:</strong> Monday to Friday, 11am – 5pm<br><strong>Ceremonies:</strong> by appointment, any day of the week</div>
-  <p style="text-align:center;margin-top:36px">You can also follow us and send a message on <a href="{FB}"><strong>Facebook</strong></a>.</p>
-  <div class="note" style="margin:30px auto 0;max-width:760px"><strong>When you contact us,</strong> it helps to mention the occasion, your preferred date, and where the ceremony will take place, so we can reply quickly.</div>
+  <p class="contact-close">We look forward to hearing from you.</p>
 </div></section>
 '''
 page("contact.htm", f"Contact a Hindu Priest in Singapore | {NAME}", "Contact Sri Rajarajeswari Divine Services in Singapore by phone, WhatsApp or email.", "contact.htm", contact)
