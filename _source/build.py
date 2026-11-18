@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=100">
+<link rel="stylesheet" href="style.css?v=101">
 </head>
 <body>
 '''
@@ -413,7 +413,7 @@ for sp in SERVICE_PAGES:
   </ul>
   {faqs}
   <h3 style="margin-top:40px">Other services</h3>
-  <ul class="related">{others}<li><a href="service.htm">All services</a></li></ul>
+  <ul class="related">{others}<li><a href="service.htm">All Services</a></li></ul>
   <p class="back-link" style="margin-top:28px"><a href="service.htm">← Back to Services</a></p>
 </div></section>
 ''' + CTA
@@ -447,7 +447,7 @@ faq_body = '''<section class="page-hero"><div class="wrap">
 <section><div class="wrap prose">
 ''' + "".join(f'<div class="faq-item{" faq-key" if "Brahma" in q else ""}"><h3>{q}</h3><p>{a}</p></div>' for q,a in GEN_FAQ) + '''
   <h2 style="margin-top:40px">Questions about a specific pooja?</h2>
-  <ul class="related">''' + "".join(f'<li><a href="{o["slug"]}">{o["short"]}</a></li>' for o in SERVICE_PAGES) + '''<li><a href="service.htm">All services</a></li></ul>
+  <ul class="related">''' + "".join(f'<li><a href="{o["slug"]}">{o["short"]}</a></li>' for o in SERVICE_PAGES) + '''<li><a href="service.htm">All Services</a></li></ul>
 </div></section>
 ''' + CTA
 
