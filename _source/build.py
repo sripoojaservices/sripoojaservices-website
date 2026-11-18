@@ -166,7 +166,7 @@ def L(name, href=None, info=None):
 SVC_GROUPS = [
  ("Life occasions", "", "occ", [
    ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
-         "Shubha Punyaahavaachanam", L("Naamakaranam (naming)","naamakaranam.htm"), "Annaprasanam (first feeding)",
+         "Shubha Punyaahavaachanam", "Naamakaranam (naming)", "Annaprasanam (first feeding)",
          "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
  ("Worship by deity", "", "deity", [
    ("Sri Maha Ganapati", ["Caturaavrutti Tarpanam", "Sri Maha Ganapati Sahasranaama Archana", "Sri Maha Ganapati Aavarana Pooja", L("Sri Maha Ganapati Homam","ganapati-homam.htm"),
@@ -347,15 +347,6 @@ SERVICE_PAGES = [
   includes=["Sankalpam for the person or family","Chanting of the Maha Mrityunjaya mantra","Offerings into the sacred fire","Purnahuti and blessings"],
   quote=("He conducted the puja with great devotion, patience, and professionalism.","Vicki M.","Mrityunjaya Homam"),
   faq=[("Can it be done at home?","Yes. We conduct Mrityunjaya Homam at your own home.")]),
- dict(slug="naamakaranam.htm", short="Naamakaranam", h1="Naamakaranam (Naming Ceremony) in Singapore",
-  title="Naamakaranam Baby Naming Ceremony in Singapore | Sri Rajarajeswari Divine Services",
-  desc="Naamakaranam, the Hindu naming ceremony for a newborn, conducted at your home in Singapore according to Vedic tradition. WhatsApp +65 9850 5804.",
-  img="photo10.jpg", alt="Devi in alankaram",
-  intro="Naamakaranam is the traditional Hindu naming ceremony. The newborn is formally given their name, and the family seeks blessings for the child's health, long life and good fortune.",
-  when="Naamakaranam is performed after the baby is born, on the day set by the family's own tradition. This differs from one community to another.",
-  includes=["Ganapati pooja","Punyaahavaachanam (purification)","The naming of the child with Vedic mantras","Blessings for the child and family"],
-  quote=None,
-  faq=[]),
  dict(slug="business-inauguration-pooja.htm", short="Business Inauguration Pooja", h1="Business Inauguration Pooja in Singapore",
   title="Shop & Office Opening Pooja in Singapore | Sri Rajarajeswari Divine Services",
   desc="Business inauguration pooja for new shops, offices and restaurants in Singapore. Seek blessings for success and prosperity. WhatsApp +65 9850 5804.",
