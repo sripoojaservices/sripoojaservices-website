@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=74">
+<link rel="stylesheet" href="style.css?v=75">
 </head>
 <body>
 '''
@@ -157,6 +157,45 @@ homams = [("Maha Ganapati Homam","Removing obstacles before new beginnings"),("S
 poojas = [("Shubha Punyaahavaachanam","Purification ceremony"),("Varalakshmi Vratha Pooja","Worship of Goddess Varalakshmi for the family's wellbeing"),("Navarathri Pooja","Nine nights of worship of the Divine Mother"),("Devata Pratishta","Installation of deities"),("Business Inauguration Pooja","For a new business or office"),("Devata Sahasranaama Pooja","Thousand-name worship of a chosen deity")]
 sams = [("Naamakaranam","Naming ceremony"),("Annaprasanam","Child's first feeding ceremony"),("Aksharabhyasam","Initiation into the world of learning"),("Graha Pravesam","Housewarming")]
 
+
+def L(name, href=None, info=None):
+    if href: name = f'<a href="{href}">{name} →</a>'
+    if info: name += f' <a class="svc-info" href="{info}">please read ⓘ</a>'
+    return name
+SVC_GROUPS = [
+ ("Life occasions", "For the important moments in a family's life", "occ", [
+   ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
+         "Shubha Punyaahavaachanam", L("Naamakaranam (naming)","naamakaranam.htm"), "Annaprasanam (first feeding)",
+         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
+ ("Worship by deity", "Archanas, poojas and homams", "deity", [
+   ("Maha Ganapati", ["Caturaavrutti Tarpanam", "Sahasranaama Archana", "Aavarana Pooja", L("Maha Ganapati Homam","ganapati-homam.htm"),
+                      "Ashta Dravya Maha Ganapati Homam", "Sahasra Modaka Homam"]),
+   ("Devi", ["Lalitha Sahasranaama Archana", "Kunkuma Archana and Suvaasini Pooja (by Suvaasinis)", "108 Aavarthi Homam for any form of Devi",
+             "Sri Sukta Homam", "Abirami Andhathi Paraayanam with Pancha Upachaara Pooja", L("Sri Varalakshmi Pooja", info="varalakshmi-pooja.htm"),
+             "Aishwarya Deepa Pooja with Suvaasini Pooja", "Sri Vidya Homam", "Devi Navaavarana Pooja", L("Bagavathi Seva", info="bagavathi-seva.htm"),
+             "Sri Lalitha Sahasranaama Homam", "Durga Saptasati Paraayanam (1 or 10, also Samputikarana)", "Chandi Homam with 10 Paraayanams (also Samputikarana)"]),
+   ("Maha Vishnu", ["Vishnu Sahasranaama Archana", "108 Aavarti Homam for any incarnation of Vishnu", L("Sri Sathyanarayana Pooja", info="sathyanarayana-pooja.htm")]),
+   ("Shiva", ["Shiva Sahasranaama Archana", L("108 Aavarti Maha Mrityunjaya Homam","mrityunjaya-homam.htm")]),
+   ("Subramanya", ["Skanda Homam", "Shatru Samhaara Trisati Maha Pooja"]),
+   ("Navagraha", [L("Navagraha Shanti Homam","navagraha-shanti-homam.htm"), "Laghu Navagraha Pooja"])]),
+ ("Installation", "Praanapratishta", "inst", [
+   ("", ["Maha Ganapati Yantra Praanapratishta", "Sri Chakra Praanapratishta"])]),
+]
+def svc_list():
+    out=[]
+    for title, sub, gid, rows in SVC_GROUPS:
+        out.append(f'  <div class="svc-group" id="{gid}"><header><h2>{title}</h2><p>{sub}</p></header>')
+        for deity, items in rows:
+            lis = "".join(f"<li>{i}</li>" for i in items)
+            if deity:
+                out.append(f'    <div class="deity-row"><h3>{deity}</h3><ul class="svc-list">{lis}</ul></div>')
+            else:
+                out.append(f'    <ul class="svc-list">{lis}</ul>')
+        out.append('  </div>')
+    out.append('  <p class="svc-combine">Many of these can be combined, for example with Laghu Navagraha Pooja or a Sahasranaama Archana. <a href="contact.htm">Contact us</a> and we will suggest what suits your occasion.</p>')
+    return "\n".join(out)
+SVC_LIST = svc_list()
+
 services = f'''<section class="page-hero svc-hero"><div class="wrap">
   <p class="eyebrow">Our services</p>
   <h1>Poojas, Homams &amp; Ceremonies</h1>
@@ -165,12 +204,35 @@ services = f'''<section class="page-hero svc-hero"><div class="wrap">
   <p>We do not conduct weddings, as customs differ from one community to another, or funeral and ancestral rites.</p>
 </div></section>
 <section><div class="wrap">
-  <div class="svc-group" id="homams"><header><h2>Homams / Havans</h2></header>{grid(homams)}</div>
-  <div class="svc-group" id="poojas"><header><h2>Poojas</h2><p>Worship for occasions and festivals</p></header>{grid(poojas)}</div>
-  <div class="svc-group" id="samskaras" style="margin-bottom:0"><header><h2>Starting Family Life</h2><p>A new home, a newborn's naming, first feeding and initiation into learning</p></header>{grid(sams)}</div>
+{SVC_LIST}
 </div></section>
 ''' + CTA
 page("service.htm", f"Poojas & Homams in Singapore | {NAME}", "Full list of poojas and homams conducted in Singapore, including Graha Pravesam, Ganapati Homam, Navagraha Shanti and Naamakaranam.", "service.htm", services)
+
+INFO_PAGES = [
+ ("varalakshmi-pooja.htm","Sri Varalakshmi Pooja",
+  ["Sri Varalakshmi Pooja is conducted over two days. On the day of the pooja, Goddess Lakshmi is invoked and welcomed into the home. She is not sent off (udvasanam) on the same day, so a Punar Pooja is performed the following day.",
+   "According to the scriptures, the priest who begins the pooja must return to complete it. The Punar Pooja cannot be left to the family to perform on their own to save cost. Our arrangement therefore always covers both days.",
+   "If a one-day arrangement is preferred, we would not be able to take up the booking."]),
+ ("sathyanarayana-pooja.htm","Sri Sathyanarayana Pooja",
+  ["We perform Sri Sathyanarayana Pooja in full, as laid down in the scriptures, ideally on a full moon day. It is an elaborate pooja that takes several hours, and it is followed by a Punar Pooja.",
+   "There is no shortened or simplified version of this pooja in the scriptures, so we do not offer one.",
+   "If the full pooja suits your family, we would be glad to conduct it."]),
+ ("bagavathi-seva.htm","Bagavathi Seva",
+  ["For Bagavathi Seva, the mandalam is drawn by the family. We will guide you on how to draw it and how it should be laid out, and then perform the Seva.",
+   "We do not draw the mandalam ourselves."]),
+]
+for slug, title, paras in INFO_PAGES:
+    ptxt = "".join(f"<p>{x}</p>" for x in paras)
+    body = f'''<section class="page-hero svc-hero"><div class="wrap">
+  <p class="back-link"><a href="service.htm">← Back to Services</a></p>
+  <p class="eyebrow">Please read before booking</p>
+  <h1>{title}</h1>
+  {ptxt}
+  <p class="back-link" style="margin-top:24px"><a href="service.htm">← Back to Services</a></p>
+</div></section>
+''' + CTA
+    page(slug, f"{title} in Singapore | {NAME}", f"How we conduct {title} in Singapore, as laid down in the scriptures.", "service.htm", body)
 
 # ---------- WHY US ----------
 why = f'''<section class="page-hero"><div class="wrap">
