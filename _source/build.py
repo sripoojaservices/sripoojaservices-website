@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=76">
+<link rel="stylesheet" href="style.css?v=77">
 </head>
 <body>
 '''
@@ -448,7 +448,7 @@ REV_THEMES = [
    ("He created an elaborate process of House warming ceremony and gave us a list to procure and explained us step by step on what needs to be done. On the day itself he came an hour earlier and helped us in setting up the Pooja and homam.","Harsha C.","Graha Pravesam"),
    ("He guided us from the start, giving advice on the items to purchase as well as what is needed to be prepared for the actual day.","Priya M.","Housewarming"),
    ("He conducted the puja with great devotion, patience, and professionalism, while guiding us through the process in a clear and reassuring manner.","Vicki M.","Mrityunjaya Homam")]),
- ("There when you need him", "Last-minute requests, special arrangements and going the extra mile.", [
+ ("There when you need us", "Last-minute requests, special arrangements and going the extra mile.", [
    ("We engaged Murali Iyer very last minute for our grahapravesam pooja, as our earlier booked one backed off last minute… we are happy that we found Murali Iyer.","Madhu B.","Graha Pravesam"),
    ("We hadn’t expected him to travel to JB - but he did, and we were truly grateful.","Vanishree P.","Graha Pravesam, Johor Bahru"),
    ("He was very professional, knowledgeable, and went above and beyond to meet our needs.","Buvanesh J.","Ganapathi Homam")]),
@@ -467,14 +467,14 @@ REV_THEMES = [
 ]
 def rev_cards(items):
     return '<div class="rv-grid">' + ''.join(f'<figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“{t}”</blockquote><figcaption><strong>{n}</strong> · {c}</figcaption></figure>' for t,n,c in items) + '</div>'
-_themes = "".join(f'  <div class="rv-theme"><header><h2>{h}</h2><p>{sub}</p></header>{rev_cards(items)}</div>\n' for h,sub,items in REV_THEMES)
+_themes = "".join(f'  <div class="rv-theme"><header class="svc-sub"><h2>{h}</h2><p>{sub}</p></header>{rev_cards(items)}</div>\n' for h,sub,items in REV_THEMES)
 reviews_body = f"""<section class="page-hero"><div class="wrap">
   <p class="eyebrow">Reviews</p>
   <h1>What families say</h1>
-  <p>Every quote below is taken word for word from our Google reviews, written by different families, for different ceremonies, over more than four years.</p>
+  <p>Every quote below is taken word for word from our Google reviews, written by different families, for different ceremonies.</p>
 </div></section>
 <section><div class="wrap">
-{_themes}  <p class="rv-note">Quotes are taken from our Google reviews and shortened in places (…), never reworded.</p>
+{_themes}  <p class="rv-note">Quotes are taken from our Google reviews.</p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
