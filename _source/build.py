@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=94">
+<link rel="stylesheet" href="style.css?v=95">
 </head>
 <body>
 '''
@@ -273,6 +273,14 @@ photos = f'''<section class="page-hero"><div class="wrap">
   <div class="gallery">
 {figs}
   </div>
+  <script>
+(function(){{var g=document.querySelector('.gallery');if(!g)return;var figs=[].slice.call(g.querySelectorAll('figure'));var last=-1;
+function lay(){{var w=g.clientWidth;var n=w<560?1:(w<900?2:3);if(n===last&&g.dataset.done)return;last=n;g.dataset.done=1;
+g.innerHTML='';g.classList.add('mz');var cols=[],h=[];for(var i=0;i<n;i++){{var c=document.createElement('div');c.className='mz-col';g.appendChild(c);cols.push(c);h.push(0);}}
+figs.forEach(function(f){{var im=f.querySelector('img');var r=(+im.getAttribute('height'))/(+im.getAttribute('width'))||0.75;var k=h.indexOf(Math.min.apply(null,h));cols[k].appendChild(f);h[k]+=r+0.22;}});
+if(n>1){{var mx=Math.max.apply(null,h);h.forEach(function(v,k){{if(mx-v>0.55){{var d=document.createElement('div');d.className='mz-orn';d.setAttribute('aria-hidden','true');d.innerHTML='<img src="image/lotus_mandala.svg" alt="">';cols[k].appendChild(d);}}}});}}}}
+lay();window.addEventListener('resize',function(){{clearTimeout(window._mz);window._mz=setTimeout(lay,150);}});}})();
+  </script>
   <p class="copy-note">All photos © {NAME}. Please do not copy or reuse them without our permission.</p>
 </div></section>
 ''' + CTA
