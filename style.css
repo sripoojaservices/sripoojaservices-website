@@ -611,3 +611,7 @@ html,body{min-height:0!important}
 /* v66: Shreem bija in metallic gold, centred above the name */
 .site-head .bija{text-align:center;font-family:"Noto Serif Devanagari","Tiro Devanagari Hindi",serif;font-weight:900;font-size:2rem;line-height:1.1;padding-top:8px;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#f3d27a;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
 @media (max-width:600px){.site-head .bija{font-size:1.6rem;padding-top:6px}}
+/* v67: bija clear of the top edge; tighter gap to the name; justified intro text */
+.site-head .bija{padding-top:16px!important}
+.site-head header.site{margin-top:-16px}
+.home-intro p.lead{text-align:justify;text-align-last:center;hyphens:auto}
