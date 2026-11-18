@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=81">
+<link rel="stylesheet" href="style.css?v=82">
 </head>
 <body>
 '''
@@ -70,7 +70,7 @@ def footer():
     return f'''<footer class="site slim"><div class="wrap">
   <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B</p>
 </div></footer>
-<script>document.addEventListener('contextmenu',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
+<script>document.addEventListener('contextmenu',function(e){{e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
 <a class="wa-float" href="{WA}" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">{WA_SVG}<span class="wa-tip">Chat with us on WhatsApp</span></a>
 </body>
 </html>

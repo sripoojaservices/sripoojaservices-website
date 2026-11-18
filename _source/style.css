@@ -708,3 +708,7 @@ html body .contact-card *,html body .note *{color:#f0dcb0;-webkit-text-fill-colo
 html body .contact-card a,html body .note a{color:#f5d37a!important}
 html body .contact-card h3,html body .contact-card strong{color:#f5d37a!important}
 html body .contact-card .ico{background:rgba(226,189,104,.15)!important;color:#f5d37a!important}
+/* v82: discourage copying — no selection or dragging, except contact details */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
+.head-contact,.contact-card,.contact-card *{-webkit-user-select:text;user-select:text}
