@@ -737,3 +737,7 @@ html body .gallery.mz{columns:auto!important;display:flex!important;gap:18px;ali
 .gallery.mz .mz-col{flex:1;min-width:0}
 .gallery.mz .mz-orn{display:flex;align-items:center;justify-content:center;padding:18px 0}
 .gallery.mz .mz-orn img{width:72%;max-width:240px;height:auto;border:0!important;box-shadow:none!important;filter:drop-shadow(0 0 10px rgba(243,210,122,.35))}
+/* v96: original column order; lotus overlays the gap only */
+html body .gallery{position:relative}
+html body .gallery .mz-orn{pointer-events:none}
+html body .gallery .mz-orn img{width:100%!important;height:100%!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 0 10px rgba(243,210,122,.35))}
