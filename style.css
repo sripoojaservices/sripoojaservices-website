@@ -686,3 +686,9 @@ html body .deity-row h3{background:none!important;-webkit-text-fill-color:#f5d37
 .rv-theme header.svc-sub h2::after,.rv-theme header h2::after{display:none!important}
 .rv-theme header.svc-sub p{margin:6px 0 0;color:#e8cfa0}
 .gold-frame .page-hero{padding-bottom:6px!important}
+/* v78: gold line directly under the subheading, full length; subtitle close below */
+.rv-theme header.svc-sub,.svc-group header.svc-sub{padding-bottom:0!important}
+.rv-theme header.svc-sub::after,.svc-group header.svc-sub::after{display:none!important;content:none!important}
+.rv-theme header.svc-sub h2,.svc-group header.svc-sub h2{display:block!important;padding-bottom:6px!important;margin:0 0 8px!important;border-bottom:2px solid transparent!important;border-image:linear-gradient(90deg,#a8771f,#f6dc8a 25%,#c9962f 50%,#f6dc8a 75%,#a8771f) 1!important}
+.rv-theme header.svc-sub p{margin:0!important}
+.rv-theme header.svc-sub{margin-bottom:14px!important}
