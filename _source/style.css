@@ -638,3 +638,6 @@ html.gf-fixed .gold-frame .gf-scroll{scrollbar-width:auto;scrollbar-color:#e2bd6
 html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar{width:12px}
 html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-track{background:rgba(0,0,0,.25);border-radius:8px;margin:14px 0}
 html.gf-fixed .gold-frame .gf-scroll::-webkit-scrollbar-thumb{background:linear-gradient(#fff3c4,#f3d27a 30%,#c9962f 60%,#a8771f);border-radius:8px;border:2px solid rgba(58,9,5,.6)}
+/* v72: hint stays until the end, then offers back to top; clickable */
+html.gf-fixed .gold-frame .gf-hint{cursor:pointer}
+html.gf-fixed .gold-frame .gf-hint.up{animation:none}

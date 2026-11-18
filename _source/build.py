@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=71">
+<link rel="stylesheet" href="style.css?v=72">
 </head>
 <body>
 '''
@@ -98,7 +98,9 @@ def page(fname, title, desc, active, body, extra_head="", img="image/srds_logo.p
                 'f.style.height=Math.max(320,avail)+"px";document.documentElement.classList.add("gf-fixed");}'
                 'window.addEventListener("resize",fit);window.addEventListener("load",fit);fit();'
                 'var sc=f.querySelector(".gf-scroll"),hint=f.querySelector(".gf-hint");'
-                'if(sc&&hint){sc.addEventListener("scroll",function(){if(sc.scrollTop>40)hint.classList.add("gone");else hint.classList.remove("gone");});}'
+                'if(sc&&hint){var upd=function(){var end=sc.scrollTop+sc.clientHeight>=sc.scrollHeight-8;'
+                'if(end){hint.textContent="\u25B4 back to top \u25B4";hint.classList.add("up");}else{hint.textContent="\u25BE scroll \u25BE";hint.classList.remove("up");}};'
+                'sc.addEventListener("scroll",upd);hint.addEventListener("click",function(){if(hint.classList.contains("up"))sc.scrollTo({top:0,behavior:"smooth"});else sc.scrollBy({top:sc.clientHeight*0.8,behavior:"smooth"});});}'
                 '})();</script>\n')
 
     with open(fname, "w", encoding="utf-8") as f:
