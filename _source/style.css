@@ -602,3 +602,9 @@ section.hero.home-intro{padding:40px 0 30px!important}
 .gold-frame .gf-br{bottom:-3px;right:-3px;transform:scale(-1,-1)}
 @media (max-width:1220px){.gold-frame{margin-left:12px;margin-right:12px}}
 @media (max-width:600px){.gold-frame{margin:10px 6px 20px;padding:18px 0 10px}.gold-frame .gf-c{width:62px;height:62px}}
+/* v65: tagline replaces SINGAPORE; page ends right after the footer */
+.site-head .brand .name small.tag{margin-top:4px}
+.site-head .brand .name small.tag b{font-weight:800}
+footer.site,footer.site.slim{padding-bottom:22px!important;margin-bottom:0!important}
+html,body{min-height:0!important}
+@media (max-width:600px){footer.site,footer.site.slim{padding-bottom:78px!important}}

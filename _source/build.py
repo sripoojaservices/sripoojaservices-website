@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=64">
+<link rel="stylesheet" href="style.css?v=65">
 </head>
 <body>
 '''
@@ -39,7 +39,7 @@ def header(active):
 <header class="site"><div class="wrap">
   <a class="brand" href="index.htm">
     <img class="logo" src="image/srds_logo_gold.png" alt="Sri Rajarajeswari Divine Services logo">
-    <span class="brand-text"><span class="name">Sri Rajarajeswari <span class="name2">Divine Services</span><small>Singapore</small><small class="tag">Your trusted partner for pooja services in Singapore</small></span></span>
+    <span class="brand-text"><span class="name">Sri Rajarajeswari <span class="name2">Divine Services</span><small class="tag">Your trusted partner for pooja services in <b>Singapore</b></small></span></span>
   </a>
 </div></header>
 <nav class="main"><div class="wrap">
@@ -66,7 +66,7 @@ CTA = f'''<section class="cta-band"><div class="wrap">
 
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
-  <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B<br>All photos and content © {NAME}. Please do not reuse without written permission.</p>
+  <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B</p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
 <a class="wa-float" href="{WA}" aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">{WA_SVG}<span class="wa-tip">Chat with us on WhatsApp</span></a>
