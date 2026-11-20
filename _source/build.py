@@ -11,7 +11,7 @@ NAME = "Sri Rajarajeswari Divine Services"
 
 WA_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.7-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.5S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.3-.3-.4-.6-.5z"/></svg>'
 
-NAV = [("index.htm","Home"),("service.htm","Services"),("extra_mile.htm","About Us"),("reviews.htm","Reviews"),("photo.htm","Photos"),("faq.htm","FAQ")]
+NAV = [("index.htm","Home"),("service.htm","Services"),("extra_mile.htm","About Us"),("community.htm","Community"),("reviews.htm","Reviews"),("photo.htm","Photos"),("faq.htm","FAQ")]
 
 def head(title, desc, extra=""):
     return f'''<!doctype html>
@@ -281,10 +281,18 @@ why = f'''<section class="page-hero"><div class="wrap">
     </div>
   </div>
 </div></section>
+''' + CTA
+page("extra_mile.htm", f"About Us | {NAME}", "Authentic, scripture-based poojas you can trust. Learn why families in Singapore choose Sri Rajarajeswari Divine Services.", "extra_mile.htm", why)
+
+# ---------- COMMUNITY ----------
+community = f'''<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">Community service</p>
+  <h1>Serving the community</h1>
+  <p>Beyond the homes we visit, we offer our prayers to the wider community.</p>
+</div></section>
 <section><div class="wrap">
   <div class="community">
-    <header class="svc-sub"><h2>Serving the community</h2><p>Beyond the homes we visit</p></header>
-    <div class="comm-grid">
+        <div class="comm-grid">
       <figure><img src="image/community_homam.jpg" alt="Homam at our community Navarathri event" width="960" height="720" loading="lazy"><figcaption>Homam at our community Navarathri event</figcaption></figure>
       <figure><img src="image/community_suvaasini.jpg" alt="Suvaasini Pooja at the community event" width="540" height="720" loading="lazy"><figcaption>Suvaasini Pooja, honouring the married women</figcaption></figure>
     </div>
@@ -295,7 +303,7 @@ why = f'''<section class="page-hero"><div class="wrap">
   </div>
 </div></section>
 ''' + CTA
-page("extra_mile.htm", f"About Us | {NAME}", "Authentic, scripture-based poojas you can trust. Learn why families in Singapore choose Sri Rajarajeswari Divine Services.", "extra_mile.htm", why)
+page("community.htm", f"Community Service | {NAME}", "Community Navarathri celebration, Sahasra Modaka Homam and Pay-With-Heart Pooja for families in need, by Sri Rajarajeswari Divine Services, Singapore.", "community.htm", community)
 
 # ---------- PHOTOS ----------
 import json
