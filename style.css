@@ -825,3 +825,6 @@ html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;bor
 }
 @media (min-width:561px){html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 300px)!important}}
 html body .fire-feature figure{justify-content:flex-start!important}
+/* v116 fire pair: bigger photos (captions may need a short scroll) */
+@media (min-width:561px){html.gf-fixed .fire-feature img{max-height:none!important;min-height:0}}
+html body .fire-feature .ff-pair{max-width:1080px!important}
