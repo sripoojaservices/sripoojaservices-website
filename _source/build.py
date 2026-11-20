@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=117">
+<link rel="stylesheet" href="style.css?v=118">
 </head>
 <body>
 '''
@@ -68,6 +68,7 @@ CTA = f'''<section class="cta-band"><div class="wrap">
 
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
+  <p class="wa-ch"><a href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel for festival greetings and auspicious days</a></p>
   <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B</p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
@@ -308,6 +309,7 @@ contact = f'''<section class="page-hero"><div class="wrap">
   </div>
   <div class="note" style="margin:40px auto 0;max-width:760px;text-align:center"><strong>Enquiries:</strong> Monday to Friday, 11am – 5pm<br><strong>Ceremonies:</strong> by appointment, any day of the week</div>
   <p class="contact-close" style="font-style:normal">If we do not answer your call, we may be conducting a pooja at a family's home. Please leave us a WhatsApp message and we will get back to you as soon as we can.</p>
+  <p class="contact-close" style="font-style:normal"><a class="btn btn-outline" href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel</a></p>
   <p class="contact-close">We look forward to hearing from you.</p>
 </div></section>
 '''

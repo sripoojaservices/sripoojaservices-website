@@ -835,3 +835,8 @@ html body .fire-feature .ff-pair{max-width:1080px!important}
 }
 @media (min-width:901px){html body .site-head .brand .logo{left:-30px!important}}
 @media (min-width:901px){html body .site-head .brand .logo{transform:translateY(calc(-50% + 22px))!important}}
+/* v118 WhatsApp channel link */
+.wa-ch{text-align:center;margin:0 0 8px}
+.wa-ch a{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important;text-decoration:none;font-size:.92rem;border-bottom:1px solid rgba(245,211,122,.45)}
+.wa-ch a:hover{border-bottom-color:#f5d37a}
+.contact-close .btn-outline{color:#f5d37a!important;border:1.5px solid #c9a24a!important;background:transparent!important}
