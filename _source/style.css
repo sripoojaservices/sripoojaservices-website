@@ -794,3 +794,19 @@ html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;bor
 .fire-feature .ff-pair{max-width:860px;margin:0 auto}
 @media (min-width:561px){html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) * .58);width:auto;max-width:100%;margin:0 auto}html.gf-fixed .fire-feature figure{display:flex;justify-content:center}}
 @media (min-width:641px){.fire-feature .ff-pair{display:flex;justify-content:center;gap:18px;max-width:none}.fire-feature figure{flex:0 1 auto;display:block!important}}
+/* v112 photo page: intro line + fire pair + caption fit in one view */
+@media (min-width:561px){
+ html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 215px)!important;min-height:150px}
+ html.gf-fixed .fire-feature .ff-cap{margin-top:8px;font-size:1rem}
+ html.gf-fixed .fire-feature{margin-bottom:28px}
+ html.gf-fixed .photo-hero{padding-bottom:6px!important}
+ html.gf-fixed .photo-hero .eyebrow,html.gf-fixed .photo-hero h1{display:inline-block;margin:0 6px!important;font-size:1.35rem!important;vertical-align:middle}
+ html.gf-fixed .photo-hero p:not(.eyebrow){margin-top:6px!important}
+}
+@media (min-width:561px){
+ html.gf-fixed .photo-hero .eyebrow{display:none!important}
+ html.gf-fixed .photo-hero h1{display:block!important;margin:0 auto!important;font-size:1.5rem!important}
+ html.gf-fixed .photo-hero{padding-top:6px!important}
+ html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 285px)!important}
+ html.gf-fixed .fire-feature .ff-cap{line-height:1.45}
+}
