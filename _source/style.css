@@ -810,3 +810,18 @@ html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;bor
  html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 285px)!important}
  html.gf-fixed .fire-feature .ff-cap{line-height:1.45}
 }
+/* v114 fire pair: caption under each photo */
+.fire-feature figure{display:flex!important;flex-direction:column;align-items:center}
+.fire-feature figcaption{text-align:center;color:#f0dcb0;font-size:.92rem;padding:10px 6px 4px;max-width:100%}
+.fire-feature figcaption.ff-main{color:#f5d37a;font-style:italic;font-size:1.02rem;font-weight:600}
+@media (min-width:641px){.fire-feature figure{flex:0 1 auto;max-width:48%}.fire-feature figcaption{width:0;min-width:100%}}
+@media (min-width:561px){html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 290px)!important}}
+/* v115 laptop: two equal columns, captions wrap under each photo */
+@media (min-width:641px){
+ html body .fire-feature .ff-pair{display:flex!important;max-width:980px!important;margin:0 auto!important;align-items:stretch}
+ html body .fire-feature figure{flex:1 1 0!important;max-width:none!important;justify-content:flex-start}
+ html body .fire-feature figcaption{width:auto!important;min-width:0!important}
+ html body .fire-feature img{width:100%!important;height:auto;object-fit:contain}
+}
+@media (min-width:561px){html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) - 300px)!important}}
+html body .fire-feature figure{justify-content:flex-start!important}

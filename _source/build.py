@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=113">
+<link rel="stylesheet" href="style.css?v=115">
 </head>
 <body>
 '''
@@ -274,10 +274,9 @@ photos = f'''<section class="page-hero photo-hero"><div class="wrap">
 <section><div class="wrap">
   <div class="fire-feature">
     <div class="ff-pair">
-      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=4" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"></figure>
-      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=4" alt="The same moment, darkened so the form in the fire is easier to see" width="800" height="584"></figure>
+      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=4" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"><figcaption class="ff-main">Many devotees present saw the form of Sri Maha Ganapati in the sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam.</figcaption></figure>
+      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=4" alt="The same picture, darkened so the form is more easily seen" width="800" height="584"><figcaption>The same picture, darkened so the form is more easily seen.</figcaption></figure>
     </div>
-    <p class="ff-cap">Many devotees present saw the form of Sri Maha Ganapati in the sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam.<br><span>The photo on the right is the same picture, darkened so the form is easier to see.</span></p>
   </div>
   <div class="gallery">
 {figs}
