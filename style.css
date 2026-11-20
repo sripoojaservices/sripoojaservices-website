@@ -768,7 +768,6 @@ html body .site-head nav.main a{min-width:86px;text-align:center}
 @media (max-width:820px){
  html body .site-head{position:relative!important;top:auto!important}
  html body .site-head .bija{font-size:1.4rem;padding-top:4px}
- html body .site-head .brand img{width:64px!important;height:auto!important}
  html body .site-head nav.main a{min-width:0;padding:7px 12px!important;font-size:.92rem}
 }
 /* v104: page titles one even gold (gradient made 2nd line look darker) */
@@ -781,3 +780,5 @@ html body .page-hero h1{background:none!important;-webkit-text-fill-color:#f5d37
 html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;border:2px solid #e2b04a!important;box-shadow:0 0 0 1px rgba(245,211,122,.25),0 0 18px rgba(226,176,74,.25)!important}
 /* v107 phone: tagline splits evenly */
 @media (max-width:600px){html body .site-head .tag .tg2{display:block}}
+/* v108 phone/tablet: header no longer sticky, so never shrink the logo */
+@media (max-width:820px){html body .site-head.shrink .brand .logo{height:84px!important}html body .site-head .brand .logo{height:84px!important}}
