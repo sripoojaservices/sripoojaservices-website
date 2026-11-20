@@ -790,3 +790,7 @@ html body section div.faq-item.faq-key{background:rgba(30,4,2,.55)!important;bor
 .fire-feature .ff-cap{text-align:center;color:#f5d37a;font-style:italic;font-size:1.08rem;margin:14px auto 0;max-width:820px}
 .fire-feature .ff-cap span{color:#f0dcb0;font-size:.9rem;font-style:normal;opacity:.85}
 @media (max-width:640px){.fire-feature .ff-pair{grid-template-columns:1fr}}
+/* v110 fire pair: fit inside the gold frame on laptops */
+.fire-feature .ff-pair{max-width:860px;margin:0 auto}
+@media (min-width:561px){html.gf-fixed .fire-feature img{max-height:calc(var(--gfh,70vh) * .58);width:auto;max-width:100%;margin:0 auto}html.gf-fixed .fire-feature figure{display:flex;justify-content:center}}
+@media (min-width:641px){.fire-feature .ff-pair{display:flex;justify-content:center;gap:18px;max-width:none}.fire-feature figure{flex:0 1 auto;display:block!important}}
