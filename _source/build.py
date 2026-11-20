@@ -470,14 +470,23 @@ REV_THEMES = [
 ]
 def rev_cards(items):
     return '<div class="rv-grid">' + ''.join(f'<figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“{t}”</blockquote><figcaption><strong>{n}</strong> · {c}</figcaption></figure>' for t,n,c in items) + '</div>'
+WA_MSGS=[("Thank you for everything and all your advice. Allow me to have your blessings always.","Bala S***","Ganapati Homam"),
+ ("Whatever little I have understood, you seem to be very meticulous about everything you do, which we feel very comfortable with, and would like to stay in touch with you for other ceremonies in the coming period.","Ramesh K***","Housewarming"),
+ ("It has been in my heart for a long time. Today it was fulfilled! Yes, God’s grace blessed through you. Thank you for a divine pujai and homam.","Kamala ***","Ganapati Homam"),
+ ("Thanks a lot for the blessed prayers. Had so much of the vibes.","Shyamala ***","Ganapati Homam · booked 2 times"),
+ ("Thank you so much for the personal touch.","Mages ***","Housewarming"),
+ ("Thank you for a great Pooja.","Nardana K***","Naming ceremony")]
+def wa_cards(items):
+    return '<div class="rv-grid">' + ''.join(f'<figure class="rv"><blockquote>“{t}”</blockquote><figcaption><strong>{n}</strong> · {c}</figcaption></figure>' for t,n,c in items) + '</div>'
 _themes = "".join(f'  <div class="rv-theme"><header class="svc-sub"><h2>{h}</h2><p>{sub}</p></header>{rev_cards(items)}</div>\n' for h,sub,items in REV_THEMES)
 reviews_body = f"""<section class="page-hero"><div class="wrap">
   <p class="eyebrow">Reviews</p>
   <h1>What families say</h1>
-  <p>Every quote below is taken word for word from our Google reviews, written by different families, for different ceremonies.</p>
+  <p>Every quote below is taken word for word from our Google reviews and from messages families sent us, written by different families, for different ceremonies.</p>
 </div></section>
 <section><div class="wrap">
-{_themes}  <p class="rv-note">Quotes are taken from our Google reviews.</p>
+{_themes}  <div class="rv-theme"><header class="svc-sub"><h2>Messages from families</h2><p>Kind words families sent us after their ceremonies. Names are shortened for privacy.</p></header>{wa_cards(WA_MSGS)}</div>
+  <p class="rv-note">Quotes are taken from our Google reviews and from messages sent to us by families.</p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
