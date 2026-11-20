@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=118">
+<link rel="stylesheet" href="style.css?v=119">
 </head>
 <body>
 '''
@@ -187,6 +187,26 @@ SVC_GROUPS = [
  ("Praanapratishta (installation)", "", "inst", [
    ("", ["Sri Mahameru Praanapratishta", "Sri Chakra Yantra Praanapratishta", "Devata Vigraha Pratishta (idol installation)", "Yantra Pratishta for a chosen deity (please check with us)"])]),
 ]
+PWH = """  <div class="pwh" id="pay-with-heart">
+    <p class="pwh-eyebrow">🪷 Divine support in times of need 🪷</p>
+    <h2>Pay-With-Heart Pooja</h2>
+    <p class="pwh-lead">Financial hardship should never stand between a family and divine blessings.</p>
+    <p>Are you, or someone you know, going through a difficult phase in life? We offer traditional Vedic poojas for families facing genuine hardship or financial distress, with prayers tailored to bring peace, strength and resolution.</p>
+    <div class="pwh-cols">
+      <div><h3>Prayers offered for</h3><ul>
+        <li><strong>Health and healing</strong>: serious illness, chronic pain or mental distress</li>
+        <li><strong>Employment and stability</strong>: sudden job loss, financial stress or career blocks</li>
+        <li><strong>Family harmony</strong>: restoring peace and resolving relationship issues at home</li>
+        <li><strong>Obstacle removal</strong>: clearing hardships and inviting positive energy into the home</li></ul></div>
+      <div><h3>Our promise to you</h3><ul>
+        <li><strong>Pay only what you can comfortably afford.</strong> Give from the heart; there is no fixed charge.</li>
+        <li><strong>Strict confidentiality.</strong> Your situation stays completely private.</li>
+        <li><strong>Authentic rituals.</strong> Performed with the same devotion, care and tradition as every ceremony.</li></ul></div>
+    </div>
+    <p class="pwh-refer">If you know a neighbour, friend or relative who could benefit from this support, please let them know, or <a href="contact.htm">contact us</a> directly.</p>
+    <p class="pwh-quote">“Let us come together to invoke divine blessings, clear obstacles, and bring hope back into your home.”</p>
+  </div>"""
+
 def svc_list():
     out=[]
     for title, sub, gid, rows in SVC_GROUPS:
@@ -199,6 +219,7 @@ def svc_list():
                 out.append(f'    <ul class="svc-list">{lis}</ul>')
         out.append('  </div>')
     out.append('  <p class="svc-combine">Some of these can be combined. Please <a href="contact.htm">give us a call</a> and we will be happy to clarify.</p>')
+    out.append(PWH)
     return "\n".join(out)
 SVC_LIST = svc_list()
 
