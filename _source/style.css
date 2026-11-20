@@ -834,3 +834,4 @@ html body .fire-feature .ff-pair{max-width:1080px!important}
  html body .site-head .brand .name .tag{margin-top:12px!important;display:block}
 }
 @media (min-width:901px){html body .site-head .brand .logo{left:-30px!important}}
+@media (min-width:901px){html body .site-head .brand .logo{transform:translateY(calc(-50% + 22px))!important}}
