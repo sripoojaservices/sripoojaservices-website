@@ -274,8 +274,8 @@ photos = f'''<section class="page-hero"><div class="wrap">
 <section><div class="wrap">
   <div class="fire-feature">
     <div class="ff-pair">
-      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=3" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"></figure>
-      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=3" alt="The same moment, darkened so the form in the fire is easier to see" width="800" height="584"></figure>
+      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=4" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"></figure>
+      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=4" alt="The same moment, darkened so the form in the fire is easier to see" width="800" height="584"></figure>
     </div>
     <p class="ff-cap">Many devotees present saw the form of Sri Maha Ganapati in the sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam.<br><span>The photo on the right is the same picture, darkened so the form is easier to see.</span></p>
   </div>
