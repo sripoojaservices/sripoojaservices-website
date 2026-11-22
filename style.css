@@ -904,3 +904,9 @@ html.rv-sample body{background:#320504!important}
 html.rv-sample body::before{content:"";position:fixed;left:0;top:0;width:100vw;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 75% 65% at 50% 45%,#c42a1e 0%,#9e1c14 30%,#6a110b 62%,#320504 100%)}
 html.rv-sample{background:#320504!important}
 html.rv-sample body{background:transparent!important}
+/* v135 ribbon border: equal polished bands on all four sides */
+html.rv-sample .gold-frame.gf2{border:0!important;border-image:none!important;
+box-shadow:0 0 0 1px #3a1c00,0 0 0 2px #7a4c06,0 0 0 3px #b8820e,0 0 0 4px #e0a82a,0 0 0 5px #f7cf55,0 0 0 6px #ffe68a,0 0 0 7px #fff8d8,0 0 0 8px #ffe17a,0 0 0 9px #f0bf3c,0 0 0 10px #d39a1c,0 0 0 11px #a8700a,0 0 0 12px #5a3300,0 12px 30px 6px rgba(0,0,0,.55)!important;margin-top:24px}
+html.rv-sample .gold-frame.gf2::after{inset:5px;border:1.5px solid #f7cf55;box-shadow:0 0 0 1px #5a3300,inset 0 0 0 1px #5a3300}
+html.rv-sample .gold-frame.gf2 .gf-tl{top:-12px;left:-12px}html.rv-sample .gold-frame.gf2 .gf-tr{top:-12px;right:-12px}html.rv-sample .gold-frame.gf2 .gf-bl{bottom:-12px;left:-12px}html.rv-sample .gold-frame.gf2 .gf-br{bottom:-12px;right:-12px}
+@media (max-width:600px){html.rv-sample .gold-frame.gf2{margin-left:16px!important;margin-right:16px!important}html.rv-sample .gold-frame.gf2::after{inset:4px}}
