@@ -1087,3 +1087,16 @@ html body section .contact-close a.btn.rv-gbtn:link,html body section .contact-c
 html body .gold-frame .gf-scroll>section:has(.rv-gbtn){padding-bottom:4px!important}
 html body .gold-frame .gf-scroll>section.cta-band{padding-top:8px!important}
 html body .gold-frame .gf-scroll>section.cta-band .orn-div,html body .gold-frame .gf-scroll>section.cta-band svg.orn-div{margin-top:0!important}
+/* v152 */
+html body .faq-item p,html body .faq-item li{color:#f3e6cc!important;-webkit-text-fill-color:#f3e6cc!important}
+/* About Us: first paragraph aligned like the rest */
+html body .gold-frame section.about-flow p,html body .gold-frame .about-centre p.about-lead{text-align:left!important}
+html body .gold-frame .about-centre .about-card p{text-align:center!important}
+/* Pay-With-Heart: lead line aligned with body text */
+html body .gold-frame .pwh p.pwh-lead{text-align:left!important;text-wrap:wrap;max-width:none}
+/* WhatsApp tooltip only on mouse devices (does not stick on phones) */
+@media (hover:none){.wa-tip{display:none!important}}
+html body .gold-frame .page-hero p.lft{text-align:left!important}
+html body .gold-frame .pwh p.pwh-lead{margin-bottom:10px!important;font-weight:600}
+html body .gold-frame .page-hero p.lft{text-wrap:wrap!important;max-width:none!important}
+html body .gold-frame p.contact-close{margin-top:14px!important;margin-bottom:0!important}
