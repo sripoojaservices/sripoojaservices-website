@@ -976,3 +976,9 @@ html body footer.site,html body footer.site p,html body footer.site a,html body 
 html body footer.site h3,html body footer.site h4,html body footer.site strong{font-size:16px!important;font-weight:600!important}
 html body .rv figcaption{font-size:14px!important}
 html body .rv blockquote,html body .rv blockquote p,html body .rv .rv-tr{font-size:19px!important;line-height:1.55!important}
+/* v141 bands like vaibhavaas: alternate section shading, distinct footer */
+html body .gold-frame > section{padding-top:48px;padding-bottom:48px}
+html body .gold-frame > section:nth-of-type(even){background:rgba(25,2,1,.28)}
+html body .gold-frame > section .wrap{max-width:880px}
+html.rv-sample body footer.site{background:#1c0302!important;border-top:2px solid #d9a63a;box-shadow:0 -1px 0 #7a4c06;padding:32px 0 28px!important;margin-top:28px}
+html.rv-sample body footer.site a{color:#f5d37a}
