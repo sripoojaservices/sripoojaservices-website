@@ -1033,3 +1033,27 @@ html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!imp
  html body .site-head .brand{padding-left:78px!important;padding-right:78px!important}
  html body .site-head .brand .logo,html body .site-head.shrink .brand .logo{height:70px!important;width:70px!important;top:var(--name-mid,24px)!important;transform:translateY(-50%)!important}
 }
+/* v149 */
+.nw{white-space:nowrap}
+.site-head .brand .logo-r{display:none}
+@media (max-width:900px){
+ html body .site-head .brand .logo-r{display:block;position:absolute;left:auto!important;right:20px}
+}
+@media (max-width:430px){html body .site-head .brand .logo-r{right:-8px}html body .site-head .brand .logo:not(.logo-r){left:-8px!important}}
+@media (max-width:400px){html body .site-head .brand .name{font-size:20px!important}}
+/* links in header behave as plain taps */
+.head-contact,.head-contact a{-webkit-user-select:none!important;user-select:none!important;-webkit-touch-callout:default}
+/* About Us vision/mission cards: maroon with gold, like Pay-With-Heart */
+html body section.about-flow div.about-centre div.about-card,html body .about-card{background:rgba(30,4,2,.45)!important;border:2px solid #c9a24a!important;border-radius:14px!important;box-shadow:0 0 0 1px rgba(245,211,122,.2),0 8px 22px rgba(0,0,0,.3)!important}
+html body section.about-flow div.about-centre div.about-card h3,html body .about-card h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important}
+html body section.about-flow div.about-centre div.about-card p,html body .about-card p{color:#f3e6cc!important;-webkit-text-fill-color:#f3e6cc!important}
+/* less empty space at top and bottom inside the frame */
+@media (max-width:820px){
+ html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:28px!important}
+ html body .gold-frame .gf-scroll>section:last-child,html body .gold-frame .gf-scroll>div:last-child{padding-bottom:36px!important}
+ html body .gold-frame .gf-scroll>section.home-intro:first-child{padding-top:46px!important}
+}
+.zoom-note{font-style:normal;font-weight:600;color:#f5d37a;white-space:nowrap}
+html body section.about-flow.alt div.about-centre div.about-card.about-card{background:rgba(30,4,2,.45)!important;border:2px solid #c9a24a!important}
+html body section.about-flow.alt div.about-centre div.about-card.about-card h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important}
+html body section.about-flow.alt div.about-centre div.about-card.about-card p{color:#f3e6cc!important;-webkit-text-fill-color:#f3e6cc!important;text-align:center!important}
