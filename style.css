@@ -897,3 +897,6 @@ html.rv-sample .site-head{background:transparent!important}
 .g-rate .g-stars img{width:34px;height:34px;display:block}
 .g-rate .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (max-width:600px){.g-rate .g-stars img{width:30px;height:30px}}
+.g-rate .g-stars svg.gst{width:34px;height:34px;display:block;overflow:visible}
+@media (max-width:600px){.g-rate .g-stars svg.gst{width:30px;height:30px}}
+.gold-frame svg.gf-c{overflow:visible}
