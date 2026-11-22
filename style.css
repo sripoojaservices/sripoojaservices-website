@@ -914,3 +914,39 @@ html.rv-sample .gold-frame.gf2 .gf-tl{top:-12px;left:-12px}html.rv-sample .gold-
 .orn-div{display:block;width:min(520px,86%);height:auto;aspect-ratio:600/84;margin:34px auto 10px;overflow:visible}
 html.rv-sample .gold-frame.gf-mandala .gf-c{width:190px;height:190px}
 @media (max-width:600px){html.rv-sample .gold-frame.gf-mandala .gf-c{width:110px;height:110px}}
+/* ===== v137 TYPOGRAPHY SYSTEM: one body font, one heading font, consistent sizes ===== */
+html body{font-family:"Mulish",system-ui,sans-serif!important;font-size:17px;line-height:1.7;font-style:normal}
+html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-family:"Mulish",system-ui,sans-serif!important;font-style:normal!important;font-size:1rem!important;line-height:1.7!important}
+html body h1,html body .page-hero h1,html body .hero h1{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:2.3rem!important;line-height:1.2!important;font-style:normal!important}
+html body h2,html body section h2,html body .svc-sub h2{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.75rem!important;line-height:1.25!important;font-style:normal!important}
+html body h3{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.35rem!important;line-height:1.3!important}
+html body .page-hero .eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-size:.8rem!important}
+/* nav: every tab identical */
+html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:1rem!important;letter-spacing:0!important}
+/* header contact line + footer: same body font */
+html body .head-contact a{font-family:"Mulish",system-ui,sans-serif!important;font-weight:600!important;font-size:.95rem!important}
+html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-family:"Mulish",system-ui,sans-serif!important;font-size:.95rem!important;font-style:normal!important}
+/* tagline: more breathing space between its two lines */
+html body .brand .tag{line-height:1.55!important;margin-top:8px!important}
+/* reviews: only the quote is italic; captions identical everywhere */
+html body .rv blockquote,html body .rv .rv-tr{font-family:"Cormorant Garamond",Georgia,serif!important;font-style:italic!important;font-size:1.22rem!important;line-height:1.5!important;margin:0 0 12px!important}
+html body .rv blockquote.hi{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif!important;font-style:normal!important;font-size:1.12rem!important}
+html body .rv .rv-tr{opacity:.92}
+html body .rv figcaption{font-family:"Mulish",system-ui,sans-serif!important;font-size:.95rem!important;font-weight:500!important;font-style:normal!important}
+html body .rv figcaption strong{font-weight:700!important}
+html body .rv figcaption *:not(strong){font-weight:500!important}
+/* centred headings get centred underline */
+html body .reviews h2::after,html body .cta-band h2::after,html body .home-intro h2::after,html body .page-hero h2::after{left:50%!important;transform:translateX(-50%)}
+/* tidy spacing inside the frame */
+html body .gold-frame section{padding-top:28px!important;padding-bottom:28px!important}
+html body .gold-frame .contact-close{padding-bottom:26px}
+@media (max-width:600px){
+ html body h1,html body .page-hero h1,html body .hero h1{font-size:1.85rem!important}
+ html body h2,html body section h2{font-size:1.5rem!important}
+ html body{font-size:16px}
+ html.rv-sample .gold-frame.gf-mandala .gf-c{width:78px!important;height:78px!important}
+ html.rv-sample .gold-frame .gf-scroll{padding-left:6px;padding-right:6px}
+ html body .gold-frame .gf-scroll>section:first-child{padding-top:46px!important}
+ html body .gold-frame section{padding-top:22px!important;padding-bottom:22px!important}
+ html body .gold-frame .contact-close{padding-bottom:40px}
+}
