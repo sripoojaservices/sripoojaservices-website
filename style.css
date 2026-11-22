@@ -1014,3 +1014,4 @@ html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!imp
  html body .site-head .brand .name{white-space:normal!important;font-size:24px!important}
  html body .site-head .brand .name .name2{display:block!important}
 }
+@media (max-width:900px){html body .site-head .bija{margin-bottom:6px!important}}
