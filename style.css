@@ -982,3 +982,4 @@ html body .gold-frame > section:nth-of-type(even){background:rgba(25,2,1,.28)}
 html body .gold-frame > section .wrap{max-width:880px}
 html.rv-sample body footer.site{background:#1c0302!important;border-top:2px solid #d9a63a;box-shadow:0 -1px 0 #7a4c06;padding:32px 0 28px!important;margin-top:28px}
 html.rv-sample body footer.site a{color:#f5d37a}
+html body .gold-frame .cta-band,html body .gold-frame .cta-band p{text-align:center!important}
