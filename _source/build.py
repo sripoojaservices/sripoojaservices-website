@@ -11,7 +11,7 @@ NAME = "Sri Rajarajeswari Divine Services"
 
 WA_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.7-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.5S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.3-.3-.4-.6-.5z"/></svg>'
 
-NAV = [("index.htm","Home"),("service.htm","Services"),("extra_mile.htm","About Us"),("community.htm","Community"),("reviews.htm","Reviews"),("photo.htm","Photos"),("faq.htm","FAQ")]
+NAV = [("index.htm","Home"),("extra_mile.htm","About Us"),("service.htm","Services"),("photo.htm","Photos"),("reviews.htm","Reviews"),("contact.htm","Contact Us"),("faq.htm","FAQ"),("community.htm","Community")]
 
 def head(title, desc, extra=""):
     return f'''<!doctype html>
@@ -24,16 +24,21 @@ def head(title, desc, extra=""):
 <meta name="keywords" content="sri, rajarajeswari, divine, services, pooja, poojas, homam, homas, hindu, priest, singapore, agamas, shastras, griha pravesam, house warming">
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=120">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=148">
 </head>
 <body>
 '''
 
 def header(active):
     act = ' class="active"'
+    def _cls(h):
+        c=[]
+        if h==active: c.append("active")
+        if h=="contact.htm": c.append("cta")
+        return f' class="{" ".join(c)}"' if c else ""
     links = "\n".join(
-        f'      <li><a href="{h}"{act if h==active else ""}>{t}</a></li>' for h,t in NAV)
+        f'      <li><a href="{h}"{_cls(h)}>{t}</a></li>' for h,t in NAV)
     cta_active = ' active' if active=="contact.htm" else ''
     return f'''<div class="site-head">
 <div class="bija" lang="sa" aria-hidden="true">श्रीं</div>
@@ -46,14 +51,12 @@ def header(active):
 <nav class="main"><div class="wrap">
   <ul>
 {links}
-    <li><a href="contact.htm" class="cta{cta_active}">Contact Us</a></li>
   </ul>
 </div></nav>
 <div class="wrap">
   <div class="head-contact">
     <a href="tel:{PHONE_TEL}"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg> {PHONE_DISPLAY}</a>
-    <a href="mailto:{EMAIL}">✉ {EMAIL}</a>
-    <a href="reviews.htm" class="tb-rev"><span class="tw">★</span> Reviews</a>
+    <a href="mailto:{EMAIL}"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.3 7H4v.6l8 5.4 8-5.4V7h-.3z"/></svg> {EMAIL}</a>
   </div>
 </div>
 </div>
@@ -68,7 +71,7 @@ CTA = f'''<section class="cta-band"><div class="wrap">
 
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
-  <p class="wa-ch"><a href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel for festival greetings and auspicious days</a></p>
+  <p class="wa-ch"><a href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel for festival greetings and auspicious days 🌺</a></p>
   <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B</p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
@@ -533,13 +536,25 @@ reviews_body = f"""<section class="page-hero"><div class="wrap">
   <p class="eyebrow">Reviews</p>
   <h1>What families say</h1>
   <p>Every quote below is taken word for word from our Google reviews and from messages families sent us, written by different families, for different ceremonies.</p>
+  <p class="g-rate"><span class="g-stars"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><span class="sr">5 stars</span></span> <strong>5.0 on Google</strong></p>
+  <p><a class="btn btn-outline" href="https://maps.google.com/?cid=2605221990443303164" target="_blank" rel="noopener">Read all our Google reviews</a></p>
 </div></section>
 <section><div class="wrap">
 {_themes}  <div class="rv-theme"><header class="svc-sub"><h2>Messages from families</h2><p>Kind words families sent us after their ceremonies. Names are shortened for privacy.</p></header>{wa_cards(WA_MSGS)}</div>
   <p class="rv-note">Quotes are taken from our Google reviews and from messages sent to us by families.</p>
+  <p class="contact-close" style="font-style:normal;text-align:center"><a class="btn btn-outline rv-gbtn" href="https://maps.google.com/?cid=2605221990443303164" target="_blank" rel="noopener">Read all our Google reviews</a></p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
+SPRITE_SR = open('_sprite_sr.html',encoding='utf-8').read()
+# Reviews page: no self-link in the header, no eyebrow, tighter top
+_rp=open("reviews.htm",encoding="utf-8").read()
+_rp=_rp.replace('    <a href="reviews.htm" class="tb-rev"><span class="tw">★</span> Reviews</a>\n','')
+_rp=_rp.replace('<p class="eyebrow">Reviews</p>\n  ','',1)
+_rp=_rp.replace('<section class="page-hero">','<section class="page-hero rv-hero">',1)
+_rp=_rp.replace('<img src="image/star_gold.svg" alt="" aria-hidden="true">','<svg class="gst" aria-hidden="true"><use href="#sr-star"/></svg>')
+_rp=_rp.replace('<div class="rv-theme">','<div class="rv-theme rv-sep">').replace('<div class="rv-theme rv-sep">','<div class="rv-theme">',1)
+open("reviews.htm","w",encoding="utf-8").write(_rp)
 
 page("faq.htm", f"FAQ: Booking a Hindu Priest in Singapore | {NAME}",
      "Common questions about booking a pooja or homam in Singapore: languages, areas served, preparation and how to book.",
@@ -548,6 +563,19 @@ page("faq.htm", f"FAQ: Booking a Hindu Priest in Singapore | {NAME}",
 # ---------- SITEMAP / ROBOTS ----------
 import datetime as _dt
 _today = _dt.date.today().isoformat()
+
+# ---- Global luxe frame: polished gold, embossed corners (mandala on some pages), pinned glow ----
+import re as _re
+MANDALA_PAGES={"index.htm","community.htm","contact.htm"}
+for _f in ALL_PAGES:
+    _h=open(_f,encoding="utf-8").read()
+    if 'class="gold-frame"' not in _h: continue
+    _sym="sr-mandala" if _f in MANDALA_PAGES else "sr-corner"
+    _h=_h.replace('<div class="gold-frame">','<div class="gold-frame gf2'+(' gf-mandala' if _sym=="sr-mandala" else '')+'">',1)
+    _h=_re.sub(r'<img class="gf-c gf-(tl|tr|bl|br)" src="image/corner_gold\.svg" alt="" aria-hidden="true">', lambda m: f'<svg class="gf-c gf-{m.group(1)}" aria-hidden="true"><use href="#{_sym}"/></svg>', _h)
+    _h=_h.replace('<div class="rv-theme rv-sep">','<svg class="orn-div" aria-hidden="true" viewBox="0 -4 600 80"><use href="#sr-div"/></svg><div class="rv-theme">')
+    _h=_h.replace('<body>','<body>'+SPRITE_SR,1).replace('<html lang="en">','<html lang="en" class="rv-sample">',1)
+    open(_f,"w",encoding="utf-8").write(_h)
 _urls = "".join(f"  <url><loc>{SITE}/{'' if p=='index.htm' else p}</loc><lastmod>{_today}</lastmod></url>\n" for p in ALL_PAGES)
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+_urls+'</urlset>\n')
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
