@@ -900,3 +900,7 @@ html.rv-sample .site-head{background:transparent!important}
 .g-rate .g-stars svg.gst{width:34px;height:34px;display:block;overflow:visible}
 @media (max-width:600px){.g-rate .g-stars svg.gst{width:30px;height:30px}}
 .gold-frame svg.gf-c{overflow:visible}
+html.rv-sample body{background:#320504!important}
+html.rv-sample body::before{content:"";position:fixed;left:0;top:0;width:100vw;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 75% 65% at 50% 45%,#c42a1e 0%,#9e1c14 30%,#6a110b 62%,#320504 100%)}
+html.rv-sample{background:#320504!important}
+html.rv-sample body{background:transparent!important}
