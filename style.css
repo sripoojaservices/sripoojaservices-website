@@ -1057,3 +1057,28 @@ html body section.about-flow div.about-centre div.about-card p,html body .about-
 html body section.about-flow.alt div.about-centre div.about-card.about-card{background:rgba(30,4,2,.45)!important;border:2px solid #c9a24a!important}
 html body section.about-flow.alt div.about-centre div.about-card.about-card h3{color:#f5d37a!important;-webkit-text-fill-color:#f5d37a!important}
 html body section.about-flow.alt div.about-centre div.about-card.about-card p{color:#f3e6cc!important;-webkit-text-fill-color:#f3e6cc!important;text-align:center!important}
+/* v150 */
+html body .gold-frame .pwh p.pwh-eyebrow,html body .gold-frame .pwh p.pwh-lead{text-align:center!important;text-wrap:balance}
+/* both Google review buttons identical (gold) */
+html body a.btn.rv-gtop,html body section .contact-close a.btn.rv-gbtn{background:linear-gradient(180deg,#ffe58a,#f2b93b 55%,#d39a1c)!important;color:#3a0603!important;-webkit-text-fill-color:#3a0603!important;border:1.5px solid #ffe9a0!important;font-weight:700!important}
+html body a.btn.rv-gtop:hover,html body section .contact-close a.btn.rv-gbtn:hover{filter:brightness(1.08)}
+/* smaller gap after the last reviews button */
+html body .rv-note{margin-bottom:6px!important}
+html body section .contact-close:has(.rv-gbtn){margin-bottom:0!important}
+html body .gold-frame section:has(.rv-gbtn){padding-bottom:12px!important}
+html body .gold-frame section:has(.rv-gbtn)+section.cta-band{padding-top:12px!important}
+/* contact cards closer together */
+@media (max-width:820px){
+ html body .contact-grid{gap:6px!important}
+ html body .contact-card{padding:12px 14px!important}
+ html body .contact-card .ico{margin-bottom:2px!important;font-size:1.6rem!important}
+ html body .contact-card h3{margin:2px 0!important}
+ html body .contact-card .btn{margin-top:8px!important}
+}
+html body .page-hero a.btn.btn-outline.rv-gtop{background:linear-gradient(180deg,#ffe58a,#f2b93b 55%,#d39a1c)!important;color:#3a0603!important;-webkit-text-fill-color:#3a0603!important;border:1.5px solid #ffe9a0!important;font-weight:700!important}
+@media (max-width:820px){
+ html body .contact-card .ico{width:40px!important;height:40px!important;font-size:1.2rem!important;margin:0 auto 2px!important}
+ html body .contact-card a.big{margin:2px 0 6px!important}
+ html body .contact-card a.btn{padding:8px 20px!important;margin-top:2px!important}
+ html body .contact-grid{gap:14px!important}
+}
