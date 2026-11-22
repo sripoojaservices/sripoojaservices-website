@@ -1020,3 +1020,12 @@ html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!imp
  html body nav.main ul{gap:1px!important}
  html body .home-intro h1{font-size:24px!important;padding:0 6px}
 }
+/* v147 company name centred on the page, logo on the left */
+@media (max-width:900px){
+ html body .site-head .brand{padding-left:92px!important;padding-right:92px!important;justify-content:center}
+}
+@media (max-width:430px){
+ html body .site-head .brand{padding-left:64px!important;padding-right:64px!important}
+ html body .site-head .brand .logo,html body .site-head.shrink .brand .logo{height:60px!important;width:60px!important}
+ html body .site-head .brand .name{font-size:21px!important}
+}
