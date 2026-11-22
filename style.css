@@ -892,3 +892,8 @@ html.rv-sample .gold-frame.gf2::after{inset:12px;border:1px solid rgba(255,228,1
 html.rv-sample .gold-frame.gf2 .gf-tl{top:-9px;left:-9px}html.rv-sample .gold-frame.gf2 .gf-tr{top:-9px;right:-9px}html.rv-sample .gold-frame.gf2 .gf-bl{bottom:-9px;left:-9px}html.rv-sample .gold-frame.gf2 .gf-br{bottom:-9px;right:-9px}
 @media (max-width:600px){html.rv-sample .gold-frame.gf2{border-width:7px;margin-left:10px;margin-right:10px}html.rv-sample .gold-frame.gf2::after{inset:9px}}
 html.rv-sample .site-head{background:transparent!important}
+.g-rate{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.g-rate .g-stars{display:inline-flex;gap:4px;letter-spacing:0}
+.g-rate .g-stars img{width:34px;height:34px;display:block}
+.g-rate .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:600px){.g-rate .g-stars img{width:30px;height:30px}}
