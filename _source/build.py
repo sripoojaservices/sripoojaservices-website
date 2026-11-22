@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=152">
+<link rel="stylesheet" href="style.css?v=153">
 </head>
 <body>
 '''
@@ -295,13 +295,16 @@ community = f'''<section class="page-hero"><div class="wrap">
 </div></section>
 <section><div class="wrap">
   <div class="community">
-        <div class="comm-grid">
-      <figure><img src="image/community_homam.jpg?v=2" alt="Community Navarathri celebration in Ang Mo Kio" width="960" height="720" loading="lazy"></figure>
-      <figure><img src="image/community_suvaasini.jpg?v=2" alt="Prayers at the community Navarathri celebration" width="540" height="720" loading="lazy"></figure>
+        <div class="comm-grid comm-grid4">
+      <figure><img src="image/community_token.jpg" alt="Grassroots advisor presenting tokens of appreciation at the community Navarathri celebration" width="1200" height="900" loading="lazy"></figure>
+      <figure><img src="image/community_meal.jpg" alt="Guests sharing a vegetarian meal at the community Navarathri celebration" width="1200" height="900" loading="lazy"></figure>
+      <figure><img src="image/community_homam.jpg?v=3" alt="Homam on the second day of the community Navarathri celebration" width="960" height="720" loading="lazy"></figure>
+      <figure><img src="image/community_suvaasini.jpg?v=3" alt="Suvaasini Pooja at the community Navarathri celebration" width="540" height="720" loading="lazy"></figure>
     </div>
+    <p class="blur-note">Faces have been blurred to protect privacy.</p>
     <p>With the blessings of the former grassroots advisor for Kebun Baru, we held a two-day community Navarathri celebration in Ang Mo Kio. Families of different races and from all walks of life came together to worship the Divine Mother and take part in the event.</p>
-    <p>On the eve of the celebration, essential groceries were delivered personally to families in the neighbourhood, so that no one had to carry them home, and they were invited to join us the next day. At the venue, they shared a vegetarian meal with us, and the grassroots advisor graciously presented each family with a token of appreciation.</p>
-    <p>Later, a two-day Sahasra Modaka Sri Maha Ganapati Homam was held on an auspicious day for Sri Ganapati, made possible by a group of like-minded well-wishers. Seniors from a home in the community were invited to join us and take part.</p>
+    <p>On the eve of the event, essential groceries were delivered personally to families in need in the neighbourhood, and they were invited to join us at the venue the next day for a meal. On that day, we were happy that our grassroots advisor joined us for the prayers, and he was kind enough to accept our request to present a token of appreciation to these families.</p>
+    <p>Later, a two-day Sahasra Modaka Sri Maha Ganapati Homam was held on Vinayaka Shashti (Pillayar Nonbu), a most auspicious day for Sri Ganapati, made possible by a group of like-minded well-wishers. Seniors from a home in the community were invited to join us and take part.</p>
     <p>These events were offered to the community with devotion, and not for profit.</p>
     <p>In the same spirit, we began the <a href="#pay-with-heart">Pay-With-Heart Pooja</a> for families going through difficult times, who give only what they can comfortably afford. Please feel free to reach out to us.</p>
   </div>
