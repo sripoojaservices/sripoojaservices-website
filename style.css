@@ -960,3 +960,4 @@ html body .gold-frame .page-hero p,html body .gold-frame .contact-close,html bod
  html body .gold-frame .gf-scroll>section:last-child{padding-bottom:56px!important}
  html body .gold-frame .contact-close{padding-bottom:48px}
 }
+html body .gold-frame p,html body .gold-frame li{text-align-last:auto!important;hyphens:manual!important}
