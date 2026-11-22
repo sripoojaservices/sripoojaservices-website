@@ -14,7 +14,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Mulish",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px}
+body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px}
 img{max-width:100%;display:block}
 a{color:var(--saffron-dark)}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--maroon);line-height:1.15;font-weight:600}
@@ -37,7 +37,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .brand .logo{height:58px;width:auto;flex-shrink:0}
 .brand .name{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;color:var(--maroon);line-height:1.05}
 .brand .name .name2{display:block}
-.brand .name small{display:block;font-family:"Mulish",sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700;margin-top:3px}
+.brand .name small{display:block;font-family:"Inter",sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700;margin-top:3px}
 nav.main ul{list-style:none;display:flex;gap:6px;align-items:center}
 nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px}
 nav.main a:hover{background:var(--cream-2)}
@@ -90,7 +90,7 @@ section{padding:80px 0}
 .checklist li{padding:9px 0 9px 32px;position:relative;border-bottom:1px dashed var(--cream-2)}
 .checklist li::before{content:"✦";position:absolute;left:4px;color:var(--saffron)}
 .quote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.5rem,3vw,2rem);color:var(--maroon);font-style:italic;text-align:center;max-width:760px;margin:0 auto;line-height:1.35}
-.quote cite{display:block;font-family:"Mulish",sans-serif;font-style:normal;font-size:.9rem;color:var(--saffron-dark);margin-top:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.quote cite{display:block;font-family:"Inter",sans-serif;font-style:normal;font-size:.9rem;color:var(--saffron-dark);margin-top:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
 
 /* Services */
 .svc-group{margin-bottom:56px}
@@ -453,7 +453,7 @@ footer.site.slim .foot-line a{color:#f3d987}
 @media (prefers-reduced-motion:reduce){.head-contact a.tb-rev .tw{animation:none}}
 /* v38: banner without the box; one font (same as tabs) for label, heading and text */
 .page-hero::before,.page-hero::after{display:none}
-.page-hero .eyebrow,.page-hero h1,.page-hero p{font-family:"Mulish",system-ui,sans-serif}
+.page-hero .eyebrow,.page-hero h1,.page-hero p{font-family:"Inter",system-ui,sans-serif}
 .page-hero .eyebrow{font-weight:700;font-size:.85rem;letter-spacing:.22em}
 .page-hero h1{font-weight:800;font-size:clamp(1.7rem,3.4vw,2.35rem);letter-spacing:.01em;line-height:1.2}
 .page-hero p{font-weight:500;font-size:1.06rem}
@@ -462,8 +462,8 @@ footer.site.slim .foot-line a{color:#f3d987}
 .page-hero h1::after{width:min(500px,78%);height:2px;margin-top:18px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
 .page-hero p{max-width:640px;margin-left:auto;margin-right:auto;text-wrap:balance}
 /* v40: company name in the same bold gold style; banner heading smaller than name */
-.site-head .brand .name{font-family:"Mulish",system-ui,sans-serif;font-weight:800;letter-spacing:.01em;line-height:1.1}
-.site-head .brand .name small{font-family:"Mulish",system-ui,sans-serif}
+.site-head .brand .name{font-family:"Inter",system-ui,sans-serif;font-weight:800;letter-spacing:.01em;line-height:1.1}
+.site-head .brand .name small{font-family:"Inter",system-ui,sans-serif}
 .page-hero h1{font-size:clamp(1.3rem,2.4vw,1.75rem)}
 @media (max-width:1100px){.site-head .brand .name{white-space:normal}.site-head .brand .name .name2{display:block}}
 @media (max-width:600px){.page-hero h1{font-size:1.2rem}}
@@ -519,13 +519,13 @@ section:not(.page-hero):not(.cta-band) h2::after{background:linear-gradient(90de
 /* v49: About Us centred single flow, bigger text */
 .about-flow{padding-top:28px!important}
 .about-centre{max-width:780px;margin:0 auto;text-align:center}
-.about-centre h2{font-size:clamp(1.6rem,2.8vw,2.15rem)!important;font-family:"Mulish",system-ui,sans-serif;font-weight:800}
+.about-centre h2{font-size:clamp(1.6rem,2.8vw,2.15rem)!important;font-family:"Inter",system-ui,sans-serif;font-weight:800}
 .about-centre h2::after{left:50%!important;transform:translateX(-50%);width:120px!important;background:linear-gradient(90deg,transparent,#c9962f,#fff1b8,#c9962f,transparent)!important}
 .about-centre p{font-size:1.14rem;line-height:1.8}
 .about-centre .eyebrow{font-size:.9rem}
 .about-centre .about-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;text-align:left}
 .about-centre .about-card{padding:26px 28px}
-.about-centre .about-card h3{font-family:"Mulish",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-align:center;margin-bottom:10px}
+.about-centre .about-card h3{font-family:"Inter",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-align:center;margin-bottom:10px}
 .about-centre .about-card p{font-size:1.05rem;line-height:1.7}
 section.alt:not(.about-flow){padding-top:40px}
 .veda-quote .vq-en{font-size:1.5rem}.veda-quote .vq-note,.veda-quote .vq-ref{font-size:1.02rem}
@@ -535,10 +535,10 @@ section.alt:not(.about-flow){padding-top:40px}
 .about-centre .about-card p{text-align:center}
 /* v51: About heading/eyebrow/lead match the banner exactly; italic sublines */
 .page-hero p{font-style:italic}
-section.about-flow .about-centre .eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
-section.about-flow .about-centre h2{font-family:"Mulish",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;letter-spacing:.01em;line-height:1.2;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important;padding-bottom:0}
+section.about-flow .about-centre .eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+section.about-flow .about-centre h2{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;letter-spacing:.01em;line-height:1.2;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important;padding-bottom:0}
 section.about-flow .about-centre h2::after{width:min(500px,78%)!important;height:2px!important;bottom:auto;position:static;display:block;margin:18px auto 0;transform:none!important;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)!important}
-section.about-flow .about-centre p.about-lead{font-family:"Mulish",system-ui,sans-serif;font-style:italic;font-weight:500;font-size:1.06rem!important;max-width:640px;margin:18px auto 0;text-wrap:balance}
+section.about-flow .about-centre p.about-lead{font-family:"Inter",system-ui,sans-serif;font-style:italic;font-weight:500;font-size:1.06rem!important;max-width:640px;margin:18px auto 0;text-wrap:balance}
 @media (max-width:600px){section.about-flow .about-centre h2{font-size:1.2rem!important}}
 html body section.about-flow.alt div.about-centre p.eyebrow,
 html body section.about-flow.alt div.about-centre h2{background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
@@ -550,7 +550,7 @@ section.about-flow{padding-top:0!important}
 .page-hero{padding-bottom:46px!important}
 .about-centre{max-width:680px}
 .about-centre p{max-width:680px;margin-left:auto;margin-right:auto}
-.site-head nav.main a,.site-head nav.main a.cta{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important;font-family:"Mulish",system-ui,sans-serif;font-weight:700;font-size:1rem;filter:none}
+.site-head nav.main a,.site-head nav.main a.cta{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important;font-family:"Inter",system-ui,sans-serif;font-weight:700;font-size:1rem;filter:none}
 .site-head nav.main a.active,.site-head nav.main a.cta.active{background:#8c2418!important;-webkit-text-fill-color:#ffe6a6!important;color:#ffe6a6!important}
 .site-head nav.main a:not(.active):hover{background:#7d2014!important;-webkit-text-fill-color:#ffe6a6!important}
 :root{--gold-shine:linear-gradient(180deg,#fff8d6 0%,#ffe9a3 18%,#e8b84a 38%,#9c6a12 50%,#d9a53a 62%,#fff0b3 80%,#c08a28 100%)}
@@ -558,15 +558,15 @@ section.about-flow{padding-top:0!important}
 html body section.about-flow.alt div.about-centre p.eyebrow{margin-bottom:0!important}
 html body section.about-flow.alt div.about-centre h2{margin-top:0!important}
 /* v55: From the scriptures label like ABOUT US; vision/mission boxes reversed */
-html body section.alt div.wrap > p.eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;width:fit-content;margin-left:auto!important;margin-right:auto!important}
+html body section.alt div.wrap > p.eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;width:fit-content;margin-left:auto!important;margin-right:auto!important}
 html body section.about-flow.alt div.about-centre div.about-card{background:linear-gradient(180deg,#fbf0d6,#f0dcb0)!important;border:1px solid #c9962f!important;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 html body section.about-flow.alt div.about-centre div.about-card h3,
 html body section.about-flow.alt div.about-centre div.about-card p{color:#5c150d!important;-webkit-text-fill-color:#5c150d!important}
 section.about-flow{padding-bottom:60px}
-.cta-band h2{font-family:"Mulish",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
+.cta-band h2{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
 .cta-band p{font-style:italic;max-width:600px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .wa-float{overflow:visible}
-.wa-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;background:#fbf0d6;color:#5c150d;font:700 .88rem "Mulish",system-ui,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}
+.wa-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;background:#fbf0d6;color:#5c150d;font:700 .88rem "Inter",system-ui,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tip,.wa-float:focus .wa-tip{opacity:1}
 .cta-band{padding:34px 0!important}
 .cta-band p{font-size:1.15rem;margin:0 auto}
@@ -631,7 +631,7 @@ html.gf-fixed footer.site{padding-top:4px!important;padding-bottom:8px!important
 .home-intro .wrap{max-width:900px!important}
 .home-intro p.lead{max-width:860px!important;hyphens:auto;-webkit-hyphens:auto;word-spacing:-.02em}
 .gold-frame .gf-hint{display:none}
-html.gf-fixed .gold-frame .gf-hint{display:block;position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;font-family:"Mulish",system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:3px 14px;border-radius:999px;background:rgba(58,9,5,.85);color:#f3d27a;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);animation:gfbob 1.8s ease-in-out infinite;transition:opacity .4s}
+html.gf-fixed .gold-frame .gf-hint{display:block;position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:3px 14px;border-radius:999px;background:rgba(58,9,5,.85);color:#f3d27a;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);animation:gfbob 1.8s ease-in-out infinite;transition:opacity .4s}
 html.gf-fixed .gold-frame .gf-hint.gone{opacity:0;pointer-events:none}
 @keyframes gfbob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,4px)}}
 html.gf-fixed .gold-frame .gf-scroll{scrollbar-width:auto;scrollbar-color:#e2bd68 rgba(0,0,0,.25)}
@@ -655,7 +655,7 @@ html.gf-fixed .gold-frame .gf-hint.up{animation:none}
 .svc small{color:#e8cfa0!important}
 .svc .dot{display:none}
 .back-link{margin:0 0 6px;text-align:left}
-.back-link a{color:#f5d37a;font-family:"Mulish",system-ui,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;font-style:normal}
+.back-link a{color:#f5d37a;font-family:"Inter",system-ui,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;font-style:normal}
 .back-link a:hover{text-decoration:underline}
 .svc-hero{padding-bottom:6px!important}
 /* v75: services as clean lists grouped by occasion and deity */
@@ -666,7 +666,7 @@ html.gf-fixed .gold-frame .gf-hint.up{animation:none}
 .svc-list a:hover{text-decoration:underline}
 .svc-list a.svc-info{font-size:.8rem;font-weight:700;margin-left:6px;padding:1px 8px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);white-space:nowrap}
 .deity-row{margin:0 0 22px}
-.deity-row h3{font-family:"Mulish",system-ui,sans-serif;font-size:1.05rem;font-weight:800;margin:0 0 6px;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.deity-row h3{font-family:"Inter",system-ui,sans-serif;font-size:1.05rem;font-weight:800;margin:0 0 6px;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .svc-group{margin-bottom:38px!important}
 .svc-combine{color:#f0dcb0;font-style:italic;margin-top:10px}
 .svc-combine a{color:#f5d37a}
@@ -915,24 +915,24 @@ html.rv-sample .gold-frame.gf2 .gf-tl{top:-12px;left:-12px}html.rv-sample .gold-
 html.rv-sample .gold-frame.gf-mandala .gf-c{width:190px;height:190px}
 @media (max-width:600px){html.rv-sample .gold-frame.gf-mandala .gf-c{width:110px;height:110px}}
 /* ===== v137 TYPOGRAPHY SYSTEM: one body font, one heading font, consistent sizes ===== */
-html body{font-family:"Mulish",system-ui,sans-serif!important;font-size:17px;line-height:1.7;font-style:normal}
-html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-family:"Mulish",system-ui,sans-serif!important;font-style:normal!important;font-size:1rem!important;line-height:1.7!important}
+html body{font-family:"Inter",system-ui,sans-serif!important;font-size:17px;line-height:1.7;font-style:normal}
+html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-family:"Inter",system-ui,sans-serif!important;font-style:normal!important;font-size:1rem!important;line-height:1.7!important}
 html body h1,html body .page-hero h1,html body .hero h1{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:2.3rem!important;line-height:1.2!important;font-style:normal!important}
 html body h2,html body section h2,html body .svc-sub h2{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.75rem!important;line-height:1.25!important;font-style:normal!important}
 html body h3{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.35rem!important;line-height:1.3!important}
-html body .page-hero .eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-size:.8rem!important}
+html body .page-hero .eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-size:.8rem!important}
 /* nav: every tab identical */
-html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:1rem!important;letter-spacing:0!important}
+html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:1rem!important;letter-spacing:0!important}
 /* header contact line + footer: same body font */
-html body .head-contact a{font-family:"Mulish",system-ui,sans-serif!important;font-weight:600!important;font-size:.95rem!important}
-html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-family:"Mulish",system-ui,sans-serif!important;font-size:.95rem!important;font-style:normal!important}
+html body .head-contact a{font-family:"Inter",system-ui,sans-serif!important;font-weight:600!important;font-size:.95rem!important}
+html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-family:"Inter",system-ui,sans-serif!important;font-size:.95rem!important;font-style:normal!important}
 /* tagline: more breathing space between its two lines */
 html body .brand .tag{line-height:1.55!important;margin-top:8px!important}
 /* reviews: only the quote is italic; captions identical everywhere */
 html body .rv blockquote,html body .rv .rv-tr{font-family:"Cormorant Garamond",Georgia,serif!important;font-style:italic!important;font-size:1.22rem!important;line-height:1.5!important;margin:0 0 12px!important}
 html body .rv blockquote.hi{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif!important;font-style:normal!important;font-size:1.12rem!important}
 html body .rv .rv-tr{opacity:.92}
-html body .rv figcaption{font-family:"Mulish",system-ui,sans-serif!important;font-size:.95rem!important;font-weight:500!important;font-style:normal!important}
+html body .rv figcaption{font-family:"Inter",system-ui,sans-serif!important;font-size:.95rem!important;font-weight:500!important;font-style:normal!important}
 html body .rv figcaption strong{font-weight:700!important}
 html body .rv figcaption *:not(strong){font-weight:500!important}
 /* centred headings get centred underline */
@@ -961,3 +961,18 @@ html body .gold-frame .page-hero p,html body .gold-frame .contact-close,html bod
  html body .gold-frame .contact-close{padding-bottom:48px}
 }
 html body .gold-frame p,html body .gold-frame li{text-align-last:auto!important;hyphens:manual!important}
+/* v140 type scale (modelled on vaibhavaas.com: Cormorant Garamond headings + Inter text) */
+html body{font-size:16px!important;line-height:1.65!important}
+html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-size:16px!important;line-height:1.65!important}
+html body .home-intro p.lead,html body .page-hero p.lead{font-size:18px!important;line-height:1.6!important}
+html body h1{font-size:36px!important;line-height:1.25!important}
+html body h2{font-size:30px!important;line-height:1.2!important}
+html body h3{font-size:22px!important;line-height:1.3!important}
+@media(min-width:821px){html body h1{font-size:46px!important}html body h2{font-size:36px!important}html body h3{font-size:24px!important}}
+html body .eyebrow,html body p.eyebrow{font-size:14px!important;font-weight:600!important;letter-spacing:.08em!important;text-transform:uppercase}
+html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-size:16px!important;font-weight:600!important}
+html body .head-contact a{font-size:15px!important;font-weight:600!important}
+html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-size:14px!important;line-height:1.6!important}
+html body footer.site h3,html body footer.site h4,html body footer.site strong{font-size:16px!important;font-weight:600!important}
+html body .rv figcaption{font-size:14px!important}
+html body .rv blockquote,html body .rv blockquote p,html body .rv .rv-tr{font-size:19px!important;line-height:1.55!important}
