@@ -14,7 +14,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Mulish",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px}
+body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px}
 img{max-width:100%;display:block}
 a{color:var(--saffron-dark)}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--maroon);line-height:1.15;font-weight:600}
@@ -37,7 +37,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .brand .logo{height:58px;width:auto;flex-shrink:0}
 .brand .name{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700;color:var(--maroon);line-height:1.05}
 .brand .name .name2{display:block}
-.brand .name small{display:block;font-family:"Mulish",sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700;margin-top:3px}
+.brand .name small{display:block;font-family:"Inter",sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saffron-dark);font-weight:700;margin-top:3px}
 nav.main ul{list-style:none;display:flex;gap:6px;align-items:center}
 nav.main a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px}
 nav.main a:hover{background:var(--cream-2)}
@@ -90,7 +90,7 @@ section{padding:80px 0}
 .checklist li{padding:9px 0 9px 32px;position:relative;border-bottom:1px dashed var(--cream-2)}
 .checklist li::before{content:"✦";position:absolute;left:4px;color:var(--saffron)}
 .quote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.5rem,3vw,2rem);color:var(--maroon);font-style:italic;text-align:center;max-width:760px;margin:0 auto;line-height:1.35}
-.quote cite{display:block;font-family:"Mulish",sans-serif;font-style:normal;font-size:.9rem;color:var(--saffron-dark);margin-top:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.quote cite{display:block;font-family:"Inter",sans-serif;font-style:normal;font-size:.9rem;color:var(--saffron-dark);margin-top:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
 
 /* Services */
 .svc-group{margin-bottom:56px}
@@ -453,7 +453,7 @@ footer.site.slim .foot-line a{color:#f3d987}
 @media (prefers-reduced-motion:reduce){.head-contact a.tb-rev .tw{animation:none}}
 /* v38: banner without the box; one font (same as tabs) for label, heading and text */
 .page-hero::before,.page-hero::after{display:none}
-.page-hero .eyebrow,.page-hero h1,.page-hero p{font-family:"Mulish",system-ui,sans-serif}
+.page-hero .eyebrow,.page-hero h1,.page-hero p{font-family:"Inter",system-ui,sans-serif}
 .page-hero .eyebrow{font-weight:700;font-size:.85rem;letter-spacing:.22em}
 .page-hero h1{font-weight:800;font-size:clamp(1.7rem,3.4vw,2.35rem);letter-spacing:.01em;line-height:1.2}
 .page-hero p{font-weight:500;font-size:1.06rem}
@@ -462,8 +462,8 @@ footer.site.slim .foot-line a{color:#f3d987}
 .page-hero h1::after{width:min(500px,78%);height:2px;margin-top:18px;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)}
 .page-hero p{max-width:640px;margin-left:auto;margin-right:auto;text-wrap:balance}
 /* v40: company name in the same bold gold style; banner heading smaller than name */
-.site-head .brand .name{font-family:"Mulish",system-ui,sans-serif;font-weight:800;letter-spacing:.01em;line-height:1.1}
-.site-head .brand .name small{font-family:"Mulish",system-ui,sans-serif}
+.site-head .brand .name{font-family:"Inter",system-ui,sans-serif;font-weight:800;letter-spacing:.01em;line-height:1.1}
+.site-head .brand .name small{font-family:"Inter",system-ui,sans-serif}
 .page-hero h1{font-size:clamp(1.3rem,2.4vw,1.75rem)}
 @media (max-width:1100px){.site-head .brand .name{white-space:normal}.site-head .brand .name .name2{display:block}}
 @media (max-width:600px){.page-hero h1{font-size:1.2rem}}
@@ -519,13 +519,13 @@ section:not(.page-hero):not(.cta-band) h2::after{background:linear-gradient(90de
 /* v49: About Us centred single flow, bigger text */
 .about-flow{padding-top:28px!important}
 .about-centre{max-width:780px;margin:0 auto;text-align:center}
-.about-centre h2{font-size:clamp(1.6rem,2.8vw,2.15rem)!important;font-family:"Mulish",system-ui,sans-serif;font-weight:800}
+.about-centre h2{font-size:clamp(1.6rem,2.8vw,2.15rem)!important;font-family:"Inter",system-ui,sans-serif;font-weight:800}
 .about-centre h2::after{left:50%!important;transform:translateX(-50%);width:120px!important;background:linear-gradient(90deg,transparent,#c9962f,#fff1b8,#c9962f,transparent)!important}
 .about-centre p{font-size:1.14rem;line-height:1.8}
 .about-centre .eyebrow{font-size:.9rem}
 .about-centre .about-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;text-align:left}
 .about-centre .about-card{padding:26px 28px}
-.about-centre .about-card h3{font-family:"Mulish",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-align:center;margin-bottom:10px}
+.about-centre .about-card h3{font-family:"Inter",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-align:center;margin-bottom:10px}
 .about-centre .about-card p{font-size:1.05rem;line-height:1.7}
 section.alt:not(.about-flow){padding-top:40px}
 .veda-quote .vq-en{font-size:1.5rem}.veda-quote .vq-note,.veda-quote .vq-ref{font-size:1.02rem}
@@ -535,10 +535,10 @@ section.alt:not(.about-flow){padding-top:40px}
 .about-centre .about-card p{text-align:center}
 /* v51: About heading/eyebrow/lead match the banner exactly; italic sublines */
 .page-hero p{font-style:italic}
-section.about-flow .about-centre .eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
-section.about-flow .about-centre h2{font-family:"Mulish",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;letter-spacing:.01em;line-height:1.2;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important;padding-bottom:0}
+section.about-flow .about-centre .eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+section.about-flow .about-centre h2{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;letter-spacing:.01em;line-height:1.2;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))!important;padding-bottom:0}
 section.about-flow .about-centre h2::after{width:min(500px,78%)!important;height:2px!important;bottom:auto;position:static;display:block;margin:18px auto 0;transform:none!important;background:linear-gradient(90deg,transparent,#c9962f 18%,#fff1b8 50%,#c9962f 82%,transparent)!important}
-section.about-flow .about-centre p.about-lead{font-family:"Mulish",system-ui,sans-serif;font-style:italic;font-weight:500;font-size:1.06rem!important;max-width:640px;margin:18px auto 0;text-wrap:balance}
+section.about-flow .about-centre p.about-lead{font-family:"Inter",system-ui,sans-serif;font-style:italic;font-weight:500;font-size:1.06rem!important;max-width:640px;margin:18px auto 0;text-wrap:balance}
 @media (max-width:600px){section.about-flow .about-centre h2{font-size:1.2rem!important}}
 html body section.about-flow.alt div.about-centre p.eyebrow,
 html body section.about-flow.alt div.about-centre h2{background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
@@ -550,7 +550,7 @@ section.about-flow{padding-top:0!important}
 .page-hero{padding-bottom:46px!important}
 .about-centre{max-width:680px}
 .about-centre p{max-width:680px;margin-left:auto;margin-right:auto}
-.site-head nav.main a,.site-head nav.main a.cta{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important;font-family:"Mulish",system-ui,sans-serif;font-weight:700;font-size:1rem;filter:none}
+.site-head nav.main a,.site-head nav.main a.cta{background:none!important;-webkit-text-fill-color:#f5d37a!important;color:#f5d37a!important;font-family:"Inter",system-ui,sans-serif;font-weight:700;font-size:1rem;filter:none}
 .site-head nav.main a.active,.site-head nav.main a.cta.active{background:#8c2418!important;-webkit-text-fill-color:#ffe6a6!important;color:#ffe6a6!important}
 .site-head nav.main a:not(.active):hover{background:#7d2014!important;-webkit-text-fill-color:#ffe6a6!important}
 :root{--gold-shine:linear-gradient(180deg,#fff8d6 0%,#ffe9a3 18%,#e8b84a 38%,#9c6a12 50%,#d9a53a 62%,#fff0b3 80%,#c08a28 100%)}
@@ -558,15 +558,15 @@ section.about-flow{padding-top:0!important}
 html body section.about-flow.alt div.about-centre p.eyebrow{margin-bottom:0!important}
 html body section.about-flow.alt div.about-centre h2{margin-top:0!important}
 /* v55: From the scriptures label like ABOUT US; vision/mission boxes reversed */
-html body section.alt div.wrap > p.eyebrow{font-family:"Mulish",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;width:fit-content;margin-left:auto!important;margin-right:auto!important}
+html body section.alt div.wrap > p.eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:.85rem!important;letter-spacing:.22em!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;width:fit-content;margin-left:auto!important;margin-right:auto!important}
 html body section.about-flow.alt div.about-centre div.about-card{background:linear-gradient(180deg,#fbf0d6,#f0dcb0)!important;border:1px solid #c9962f!important;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 html body section.about-flow.alt div.about-centre div.about-card h3,
 html body section.about-flow.alt div.about-centre div.about-card p{color:#5c150d!important;-webkit-text-fill-color:#5c150d!important}
 section.about-flow{padding-bottom:60px}
-.cta-band h2{font-family:"Mulish",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
+.cta-band h2{font-family:"Inter",system-ui,sans-serif!important;font-weight:800!important;font-size:clamp(1.3rem,2.4vw,1.75rem)!important;background:var(--gold-metal)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
 .cta-band p{font-style:italic;max-width:600px;margin-left:auto;margin-right:auto;text-wrap:balance}
 .wa-float{overflow:visible}
-.wa-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;background:#fbf0d6;color:#5c150d;font:700 .88rem "Mulish",system-ui,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}
+.wa-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);white-space:nowrap;background:#fbf0d6;color:#5c150d;font:700 .88rem "Inter",system-ui,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}
 .wa-float:hover .wa-tip,.wa-float:focus .wa-tip{opacity:1}
 .cta-band{padding:34px 0!important}
 .cta-band p{font-size:1.15rem;margin:0 auto}
@@ -631,7 +631,7 @@ html.gf-fixed footer.site{padding-top:4px!important;padding-bottom:8px!important
 .home-intro .wrap{max-width:900px!important}
 .home-intro p.lead{max-width:860px!important;hyphens:auto;-webkit-hyphens:auto;word-spacing:-.02em}
 .gold-frame .gf-hint{display:none}
-html.gf-fixed .gold-frame .gf-hint{display:block;position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;font-family:"Mulish",system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:3px 14px;border-radius:999px;background:rgba(58,9,5,.85);color:#f3d27a;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);animation:gfbob 1.8s ease-in-out infinite;transition:opacity .4s}
+html.gf-fixed .gold-frame .gf-hint{display:block;position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;font-family:"Inter",system-ui,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:3px 14px;border-radius:999px;background:rgba(58,9,5,.85);color:#f3d27a;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);animation:gfbob 1.8s ease-in-out infinite;transition:opacity .4s}
 html.gf-fixed .gold-frame .gf-hint.gone{opacity:0;pointer-events:none}
 @keyframes gfbob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,4px)}}
 html.gf-fixed .gold-frame .gf-scroll{scrollbar-width:auto;scrollbar-color:#e2bd68 rgba(0,0,0,.25)}
@@ -655,7 +655,7 @@ html.gf-fixed .gold-frame .gf-hint.up{animation:none}
 .svc small{color:#e8cfa0!important}
 .svc .dot{display:none}
 .back-link{margin:0 0 6px;text-align:left}
-.back-link a{color:#f5d37a;font-family:"Mulish",system-ui,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;font-style:normal}
+.back-link a{color:#f5d37a;font-family:"Inter",system-ui,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;font-style:normal}
 .back-link a:hover{text-decoration:underline}
 .svc-hero{padding-bottom:6px!important}
 /* v75: services as clean lists grouped by occasion and deity */
@@ -666,7 +666,7 @@ html.gf-fixed .gold-frame .gf-hint.up{animation:none}
 .svc-list a:hover{text-decoration:underline}
 .svc-list a.svc-info{font-size:.8rem;font-weight:700;margin-left:6px;padding:1px 8px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(226,189,104,.6);white-space:nowrap}
 .deity-row{margin:0 0 22px}
-.deity-row h3{font-family:"Mulish",system-ui,sans-serif;font-size:1.05rem;font-weight:800;margin:0 0 6px;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.deity-row h3{font-family:"Inter",system-ui,sans-serif;font-size:1.05rem;font-weight:800;margin:0 0 6px;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .svc-group{margin-bottom:38px!important}
 .svc-combine{color:#f0dcb0;font-style:italic;margin-top:10px}
 .svc-combine a{color:#f5d37a}
@@ -863,3 +863,173 @@ html body .fire-feature .ff-pair{max-width:1080px!important}
 .community p{color:#f3e6cc;text-align:justify;text-align-last:left}
 .community a{color:#f5d37a}
 @media (max-width:700px){.community .comm-grid{grid-template-columns:1fr}}
+/* v121 Google rating line */
+.g-rate{margin:14px 0 6px;font-size:1.15rem;color:#f5d37a}
+.g-rate .g-stars{color:#f2b93b;letter-spacing:2px;font-size:1.25rem}
+.page-hero .btn.btn-outline,.rv-gbtn{color:#f5d37a!important;border-color:#f2b93b!important;background:rgba(30,4,2,.35)!important;font-style:normal}
+.page-hero .btn.btn-outline:hover{background:#f2b93b!important;color:#3a0603!important}
+.rv-gbtn:hover{background:#f2b93b!important;color:#3a0603!important}
+/* v124 bottom Google button identical to top */
+section .contact-close a.btn.rv-gbtn,section .contact-close a.btn.rv-gbtn:link,section .contact-close a.btn.rv-gbtn:visited{color:#f5d37a!important;border-color:#f2b93b!important;background:rgba(30,4,2,.35)!important}
+section .contact-close a.btn.rv-gbtn:hover,section .contact-close a.btn.rv-gbtn:focus{background:#f2b93b!important;color:#3a0603!important}
+section .contact-close a.btn.rv-gbtn{-webkit-text-fill-color:#f5d37a!important}
+section .contact-close a.btn.rv-gbtn:hover,section .contact-close a.btn.rv-gbtn:focus{-webkit-text-fill-color:#3a0603!important}
+.page-hero.rv-hero{padding-top:18px!important}
+.page-hero.rv-hero h1{margin-top:0}
+/* v127 SAMPLE grand shiny frame (reviews page only) */
+.gold-frame.gf2{border:6px solid transparent;border-image:linear-gradient(135deg,#fff8d6 0%,#f9dd7a 10%,#d9a521 22%,#fff0a8 32%,#c98f12 45%,#f7d76a 55%,#fff6c8 62%,#d9a521 72%,#fbe48d 84%,#a87410 100%) 1;box-shadow:0 0 0 1px rgba(40,6,2,.6),0 6px 22px rgba(0,0,0,.35),inset 0 0 0 1px rgba(40,6,2,.5),inset 0 0 0 9px rgba(0,0,0,0),inset 0 0 0 10px rgba(249,221,122,.75),inset 0 0 0 11px rgba(40,6,2,.35);background-clip:padding-box}
+.gold-frame.gf2 .gf-c{width:150px;height:150px}
+.gold-frame.gf2 .gf-tl{top:-6px;left:-6px}.gold-frame.gf2 .gf-tr{top:-6px;right:-6px}.gold-frame.gf2 .gf-bl{bottom:-6px;left:-6px}.gold-frame.gf2 .gf-br{bottom:-6px;right:-6px}
+@media (max-width:600px){.gold-frame.gf2{border-width:5px}.gold-frame.gf2 .gf-c{width:92px;height:92px}}
+.gold-frame.gf2{box-shadow:0 0 0 1px rgba(40,6,2,.6),0 6px 22px rgba(0,0,0,.35)!important}
+.gold-frame.gf2::after{content:"";position:absolute;inset:6px;border:1.5px solid rgba(249,221,122,.85);box-shadow:0 0 0 1px rgba(40,6,2,.35),inset 0 0 0 1px rgba(40,6,2,.35);pointer-events:none;z-index:1}
+@media (max-width:600px){.gold-frame.gf2::after{inset:4px}}
+/* v129 SAMPLE: ribbon-gold frame + rich red centre (reviews page only, html.rv-sample) */
+html.rv-sample body{background:radial-gradient(ellipse 75% 65% at 50% 45%,#c42a1e 0%,#9e1c14 30%,#6a110b 62%,#320504 100%) fixed,#320504}
+html.rv-sample .gold-frame.gf2{border:9px solid transparent;border-image:linear-gradient(90deg,#8a5a10 0%,#e2a63a 12%,#ffe27a 30%,#fff6cf 42%,#ffd75e 52%,#e8ac32 66%,#ffe58a 80%,#c48820 92%,#7a4c0c 100%) 1;
+box-shadow:0 0 0 1px #fff3b8,0 0 0 3px #e8b23c,0 0 0 4px #fffbe6,0 0 0 6px #d99a22,0 0 0 7px #4a1800,0 10px 28px rgba(0,0,0,.55),inset 0 0 0 1px #4a1800,inset 0 0 0 2px #fff3b8,inset 0 0 0 3px #c98a1c,inset 0 0 18px rgba(0,0,0,.35)!important}
+html.rv-sample .gold-frame.gf2::after{inset:12px;border:1px solid rgba(255,228,140,.9);box-shadow:0 0 0 1px rgba(60,10,0,.5)}
+html.rv-sample .gold-frame.gf2 .gf-tl{top:-9px;left:-9px}html.rv-sample .gold-frame.gf2 .gf-tr{top:-9px;right:-9px}html.rv-sample .gold-frame.gf2 .gf-bl{bottom:-9px;left:-9px}html.rv-sample .gold-frame.gf2 .gf-br{bottom:-9px;right:-9px}
+@media (max-width:600px){html.rv-sample .gold-frame.gf2{border-width:7px;margin-left:10px;margin-right:10px}html.rv-sample .gold-frame.gf2::after{inset:9px}}
+html.rv-sample .site-head{background:transparent!important}
+.g-rate{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.g-rate .g-stars{display:inline-flex;gap:4px;letter-spacing:0}
+.g-rate .g-stars img{width:34px;height:34px;display:block}
+.g-rate .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:600px){.g-rate .g-stars img{width:30px;height:30px}}
+.g-rate .g-stars svg.gst{width:34px;height:34px;display:block;overflow:visible}
+@media (max-width:600px){.g-rate .g-stars svg.gst{width:30px;height:30px}}
+.gold-frame svg.gf-c{overflow:visible}
+html.rv-sample body{background:#320504!important}
+html.rv-sample body::before{content:"";position:fixed;left:0;top:0;width:100vw;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 75% 65% at 50% 45%,#c42a1e 0%,#9e1c14 30%,#6a110b 62%,#320504 100%)}
+html.rv-sample{background:#320504!important}
+html.rv-sample body{background:transparent!important}
+/* v135 ribbon border: equal polished bands on all four sides */
+html.rv-sample .gold-frame.gf2{border:0!important;border-image:none!important;
+box-shadow:0 0 0 1px #3a1c00,0 0 0 2px #7a4c06,0 0 0 3px #b8820e,0 0 0 4px #e0a82a,0 0 0 5px #f7cf55,0 0 0 6px #ffe68a,0 0 0 7px #fff8d8,0 0 0 8px #ffe17a,0 0 0 9px #f0bf3c,0 0 0 10px #d39a1c,0 0 0 11px #a8700a,0 0 0 12px #5a3300,0 12px 30px 6px rgba(0,0,0,.55)!important;margin-top:24px}
+html.rv-sample .gold-frame.gf2::after{inset:5px;border:1.5px solid #f7cf55;box-shadow:0 0 0 1px #5a3300,inset 0 0 0 1px #5a3300}
+html.rv-sample .gold-frame.gf2 .gf-tl{top:-12px;left:-12px}html.rv-sample .gold-frame.gf2 .gf-tr{top:-12px;right:-12px}html.rv-sample .gold-frame.gf2 .gf-bl{bottom:-12px;left:-12px}html.rv-sample .gold-frame.gf2 .gf-br{bottom:-12px;right:-12px}
+@media (max-width:600px){html.rv-sample .gold-frame.gf2{margin-left:16px!important;margin-right:16px!important}html.rv-sample .gold-frame.gf2::after{inset:4px}}
+/* v136 global luxe extras */
+.orn-div{display:block;width:min(520px,86%);height:auto;aspect-ratio:600/84;margin:34px auto 10px;overflow:visible}
+html.rv-sample .gold-frame.gf-mandala .gf-c{width:190px;height:190px}
+@media (max-width:600px){html.rv-sample .gold-frame.gf-mandala .gf-c{width:110px;height:110px}}
+/* ===== v137 TYPOGRAPHY SYSTEM: one body font, one heading font, consistent sizes ===== */
+html body{font-family:"Inter",system-ui,sans-serif!important;font-size:17px;line-height:1.7;font-style:normal}
+html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-family:"Inter",system-ui,sans-serif!important;font-style:normal!important;font-size:1rem!important;line-height:1.7!important}
+html body h1,html body .page-hero h1,html body .hero h1{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:2.3rem!important;line-height:1.2!important;font-style:normal!important}
+html body h2,html body section h2,html body .svc-sub h2{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.75rem!important;line-height:1.25!important;font-style:normal!important}
+html body h3{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:700!important;font-size:1.35rem!important;line-height:1.3!important}
+html body .page-hero .eyebrow{font-family:"Inter",system-ui,sans-serif!important;font-size:.8rem!important}
+/* nav: every tab identical */
+html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-family:"Inter",system-ui,sans-serif!important;font-weight:700!important;font-size:1rem!important;letter-spacing:0!important}
+/* header contact line + footer: same body font */
+html body .head-contact a{font-family:"Inter",system-ui,sans-serif!important;font-weight:600!important;font-size:.95rem!important}
+html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-family:"Inter",system-ui,sans-serif!important;font-size:.95rem!important;font-style:normal!important}
+/* tagline: more breathing space between its two lines */
+html body .brand .tag{line-height:1.55!important;margin-top:8px!important}
+/* reviews: only the quote is italic; captions identical everywhere */
+html body .rv blockquote,html body .rv .rv-tr{font-family:"Cormorant Garamond",Georgia,serif!important;font-style:italic!important;font-size:1.22rem!important;line-height:1.5!important;margin:0 0 12px!important}
+html body .rv blockquote.hi{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",serif!important;font-style:normal!important;font-size:1.12rem!important}
+html body .rv .rv-tr{opacity:.92}
+html body .rv figcaption{font-family:"Inter",system-ui,sans-serif!important;font-size:.95rem!important;font-weight:500!important;font-style:normal!important}
+html body .rv figcaption strong{font-weight:700!important}
+html body .rv figcaption *:not(strong){font-weight:500!important}
+/* centred headings get centred underline */
+html body .reviews h2::after,html body .cta-band h2::after,html body .home-intro h2::after,html body .page-hero h2::after{left:50%!important;transform:translateX(-50%)}
+/* tidy spacing inside the frame */
+html body .gold-frame section{padding-top:28px!important;padding-bottom:28px!important}
+html body .gold-frame .contact-close{padding-bottom:26px}
+@media (max-width:600px){
+ html body h1,html body .page-hero h1,html body .hero h1{font-size:1.85rem!important}
+ html body h2,html body section h2{font-size:1.5rem!important}
+ html body{font-size:16px}
+ html.rv-sample .gold-frame.gf-mandala .gf-c{width:78px!important;height:78px!important}
+ html.rv-sample .gold-frame .gf-scroll{padding-left:6px;padding-right:6px}
+ html body .gold-frame .gf-scroll>section:first-child{padding-top:46px!important}
+ html body .gold-frame section{padding-top:22px!important;padding-bottom:22px!important}
+ html body .gold-frame .contact-close{padding-bottom:40px}
+}
+/* v138 */
+html body .gold-frame p,html body .gold-frame li{text-align:left!important}
+html body .gold-frame .page-hero p,html body .gold-frame .contact-close,html body .gold-frame .rv-note,html body .gold-frame .lead.c{text-align:center!important}
+@media (max-width:820px){
+ html.rv-sample .gold-frame.gf-mandala .gf-c{width:84px!important;height:84px!important}
+ html.rv-sample .gold-frame.gf2 .gf-c{width:84px;height:84px}
+ html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:64px!important}
+ html body .gold-frame .gf-scroll>section:last-child{padding-bottom:56px!important}
+ html body .gold-frame .contact-close{padding-bottom:48px}
+}
+html body .gold-frame p,html body .gold-frame li{text-align-last:auto!important;hyphens:manual!important}
+/* v140 type scale (modelled on vaibhavaas.com: Cormorant Garamond headings + Inter text) */
+html body{font-size:16px!important;line-height:1.65!important}
+html body p,html body li,html body td,html body .lead,html body .page-hero p,html body .contact-close,html body .rv-note,html body .home-intro p{font-size:16px!important;line-height:1.65!important}
+html body .home-intro p.lead,html body .page-hero p.lead{font-size:18px!important;line-height:1.6!important}
+html body h1{font-size:36px!important;line-height:1.25!important}
+html body h2{font-size:30px!important;line-height:1.2!important}
+html body h3{font-size:22px!important;line-height:1.3!important}
+@media(min-width:821px){html body h1{font-size:46px!important}html body h2{font-size:36px!important}html body h3{font-size:24px!important}}
+html body .eyebrow,html body p.eyebrow{font-size:14px!important;font-weight:600!important;letter-spacing:.08em!important;text-transform:uppercase}
+html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-size:16px!important;font-weight:600!important}
+html body .head-contact a{font-size:15px!important;font-weight:600!important}
+html body footer.site,html body footer.site p,html body footer.site a,html body .wa-ch,html body .wa-ch a{font-size:14px!important;line-height:1.6!important}
+html body footer.site h3,html body footer.site h4,html body footer.site strong{font-size:16px!important;font-weight:600!important}
+html body .rv figcaption{font-size:14px!important}
+html body .rv blockquote,html body .rv blockquote p,html body .rv .rv-tr{font-size:19px!important;line-height:1.55!important}
+/* v141 bands like vaibhavaas: alternate section shading, distinct footer */
+html body .gold-frame > section{padding-top:48px;padding-bottom:48px}
+html body .gold-frame > section:nth-of-type(even){background:rgba(25,2,1,.28)}
+html body .gold-frame > section .wrap{max-width:880px}
+html.rv-sample body footer.site{background:#1c0302!important;border-top:2px solid #d9a63a;box-shadow:0 -1px 0 #7a4c06;padding:32px 0 28px!important;margin-top:28px}
+html.rv-sample body footer.site a{color:#f5d37a}
+html body .gold-frame .cta-band,html body .gold-frame .cta-band p{text-align:center!important}
+/* v143 header, nav, reviews tab, headings */
+/* Reviews tab: twinkling star + soft glow pulse */
+html body nav.main a.rev-tab .tw{display:inline-block;-webkit-text-fill-color:#ffd75e!important;color:#ffd75e;animation:twinkle 2.4s ease-in-out infinite;margin-right:2px}
+html body nav.main a.rev-tab{animation:revglow 2.4s ease-in-out infinite}
+@keyframes revglow{0%,100%{box-shadow:0 0 0 0 rgba(255,215,94,0)}50%{box-shadow:0 0 14px 2px rgba(255,215,94,.55),inset 0 0 0 1px rgba(255,225,130,.7)}}
+@keyframes twinkle{0%,100%{transform:scale(1) rotate(0);filter:drop-shadow(0 0 0 rgba(255,215,94,0))}50%{transform:scale(1.35) rotate(20deg);filter:drop-shadow(0 0 6px rgba(255,225,120,1))}}
+@media (prefers-reduced-motion:reduce){html body nav.main a.rev-tab,html body nav.main a.rev-tab .tw{animation:none}}
+/* tighter nav on phones/tablets */
+@media (max-width:820px){
+ html body nav.main ul{gap:2px 2px!important;padding:2px 0 4px!important}
+ html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-size:14.5px!important;padding:6px 10px!important;line-height:1.3!important}
+}
+/* centred brand text block */
+@media (max-width:900px){
+ html body .site-head .brand{justify-content:center}
+ html body .site-head .brand .brand-text,html body .site-head .brand .name,html body .site-head .brand .name small.tag{text-align:center!important}
+ html body .site-head .brand .name{font-size:23px!important;line-height:1.15!important}
+}
+/* eyebrow labels centred above centred headings */
+html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!important;margin-right:auto!important;font-family:"Cormorant Garamond",serif!important;font-size:17px!important;font-weight:700!important;letter-spacing:.12em!important}
+/* home heading: higher, two lines on phone */
+@media (max-width:820px){
+ html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:46px!important}
+}
+@media (max-width:520px){html body .home-intro h1{font-size:29px!important;line-height:1.22!important;padding:0 18px}}
+@media (max-width:900px){
+ html body .site-head .brand{padding-left:96px!important;justify-content:flex-start}
+ html body .site-head .brand .brand-text{flex:1;min-width:0}
+ html body .site-head .brand .name{white-space:normal!important;font-size:24px!important}
+ html body .site-head .brand .name .name2{display:block!important}
+}
+@media (max-width:900px){html body .site-head .bija{margin-bottom:6px!important}}
+@media (max-width:430px){
+ html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-size:13.5px!important;padding:5px 7px!important}
+ html body nav.main ul{gap:1px!important}
+ html body .home-intro h1{font-size:24px!important;padding:0 6px}
+}
+/* v147 company name centred on the page, logo on the left */
+@media (max-width:900px){
+ html body .site-head .brand{padding-left:92px!important;padding-right:92px!important;justify-content:center}
+}
+@media (max-width:430px){
+ html body .site-head .brand{padding-left:64px!important;padding-right:64px!important}
+ html body .site-head .brand .logo,html body .site-head.shrink .brand .logo{height:60px!important;width:60px!important}
+ html body .site-head .brand .name{font-size:21px!important}
+}
+@media (max-width:430px){
+ html body .site-head .brand{padding-left:78px!important;padding-right:78px!important}
+ html body .site-head .brand .logo,html body .site-head.shrink .brand .logo{height:70px!important;width:70px!important;top:var(--name-mid,24px)!important;transform:translateY(-50%)!important}
+}
