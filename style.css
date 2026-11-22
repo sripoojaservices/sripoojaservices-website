@@ -950,3 +950,13 @@ html body .gold-frame .contact-close{padding-bottom:26px}
  html body .gold-frame section{padding-top:22px!important;padding-bottom:22px!important}
  html body .gold-frame .contact-close{padding-bottom:40px}
 }
+/* v138 */
+html body .gold-frame p,html body .gold-frame li{text-align:left!important}
+html body .gold-frame .page-hero p,html body .gold-frame .contact-close,html body .gold-frame .rv-note,html body .gold-frame .lead.c{text-align:center!important}
+@media (max-width:820px){
+ html.rv-sample .gold-frame.gf-mandala .gf-c{width:84px!important;height:84px!important}
+ html.rv-sample .gold-frame.gf2 .gf-c{width:84px;height:84px}
+ html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:64px!important}
+ html body .gold-frame .gf-scroll>section:last-child{padding-bottom:56px!important}
+ html body .gold-frame .contact-close{padding-bottom:48px}
+}
