@@ -869,3 +869,6 @@ html body .fire-feature .ff-pair{max-width:1080px!important}
 .page-hero .btn.btn-outline,.rv-gbtn{color:#f5d37a!important;border-color:#f2b93b!important;background:rgba(30,4,2,.35)!important;font-style:normal}
 .page-hero .btn.btn-outline:hover{background:#f2b93b!important;color:#3a0603!important}
 .rv-gbtn:hover{background:#f2b93b!important;color:#3a0603!important}
+/* v124 bottom Google button identical to top */
+section .contact-close a.btn.rv-gbtn,section .contact-close a.btn.rv-gbtn:link,section .contact-close a.btn.rv-gbtn:visited{color:#f5d37a!important;border-color:#f2b93b!important;background:rgba(30,4,2,.35)!important}
+section .contact-close a.btn.rv-gbtn:hover,section .contact-close a.btn.rv-gbtn:focus{background:#f2b93b!important;color:#3a0603!important}
