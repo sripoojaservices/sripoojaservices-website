@@ -1100,3 +1100,8 @@ html body .gold-frame .page-hero p.lft{text-align:left!important}
 html body .gold-frame .pwh p.pwh-lead{margin-bottom:10px!important;font-weight:600}
 html body .gold-frame .page-hero p.lft{text-wrap:wrap!important;max-width:none!important}
 html body .gold-frame p.contact-close{margin-top:14px!important;margin-bottom:0!important}
+.comm-grid.comm-grid4{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.comm-grid.comm-grid4 figure{margin:0}
+.comm-grid.comm-grid4 img{width:100%;height:auto;display:block}
+@media (max-width:600px){.comm-grid.comm-grid4{grid-template-columns:1fr}}
+html body .gold-frame p.blur-note{text-align:center!important;font-size:13px!important;font-style:italic!important;opacity:.85;margin:6px 0 18px!important}
