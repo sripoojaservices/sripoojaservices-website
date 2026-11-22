@@ -983,3 +983,28 @@ html body .gold-frame > section .wrap{max-width:880px}
 html.rv-sample body footer.site{background:#1c0302!important;border-top:2px solid #d9a63a;box-shadow:0 -1px 0 #7a4c06;padding:32px 0 28px!important;margin-top:28px}
 html.rv-sample body footer.site a{color:#f5d37a}
 html body .gold-frame .cta-band,html body .gold-frame .cta-band p{text-align:center!important}
+/* v143 header, nav, reviews tab, headings */
+/* Reviews tab: twinkling star + soft glow pulse */
+html body nav.main a.rev-tab .tw{display:inline-block;-webkit-text-fill-color:#ffd75e!important;color:#ffd75e;animation:twinkle 2.4s ease-in-out infinite;margin-right:2px}
+html body nav.main a.rev-tab{animation:revglow 2.4s ease-in-out infinite}
+@keyframes revglow{0%,100%{box-shadow:0 0 0 0 rgba(255,215,94,0)}50%{box-shadow:0 0 14px 2px rgba(255,215,94,.55),inset 0 0 0 1px rgba(255,225,130,.7)}}
+@keyframes twinkle{0%,100%{transform:scale(1) rotate(0);filter:drop-shadow(0 0 0 rgba(255,215,94,0))}50%{transform:scale(1.35) rotate(20deg);filter:drop-shadow(0 0 6px rgba(255,225,120,1))}}
+@media (prefers-reduced-motion:reduce){html body nav.main a.rev-tab,html body nav.main a.rev-tab .tw{animation:none}}
+/* tighter nav on phones/tablets */
+@media (max-width:820px){
+ html body nav.main ul{gap:2px 2px!important;padding:2px 0 4px!important}
+ html body nav.main a,html body nav.main a.cta,html body .site-head nav.main a{font-size:14.5px!important;padding:6px 10px!important;line-height:1.3!important}
+}
+/* centred brand text block */
+@media (max-width:900px){
+ html body .site-head .brand{justify-content:center}
+ html body .site-head .brand .brand-text,html body .site-head .brand .name,html body .site-head .brand .name small.tag{text-align:center!important}
+ html body .site-head .brand .name{font-size:23px!important;line-height:1.15!important}
+}
+/* eyebrow labels centred above centred headings */
+html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!important;margin-right:auto!important;font-family:"Cormorant Garamond",serif!important;font-size:17px!important;font-weight:700!important;letter-spacing:.12em!important}
+/* home heading: higher, two lines on phone */
+@media (max-width:820px){
+ html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:46px!important}
+}
+@media (max-width:520px){html body .home-intro h1{font-size:29px!important;line-height:1.22!important;padding:0 18px}}
