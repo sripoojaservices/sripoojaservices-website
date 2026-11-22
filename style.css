@@ -1008,3 +1008,9 @@ html body .gold-frame p.eyebrow{text-align:center!important;margin-left:auto!imp
  html body .gold-frame .gf-scroll>section:first-child,html body .gold-frame .gf-scroll>div:first-child{padding-top:46px!important}
 }
 @media (max-width:520px){html body .home-intro h1{font-size:29px!important;line-height:1.22!important;padding:0 18px}}
+@media (max-width:900px){
+ html body .site-head .brand{padding-left:96px!important;justify-content:flex-start}
+ html body .site-head .brand .brand-text{flex:1;min-width:0}
+ html body .site-head .brand .name{white-space:normal!important;font-size:24px!important}
+ html body .site-head .brand .name .name2{display:block!important}
+}
