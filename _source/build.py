@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=150">
+<link rel="stylesheet" href="style.css?v=152">
 </head>
 <body>
 '''
@@ -270,7 +270,7 @@ for slug, title, paras in INFO_PAGES:
 why = f'''<section class="page-hero"><div class="wrap">
   <p class="eyebrow">About us</p>
   <h1>Serving Singapore's Hindu families since 2009</h1>
-  <p>For nearly two decades, families across our island have engaged us for poojas and homams in their homes. Many engage us again for subsequent prayers, and recommend us to their relatives and friends.</p>
+  <p class="lft">For nearly two decades, families across our island have engaged us for poojas and homams in their homes. Many engage us again for subsequent prayers, and recommend us to their relatives and friends.</p>
 </div></section>
 <section class="alt about-flow"><div class="wrap">
   <div class="about-centre">
@@ -299,9 +299,9 @@ community = f'''<section class="page-hero"><div class="wrap">
       <figure><img src="image/community_homam.jpg?v=2" alt="Community Navarathri celebration in Ang Mo Kio" width="960" height="720" loading="lazy"></figure>
       <figure><img src="image/community_suvaasini.jpg?v=2" alt="Prayers at the community Navarathri celebration" width="540" height="720" loading="lazy"></figure>
     </div>
-    <p>With the blessings of the former Member of Parliament for Kebun Baru, we held a two-day community Navarathri celebration in Ang Mo Kio, with the necessary approvals. Families of different races and from all walks of life came together to worship the Divine Mother and take part in the prayers.</p>
-    <p>Families from the neighbourhood joined us to share a vegetarian meal, and our Member of Parliament at the time graciously attended to present them with ang pao.</p>
-    <p>Another occasion, a two-day Sahasra Modaka Sri Maha Ganapati Homam, was made possible by a group of like-minded well-wishers, and guests from the community were welcomed to share a meal with us.</p>
+    <p>With the blessings of the former grassroots advisor for Kebun Baru, we held a two-day community Navarathri celebration in Ang Mo Kio. Families of different races and from all walks of life came together to worship the Divine Mother and take part in the event.</p>
+    <p>On the eve of the celebration, essential groceries were delivered personally to families in the neighbourhood, so that no one had to carry them home, and they were invited to join us the next day. At the venue, they shared a vegetarian meal with us, and the grassroots advisor graciously presented each family with a token of appreciation.</p>
+    <p>Later, a two-day Sahasra Modaka Sri Maha Ganapati Homam was held on an auspicious day for Sri Ganapati, made possible by a group of like-minded well-wishers. Seniors from a home in the community were invited to join us and take part.</p>
     <p>These events were offered to the community with devotion, and not for profit.</p>
     <p>In the same spirit, we began the <a href="#pay-with-heart">Pay-With-Heart Pooja</a> for families going through difficult times, who give only what they can comfortably afford. Please feel free to reach out to us.</p>
   </div>
@@ -355,8 +355,7 @@ contact = f'''<section class="page-hero"><div class="wrap">
   </div>
   <div class="note" style="margin:40px auto 0;max-width:760px;text-align:center"><strong>Enquiries:</strong> Monday to Friday, 11am – 5pm<br><strong>Ceremonies:</strong> by appointment, any day of the week</div>
   <p class="contact-close" style="font-style:normal">If we do not answer your call, we may be conducting a pooja at a family's home. Please leave us a WhatsApp message and we will get back to you as soon as we can.</p>
-  <p class="contact-close" style="font-style:normal"><a class="btn btn-outline" href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel</a></p>
-  <p class="contact-close">We look forward to hearing from you.</p>
+  <p class="contact-close">Feel free to reach out to us and know more.</p>
 </div></section>
 '''
 page("contact.htm", f"Contact a Hindu Priest in Singapore | {NAME}", "Contact Sri Rajarajeswari Divine Services in Singapore by phone, WhatsApp or email.", "contact.htm", contact)
@@ -537,12 +536,12 @@ reviews_body = f"""<section class="page-hero"><div class="wrap">
   <h1>What families say about us</h1>
   <p>Every quote below is taken word for word from our Google reviews and from messages families sent us, written by different families, for different ceremonies.</p>
   <p class="g-rate"><span class="g-stars"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><span class="sr">5 stars</span></span> <strong>5.0 on Google</strong></p>
-  <p><a class="btn btn-outline rv-gtop" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,," target="_blank" rel="noopener">Read all our Google reviews</a></p>
+  <p><a class="btn btn-outline rv-gtop" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,,">Read all our Google reviews</a></p>
 </div></section>
 <section><div class="wrap">
 {_themes}  <div class="rv-theme"><header class="svc-sub"><h2>Messages from families</h2><p>Kind words families sent us after their ceremonies. Names are shortened for privacy.</p></header>{wa_cards(WA_MSGS)}</div>
   <p class="rv-note">Quotes are taken from our Google reviews and from messages sent to us by families.</p>
-  <p class="contact-close" style="font-style:normal;text-align:center"><a class="btn btn-outline rv-gbtn" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,," target="_blank" rel="noopener">Read all our Google reviews</a></p>
+  <p class="contact-close" style="font-style:normal;text-align:center"><a class="btn btn-outline rv-gbtn" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,,">Read all our Google reviews</a></p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
