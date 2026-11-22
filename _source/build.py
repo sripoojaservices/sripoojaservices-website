@@ -11,7 +11,7 @@ NAME = "Sri Rajarajeswari Divine Services"
 
 WA_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.1-1.7-1.7-3.8-1.7-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.5S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.3-.3-.4-.6-.5z"/></svg>'
 
-NAV = [("index.htm","Home"),("extra_mile.htm","About Us"),("service.htm","Services"),("photo.htm","Photos"),("reviews.htm","Reviews"),("contact.htm","Contact Us"),("faq.htm","FAQ"),("community.htm","Community")]
+NAV = [("index.htm","Home"),("extra_mile.htm","About Us"),("service.htm","Services"),("photo.htm","Photos"),("reviews.htm","Reviews"),("contact.htm","Contact Us"),("faq.htm","FAQ"),("community.htm","Seva")]
 
 def head(title, desc, extra=""):
     return f'''<!doctype html>
@@ -25,7 +25,7 @@ def head(title, desc, extra=""):
 {extra}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Tiro+Devanagari+Hindi&family=Noto+Serif+Devanagari:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=148">
+<link rel="stylesheet" href="style.css?v=150">
 </head>
 <body>
 '''
@@ -45,6 +45,7 @@ def header(active):
 <header class="site"><div class="wrap">
   <a class="brand" href="index.htm">
     <img class="logo" src="image/srds_logo_gold.png" alt="Sri Rajarajeswari Divine Services logo">
+    <img class="logo logo-r" src="image/srds_logo_gold.png" alt="" aria-hidden="true">
     <span class="brand-text"><span class="name">Sri Rajarajeswari <span class="name2">Divine Services</span><small class="tag">Your trusted partner for <span class="tg2">pooja services in <b>Singapore</b></span></small></span></span>
   </a>
 </div></header>
@@ -72,7 +73,7 @@ CTA = f'''<section class="cta-band"><div class="wrap">
 def footer():
     return f'''<footer class="site slim"><div class="wrap">
   <p class="wa-ch"><a href="https://whatsapp.com/channel/0029VbEuGN57DAWzT0waip0N" target="_blank" rel="noopener">🌺 Follow our WhatsApp Channel for festival greetings and auspicious days 🌺</a></p>
-  <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · UEN 53144294B</p>
+  <p class="copy">© {NAME}<br>Registered in Singapore since 2009 · <span class="nw">UEN 53144294B</span></p>
 </div></footer>
 <script>document.addEventListener('contextmenu',function(e){{e.preventDefault();}});document.addEventListener('dragstart',function(e){{if(e.target.tagName==='IMG')e.preventDefault();}});</script>
 <a class="to-top" href="#" aria-label="Back to top" onclick="window.scrollTo({{top:0,behavior:'smooth'}});return false;">▲<span>Top</span></a>
@@ -135,8 +136,7 @@ home = f'''<section class="hero home-intro"><div class="wrap">
 
 <section class="reviews"><div class="wrap">
   <div class="rv-head">
-    <p class="eyebrow">In their words</p>
-    <h2>What families say</h2>
+    <h2>What families say about us</h2>
   </div>
   <div class="rv-grid">
     <figure class="rv"><span class="stars" aria-hidden="true">★★★★★</span><blockquote>“The entire ceremony was performed with care and attention to detail, creating a peaceful and spiritual atmosphere for our family.”</blockquote><figcaption><strong>Vicki M.</strong> · Mrityunjaya Homam</figcaption></figure>
@@ -156,7 +156,7 @@ def grid(items):
     out = []
     for i,(n,s) in enumerate(items,1):
         sub = f"<small>{s}</small>" if s else ""
-        nm = f'<a href="{SVC_LINK[n]}">{n} →</a>' if n in SVC_LINK else n
+        nm = (f'<a href="{SVC_LINK[n]}">{n.rpartition(" ")[0]} <span class="nw">{n.rpartition(" ")[2]} →</span></a>' if " " in n else f'<a href="{SVC_LINK[n]}"><span class="nw">{n} →</span></a>') if n in SVC_LINK else n
         out.append(f'<div class="svc"><div><strong>{nm}</strong>{sub}</div></div>')
     return '<div class="svc-grid">' + "\n".join(out) + '</div>'
 
@@ -166,14 +166,16 @@ sams = [("Naamakaranam","Naming ceremony"),("Annaprasanam","Child's first feedin
 
 
 def L(name, href=None, info=None):
-    if href: name = f'<a href="{href}">{name} →</a>'
+    if href:
+        _h,_,_t = name.rpartition(" ")
+        name = f'<a href="{href}">{_h} <span class="nw">{_t} →</span></a>' if _h else f'<a href="{href}"><span class="nw">{name} →</span></a>'
     if info: name += f' <a class="svc-info" href="{info}">please read ⓘ</a>'
     return name
 SVC_GROUPS = [
  ("Life occasions", "", "occ", [
    ("", [L("Graha Pravesam (housewarming)","graha-pravesam.htm"), L("Business premises opening","business-inauguration-pooja.htm"),
          "Shubha Punyaahavaachanam", "Naamakaranam (naming)", "Annaprasanam (first feeding)",
-         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "Chanting session during palliative care"])]),
+         "Aksharabhyasam (initiation into learning)", "Ayushya Homam", "<strong>Chanting session during palliative care</strong>"])]),
  ("Worship by deity", "", "deity", [
    ("Sri Maha Ganapati", ["Caturaavrutti Tarpanam", "Sri Maha Ganapati Sahasranaama Archana", "Sri Maha Ganapati Aavarana Pooja", L("Sri Maha Ganapati Homam","ganapati-homam.htm"),
                       "Ashta Dravya Sri Maha Ganapati Homam", "Sahasra Modaka Homam"]),
@@ -222,7 +224,6 @@ def svc_list():
                 out.append(f'    <ul class="svc-list">{lis}</ul>')
         out.append('  </div>')
     out.append('  <p class="svc-combine">Some of these can be combined. Please <a href="contact.htm">give us a call</a> and we will be happy to clarify.</p>')
-    out.append(PWH)
     return "\n".join(out)
 SVC_LIST = svc_list()
 
@@ -236,7 +237,7 @@ services = f'''<section class="page-hero svc-hero"><div class="wrap">
 <section><div class="wrap">
 {SVC_LIST}
 </div></section>
-''' + CTA
+'''
 page("service.htm", f"Poojas & Homams in Singapore | {NAME}", "Full list of poojas and homams conducted in Singapore, including Graha Pravesam, Ganapati Homam, Navagraha Shanti and Naamakaranam.", "service.htm", services)
 
 INFO_PAGES = [
@@ -289,21 +290,22 @@ page("extra_mile.htm", f"About Us | {NAME}", "Authentic, scripture-based poojas 
 
 # ---------- COMMUNITY ----------
 community = f'''<section class="page-hero"><div class="wrap">
-  <p class="eyebrow">Community service</p>
-  <h1>Serving the community</h1>
-  <p>Beyond the homes we visit, we offer our prayers to the wider community.</p>
+  <h1>Community Service</h1>
+  <p>Serving the community: beyond the homes we visit, we organise occasions where the wider community can come together in prayer.</p>
 </div></section>
 <section><div class="wrap">
   <div class="community">
         <div class="comm-grid">
-      <figure><img src="image/community_homam.jpg" alt="Homam at our community Navarathri event" width="960" height="720" loading="lazy"><figcaption>Homam at our community Navarathri event</figcaption></figure>
-      <figure><img src="image/community_suvaasini.jpg" alt="Suvaasini Pooja at the community event" width="540" height="720" loading="lazy"><figcaption>Suvaasini Pooja, honouring the married women</figcaption></figure>
+      <figure><img src="image/community_homam.jpg?v=2" alt="Community Navarathri celebration in Ang Mo Kio" width="960" height="720" loading="lazy"></figure>
+      <figure><img src="image/community_suvaasini.jpg?v=2" alt="Prayers at the community Navarathri celebration" width="540" height="720" loading="lazy"></figure>
     </div>
-    <p>Our first major public event was a two-day community Navarathri celebration in Ang Mo Kio, held with the necessary approvals. Sri Devi was brought out to the site and stayed with the devotees through the night. The celebration included a homam and a Suvaasini Pooja, and low-income families were invited to share a vegetarian meal and receive ang pao, which our Member of Parliament graciously attended to distribute.</p>
-    <p>On a later occasion, we organised a two-day Sahasra Modaka Sri Maha Ganapati Homam, with additional priests brought in from India, made possible by a committee of families who regularly pray with us.</p>
+    <p>With the blessings of the former Member of Parliament for Kebun Baru, we held a two-day community Navarathri celebration in Ang Mo Kio, with the necessary approvals. Families of different races and from all walks of life came together to worship the Divine Mother and take part in the prayers.</p>
+    <p>Families from the neighbourhood joined us to share a vegetarian meal, and our Member of Parliament at the time graciously attended to present them with ang pao.</p>
+    <p>Another occasion, a two-day Sahasra Modaka Sri Maha Ganapati Homam, was made possible by a group of like-minded well-wishers, and guests from the community were welcomed to share a meal with us.</p>
     <p>These events were offered to the community with devotion, and not for profit.</p>
-    <p>We also offer the <a href="service.htm#pay-with-heart">Pay-With-Heart Pooja</a> for families going through hardship, where they give only what they can comfortably afford.</p>
+    <p>In the same spirit, we began the <a href="#pay-with-heart">Pay-With-Heart Pooja</a> for families going through difficult times, who give only what they can comfortably afford. Please feel free to reach out to us.</p>
   </div>
+{PWH}
 </div></section>
 ''' + CTA
 page("community.htm", f"Community Service | {NAME}", "Community Navarathri celebration, Sahasra Modaka Homam and Pay-With-Heart Pooja for families in need, by Sri Rajarajeswari Divine Services, Singapore.", "community.htm", community)
@@ -313,15 +315,14 @@ import json
 _g=[x for x in json.load(open('gallery.json')) if x[0] not in ('photo02.jpg','photo09.jpg','photo16.jpg','photo06.jpg','photo25.jpg','photo26.jpg','photo27.jpg','photo28.jpg','photo23.jpg','photo29.jpg','photo43.jpg','photo34.jpg')]  # hidden = archive; swap in quarterly
 figs="\n".join(f'    <figure><img src="image/gallery/{n}" alt="{c}" loading="lazy" width="{w}" height="{h}"{' style="object-position:center 20%"' if n=='photo17.jpg' else ''}><figcaption>{c}</figcaption></figure>' for n,c,(w,h) in _g)
 photos = f'''<section class="page-hero photo-hero"><div class="wrap">
-  <p class="eyebrow">Gallery</p>
   <h1>Photos</h1>
   <p>Moments from poojas, homams and ceremonies we have conducted.</p>
 </div></section>
 <section><div class="wrap">
   <div class="fire-feature">
     <div class="ff-pair">
-      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=4" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"><figcaption class="ff-main">Many devotees present saw the form of Sri Maha Ganapati in the sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam.</figcaption></figure>
-      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=4" alt="The same picture, darkened so the form is more easily seen" width="800" height="584"><figcaption class="ff-main">The same picture, darkened so the form is more easily seen.</figcaption></figure>
+      <figure><img src="image/gallery/fire_ganapati_colour.jpg?v=4" alt="Sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam" width="800" height="584"><figcaption class="ff-main">Many devotees present saw the form of Sri Maha Ganapati in the sacred fire during the Sahasra Modaka Sri Maha Ganapati Homam. <em class="zoom-note">(Please zoom in to see.)</em></figcaption></figure>
+      <figure><img src="image/gallery/fire_ganapati_dark.jpg?v=4" alt="The same picture, darkened so the form is more easily seen" width="800" height="584"><figcaption class="ff-main">The same picture, darkened so the form is more easily seen. <em class="zoom-note">(Please zoom in to see.)</em></figcaption></figure>
     </div>
   </div>
   <div class="gallery">
@@ -369,9 +370,9 @@ SERVICE_PAGES = [
   img="photo03.jpg", alt="Milk-boiling ritual during a Graha Pravesam housewarming ceremony",
   intro="Graha Pravesam is the traditional Hindu ceremony for entering a new home. It purifies the house and invokes the blessings of the deities, so that the family begins life in their new home with peace, health and prosperity.",
   when="Families perform Graha Pravesam when moving into a newly bought or newly built home, including HDB flats, condominiums and landed houses. It is also often done after major renovation. The ceremony is held on an auspicious date and time (muhurtham).",
-  includes=["Ganapati Pooja to remove obstacles","Punyaahavaachanam (purification of the home)","Dwara Pooja at the main entrance","The family's first entry into the new home","The traditional boiling of milk in the new kitchen","Offering the milk to the deities at the home altar"],
+  includes=["Prayers to remove obstacles and bless the occasion","Purification of the new home","The family's ceremonial first entry into the home","Blessing of the kitchen and the home altar"],
   addons=["Maha Ganapati Homam, or another homam of your choice","Navagraha Pooja"],
-  note="", where="Conducted at your new home",
+  note="Every step is performed in the traditional sequence laid down in the scriptures. Please contact us and we will gladly explain the ceremony in detail.", where="Conducted at your new home",
   quote=("He has been a guiding light in ensuring my first home is thoroughly blessed.","Vasellia S.","Graha Pravesam"),
   faq=[("When should we do Graha Pravesam?","On the day you move in, at an auspicious muhurtham. The family should stay overnight in the new home that same night, as the Graha Pravesam marks the day you begin living there."),
        ("Can it be done in an HDB flat?","Yes. We conduct Graha Pravesam in HDB flats, condominiums and landed homes.")]),
@@ -433,8 +434,7 @@ for sp in SERVICE_PAGES:
     others = "".join(f'<li><a href="{o["slug"]}">{o["short"]}</a></li>' for o in SERVICE_PAGES if o is not sp)
     body = f'''<section class="page-hero"><div class="wrap">
   <p class="back-link"><a href="service.htm">← Back to Services</a></p>
-  <p class="eyebrow"><a href="service.htm" style="color:inherit;text-decoration:none">Services</a> › {sp["short"]}</p>
-  <h1>{sp["h1"]}</h1>
+  <h1>{sp["h1"].replace(" in Singapore","")}</h1>
   <p>{sp["intro"]}</p>
 </div></section>
 <section><div class="wrap two-col svc-detail">
@@ -466,7 +466,7 @@ GEN_FAQ = [
  ("How is a booking confirmed?","The details for confirming your booking are stated in the quotation we send you."),
  ("Can you help us choose an auspicious date and time?","Yes. Share the details with us and we will help you choose a suitable date and time for your ceremony."),
  ("Do you provide astrological services?","We do not offer astrological consultations as a separate service. However, we can check auspicious dates against your horoscope, and where there are hurdles or blockages in a particular matter, we can look into what may be causing them."),
- ("Can a ceremony be held during Brahma Muhurtham?","Brahma Muhurtham, the early hours before sunrise, is an auspicious time for worship. However, the day of the week must also be considered. Hindus avoid certain events on some days; for example, Graha Pravesam is avoided on Tuesdays and Saturdays.<br><br><strong>Please note:</strong> in the Hindu almanac, a day begins at sunrise, not at midnight. If sunrise in Singapore is at 7am on a Wednesday, the hours before 7am still belong to Tuesday. So a Graha Pravesam held at 5am on a Wednesday actually falls on Tuesday, and one held at 5am on a Sunday falls on Saturday. Many families are not aware of this. Please keep both the time and the day of the week in mind when choosing your date, and we will be happy to advise you."),
+ ("Can a ceremony be held during Brahma Muhurta?","Brahma Muhurta, the early hours before sunrise, is an auspicious time for worship. However, the day of the week must also be considered. Hindus avoid certain events on some days; for example, Graha Pravesam is avoided on Tuesdays and Saturdays.<br><br><strong>Please note:</strong> in the Hindu almanac, a day begins at sunrise, not at midnight. If sunrise in Singapore is at 7am on a Wednesday, the hours before 7am still belong to Tuesday. So a Graha Pravesam held at 5am on a Wednesday actually falls on Tuesday, and one held at 5am on a Sunday falls on Saturday. Many families are not aware of this. Please keep both the time and the day of the week in mind when choosing your date, and we will be happy to advise you."),
  ("Apart from the booking charge, is there anything else to pay?","Transport to and from the venue is to be arranged by the host.<br><br>Giving dakshina is entirely your choice. The scriptures highly recommend performing a charitable deed (daanam) after a ceremony in your home, and many families make their first such offering to the priest who performed the worship, as a token of gratitude, sometimes together with a veshti (dhoti). It is a gift, never a requirement.<br><br>In homes with a domestic helper, we also encourage families to give the helper a small token of appreciation, as such occasions bring extra work. If you wish, the priest can advise you on the right moment during the ceremony, so that the offering brings more merit."),
  ("Do you supply the pooja items?","No. We are registered as a service provider, not a supplier. Sourcing items for each family would add time and cost, and every home is different: most Hindu homes already have basic pooja utensils and trays, and fresh items such as fruits and flowers differ from shop to shop.<br><br>We also believe that choosing the items yourself is part of the worship. Just as you would personally choose a gift for someone you love, selecting the offerings with your own hands brings you closer to the Divine, and the blessings begin from there."),
  ("Will you guide us on what to buy and where to get it?","Yes. Once your booking is confirmed, we will guide you every step of the way, from the list of items and where to buy them to the arrangements needed, so that your ceremony goes smoothly."),
@@ -534,15 +534,15 @@ def wa_cards(items):
 _themes = "".join(f'  <div class="rv-theme"><header class="svc-sub"><h2>{h}</h2><p>{sub}</p></header>{rev_cards(items)}</div>\n' for h,sub,items in REV_THEMES)
 reviews_body = f"""<section class="page-hero"><div class="wrap">
   <p class="eyebrow">Reviews</p>
-  <h1>What families say</h1>
+  <h1>What families say about us</h1>
   <p>Every quote below is taken word for word from our Google reviews and from messages families sent us, written by different families, for different ceremonies.</p>
   <p class="g-rate"><span class="g-stars"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><img src="image/star_gold.svg" alt="" aria-hidden="true"><span class="sr">5 stars</span></span> <strong>5.0 on Google</strong></p>
-  <p><a class="btn btn-outline" href="https://maps.google.com/?cid=2605221990443303164" target="_blank" rel="noopener">Read all our Google reviews</a></p>
+  <p><a class="btn btn-outline rv-gtop" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,," target="_blank" rel="noopener">Read all our Google reviews</a></p>
 </div></section>
 <section><div class="wrap">
 {_themes}  <div class="rv-theme"><header class="svc-sub"><h2>Messages from families</h2><p>Kind words families sent us after their ceremonies. Names are shortened for privacy.</p></header>{wa_cards(WA_MSGS)}</div>
   <p class="rv-note">Quotes are taken from our Google reviews and from messages sent to us by families.</p>
-  <p class="contact-close" style="font-style:normal;text-align:center"><a class="btn btn-outline rv-gbtn" href="https://maps.google.com/?cid=2605221990443303164" target="_blank" rel="noopener">Read all our Google reviews</a></p>
+  <p class="contact-close" style="font-style:normal;text-align:center"><a class="btn btn-outline rv-gbtn" href="https://www.google.com/search?q=Sri+Rajarajeswari+Divine+Services#lrd=0x31da16bb07889213:0x24279b98e568c0fc,1,,," target="_blank" rel="noopener">Read all our Google reviews</a></p>
 </div></section>
 """ + CTA
 page("reviews.htm", f"Reviews from Families in Singapore | {NAME}", "What families in Singapore say about our poojas, homams and ceremonies: patient, calm, authentic and well guided. Quotes taken word for word from our Google reviews.", "reviews.htm", reviews_body)
