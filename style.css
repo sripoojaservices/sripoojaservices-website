@@ -1082,3 +1082,8 @@ html body .page-hero a.btn.btn-outline.rv-gtop{background:linear-gradient(180deg
  html body .contact-card a.btn{padding:8px 20px!important;margin-top:2px!important}
  html body .contact-grid{gap:14px!important}
 }
+/* v151 bottom Google button = top one; tighter gap */
+html body section .contact-close a.btn.rv-gbtn:link,html body section .contact-close a.btn.rv-gbtn:visited,html body section .contact-close a.btn.rv-gbtn{background:linear-gradient(180deg,#ffe58a,#f2b93b 55%,#d39a1c)!important;color:#3a0603!important;-webkit-text-fill-color:#3a0603!important;border:1.5px solid #ffe9a0!important;font-weight:700!important}
+html body .gold-frame .gf-scroll>section:has(.rv-gbtn){padding-bottom:4px!important}
+html body .gold-frame .gf-scroll>section.cta-band{padding-top:8px!important}
+html body .gold-frame .gf-scroll>section.cta-band .orn-div,html body .gold-frame .gf-scroll>section.cta-band svg.orn-div{margin-top:0!important}
