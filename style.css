@@ -1105,3 +1105,5 @@ html body .gold-frame p.contact-close{margin-top:14px!important;margin-bottom:0!
 .comm-grid.comm-grid4 img{width:100%;height:auto;display:block}
 @media (max-width:600px){.comm-grid.comm-grid4{grid-template-columns:1fr}}
 html body .gold-frame p.blur-note{text-align:center!important;font-size:13px!important;font-style:italic!important;opacity:.85;margin:6px 0 18px!important}
+html body .gold-frame .community p{margin:0 0 14px!important}
+html body .gold-frame .community p.sec-gap{margin-top:30px!important}
