@@ -1114,3 +1114,8 @@ html body .gold-frame .sloka .sk-tr{font-weight:600!important;color:#f3e6cc!impo
 html body .gold-frame .sloka .sk-en{font-family:"Cormorant Garamond",serif!important;font-style:italic!important;font-size:19px!important;color:#f3e6cc!important}
 html body .gold-frame .sloka .sk-src{font-size:13px!important;letter-spacing:.06em;color:#f5d37a!important;margin:0!important}
 html body .gold-frame .sloka.sec-gap-box{margin-top:34px!important;margin-bottom:18px!important}
+/* v157 even paragraph spacing on Seva */
+html body .gold-frame .community p,html body .gold-frame .community p.sec-gap{margin:0 0 14px!important}
+html body .gold-frame .community .sloka,html body .gold-frame .community .sloka.sec-gap-box{margin:14px auto 14px!important}
+html body .gold-frame .community .sloka p{margin:0 0 8px!important}
+html body .gold-frame .community p.blur-note{margin:4px 0 14px!important}
